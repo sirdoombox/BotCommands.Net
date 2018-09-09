@@ -1,0 +1,389 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="bcaaa82a-0cb2-4e3d-9557-580925b02e26" name="Default" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/.idea.BotCommands.Net/.idea/contentModel.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/.idea.BotCommands.Net/.idea/indexLayout.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/.idea.BotCommands.Net/.idea/modules.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/.idea.BotCommands.Net/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/.idea.BotCommands.Net/riderModule.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/BotCommands.Net.Tests/Commands/TestCommand.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/BotCommands.Net.sln" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/BotCommands.Net/Attributes/CommandAliases.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/BotCommands.Net/Attributes/CommandDescription.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/BotCommands.Net/BotCommands.Net.csproj" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/BotCommands.Net/Core/Commander.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/BotCommands.Net/Interfaces/IBotCommand.cs" afterDir="false" />
+    </list>
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <option name="TRACKING_ENABLED" value="true" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileEditorManager">
+    <leaf>
+      <file leaf-file-name="Commander.cs" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/BotCommands.Net/Core/Commander.cs">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="170">
+              <caret line="10" column="12" selection-start-line="10" selection-start-column="12" selection-end-line="10" selection-end-column="12" />
+              <folding>
+                <marker date="1536489122106" expanded="true" signature="57:712" ph="{...}" />
+                <marker date="1536489122106" expanded="true" signature="93:710" ph="{...}" />
+                <marker date="1536489122106" expanded="true" signature="172:205" ph="{...}" />
+                <marker date="1536489122106" expanded="true" signature="223:368" ph="/// Register a command. ... " />
+                <marker date="1536489122106" expanded="true" signature="431:464" ph="{...}" />
+                <marker date="1536489122106" expanded="true" signature="482:629" ph="/// Gather all top level types that implement &lt;see cref=&quot;IBotCommand&quot;/&gt; and register them as commands. ... " />
+                <marker date="1536489122106" expanded="true" signature="671:704" ph="{...}" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="CommandAliases.cs" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/BotCommands.Net/Attributes/CommandAliases.cs">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="391">
+              <caret line="24" column="1" lean-forward="true" selection-start-line="24" selection-start-column="1" selection-end-line="24" selection-end-column="1" />
+              <folding>
+                <marker date="1536490632044" expanded="false" signature="6:47" ph="..." />
+                <marker date="1536490632044" expanded="true" signature="138:920" ph="{...}" />
+                <marker date="1536490632044" expanded="true" signature="262:918" ph="{...}" />
+                <marker date="1536490632044" expanded="true" signature="340:631" ph="/// Provide aliases for a given command. ... " />
+                <marker date="1536490632044" expanded="true" signature="686:912" ph="{...}" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="CommandDescription.cs" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/BotCommands.Net/Attributes/CommandDescription.cs">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="221">
+              <caret line="13" column="85" selection-start-line="13" selection-start-column="85" selection-end-line="13" selection-end-column="85" />
+              <folding>
+                <marker date="1536490528972" expanded="true" signature="47:863" ph="{...}" />
+                <marker date="1536490528972" expanded="true" signature="175:861" ph="{...}" />
+                <marker date="1536490528972" expanded="true" signature="242:581" ph="/// Provide a description for a given command - Used for automating &quot;Help&quot; command creation. ... " />
+                <marker date="1536490528972" expanded="true" signature="635:855" ph="{...}" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="IBotCommand.cs" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/BotCommands.Net/Interfaces/IBotCommand.cs">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="170">
+              <caret line="10" column="105" selection-start-line="10" selection-start-column="105" selection-end-line="10" selection-end-column="105" />
+              <folding>
+                <marker date="1536489387914" expanded="true" signature="32:440" ph="{...}" />
+                <marker date="1536489387914" expanded="true" signature="39:128" ph="/// The interface which all commands must implement. ... " />
+                <marker date="1536489387914" expanded="true" signature="161:438" ph="{...}" />
+                <marker date="1536489387914" expanded="true" signature="176:406" ph="/// Called when the command is executed without additional arguments. ... " />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Class1.cs" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/BotCommands.Net.Tests/Class1.cs">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="187">
+              <caret line="11" column="12" selection-start-line="11" selection-start-column="12" selection-end-line="11" selection-end-column="12" />
+              <folding>
+                <marker date="1536489541494" expanded="true" signature="6:60" ph="..." />
+                <marker date="1536489541494" expanded="true" signature="93:215" ph="{...}" />
+                <marker date="1536489541494" expanded="true" signature="119:213" ph="{...}" />
+                <marker date="1536489541494" expanded="true" signature="174:207" ph="{...}" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="TestCommand.cs" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/BotCommands.Net.Tests/Commands/TestCommand.cs">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="85">
+              <caret line="5" column="30" selection-start-line="5" selection-start-column="30" selection-end-line="5" selection-end-column="30" />
+              <folding>
+                <marker date="1536490433126" expanded="true" signature="6:59" ph="..." />
+                <marker date="1536490433126" expanded="true" signature="97:297" ph="{...}" />
+                <marker date="1536490433126" expanded="true" signature="175:295" ph="{...}" />
+                <marker date="1536490433126" expanded="true" signature="213:289" ph="{...}" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="HighlightingSettingsPerFile">
+    <setting file="file://$PROJECT_DIR$/BotCommands.Net/Interfaces/IBotCommand.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/BotCommands.Net.Tests/Commands/TestCommand.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/BotCommands.Net/Attributes/CommandAliases.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/BotCommands.Net.Tests/Class1.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/BotCommands.Net/Attributes/CommandDescription.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/BotCommands.Net/Core/Commander.cs" root0="FORCE_HIGHLIGHTING" />
+  </component>
+  <component name="IdeDocumentHistory">
+    <option name="CHANGED_PATHS">
+      <list>
+        <option value="$PROJECT_DIR$/BotCommands.Net/Commander.cs" />
+        <option value="$PROJECT_DIR$/BotCommands.Net/Interfaces/ICommand.cs" />
+        <option value="$PROJECT_DIR$/BotCommands.Net/Core/Commander.cs" />
+        <option value="$PROJECT_DIR$/BotCommands.Net/Interfaces/IBotCommand.cs" />
+        <option value="$PROJECT_DIR$/BotCommands.Net.Tests/Class1.cs" />
+        <option value="$PROJECT_DIR$/BotCommands.Net/Attributes/Aliases.cs" />
+        <option value="$PROJECT_DIR$/BotCommands.Net.Tests/Commands/TestCommand.cs" />
+        <option value="$PROJECT_DIR$/BotCommands.Net/Attributes/CommandDescription.cs" />
+        <option value="$PROJECT_DIR$/BotCommands.Net/Attributes/CommandAliases.cs" />
+      </list>
+    </option>
+  </component>
+  <component name="JsBuildToolGruntFileManager" detection-done="true" sorting="DEFINITION_ORDER" />
+  <component name="JsBuildToolPackageJson" detection-done="true" sorting="DEFINITION_ORDER" />
+  <component name="JsGulpfileManager">
+    <detection-done>true</detection-done>
+    <sorting>DEFINITION_ORDER</sorting>
+  </component>
+  <component name="NodePackageJsonFileManager">
+    <packageJsonPaths />
+  </component>
+  <component name="ProjectFrameBounds">
+    <option name="width" value="1920" />
+    <option name="height" value="1050" />
+  </component>
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
+  <component name="ProjectView">
+    <navigator currentView="SolutionExplorer" proportions="" version="1">
+      <foldersAlwaysOnTop value="true" />
+    </navigator>
+    <panes>
+      <pane id="SolutionExplorer">
+        <subPane>
+          <expand>
+            <path>
+              <item name="" type="13324e5d:SolutionExplorerViewPane$ProjectViewPaneTreeStructure$createRoot$1" />
+              <item name="BotCommands.Net (2 projects)" type="977d5f41:SolutionExplorerNodeRider" />
+            </path>
+            <path>
+              <item name="" type="13324e5d:SolutionExplorerViewPane$ProjectViewPaneTreeStructure$createRoot$1" />
+              <item name="BotCommands.Net (2 projects)" type="977d5f41:SolutionExplorerNodeRider" />
+              <item name="BotCommands.Net" type="977d5f41:SolutionExplorerNodeRider" />
+            </path>
+            <path>
+              <item name="" type="13324e5d:SolutionExplorerViewPane$ProjectViewPaneTreeStructure$createRoot$1" />
+              <item name="BotCommands.Net (2 projects)" type="977d5f41:SolutionExplorerNodeRider" />
+              <item name="BotCommands.Net" type="977d5f41:SolutionExplorerNodeRider" />
+              <item name="Attributes" type="977d5f41:SolutionExplorerNodeRider" />
+            </path>
+            <path>
+              <item name="" type="13324e5d:SolutionExplorerViewPane$ProjectViewPaneTreeStructure$createRoot$1" />
+              <item name="BotCommands.Net (2 projects)" type="977d5f41:SolutionExplorerNodeRider" />
+              <item name="BotCommands.Net" type="977d5f41:SolutionExplorerNodeRider" />
+              <item name="Interfaces" type="977d5f41:SolutionExplorerNodeRider" />
+            </path>
+            <path>
+              <item name="" type="13324e5d:SolutionExplorerViewPane$ProjectViewPaneTreeStructure$createRoot$1" />
+              <item name="BotCommands.Net (2 projects)" type="977d5f41:SolutionExplorerNodeRider" />
+              <item name="BotCommands.Net.Tests" type="977d5f41:SolutionExplorerNodeRider" />
+            </path>
+          </expand>
+          <select />
+        </subPane>
+        <option name="show-file-system" value="false" />
+        <option name="show-all-items" value="false" />
+      </pane>
+      <pane id="Scratches" />
+    </panes>
+  </component>
+  <component name="PropertiesComponent">
+    <property name="Rider.ProjectViewActivator.IsNotFirstRun" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+  </component>
+  <component name="RunDashboard">
+    <option name="ruleStates">
+      <list>
+        <RuleState>
+          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
+        </RuleState>
+        <RuleState>
+          <option name="name" value="StatusDashboardGroupingRule" />
+        </RuleState>
+      </list>
+    </option>
+  </component>
+  <component name="RunManager" selected=".NET Project.Default">
+    <configuration name="Default" type="DotNetProject" factoryName=".NET Project">
+      <option name="EXE_PATH" value="" />
+      <option name="PROGRAM_PARAMETERS" value="" />
+      <option name="WORKING_DIRECTORY" value="" />
+      <option name="PASS_PARENT_ENVS" value="1" />
+      <option name="USE_EXTERNAL_CONSOLE" value="0" />
+      <option name="USE_MONO" value="0" />
+      <option name="PROJECT_PATH" value="" />
+      <option name="PROJECT_EXE_PATH_TRACKING" value="1" />
+      <option name="PROJECT_ARGUMENTS_TRACKING" value="1" />
+      <option name="PROJECT_WORKING_DIRECTORY_TRACKING" value="1" />
+      <option name="PROJECT_KIND" value="None" />
+      <option name="PROJECT_TFM" value="" />
+    </configuration>
+    <list>
+      <item itemvalue=".NET Project.Default" />
+    </list>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="bcaaa82a-0cb2-4e3d-9557-580925b02e26" name="Default" comment="" />
+      <created>1536487823876</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1536487823876</updated>
+      <workItem from="1536487825077" duration="2804000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TimeTrackingManager">
+    <option name="totallyTimeSpent" value="2804000" />
+  </component>
+  <component name="TodoView">
+    <todo-panel id="selected-file">
+      <is-autoscroll-to-source value="true" />
+    </todo-panel>
+    <todo-panel id="all">
+      <are-packages-shown value="true" />
+      <is-autoscroll-to-source value="true" />
+    </todo-panel>
+  </component>
+  <component name="ToolWindowManager">
+    <frame x="0" y="0" width="1920" height="1050" extended-state="0" />
+    <editor active="true" />
+    <layout>
+      <window_info anchor="right" id="TODO" order="6" sideWeight="0.5015723" side_tool="true" visible="true" weight="0.25053304" />
+      <window_info anchor="right" id="Errors In Solution" order="0" weight="0.32995737" />
+      <window_info anchor="bottom" id="Event Log" order="0" side_tool="true" weight="0.32982087" />
+      <window_info anchor="bottom" id="Unit Tests" order="1" visible="true" weight="0.32982087" />
+      <window_info anchor="bottom" id="Database Changes" order="2" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Run" order="9" />
+      <window_info anchor="bottom" id="Version Control" order="3" />
+      <window_info anchor="bottom" id="Terminal" order="4" />
+      <window_info anchor="bottom" id="NuGet" order="5" weight="0.32982087" />
+      <window_info active="true" anchor="right" content_ui="combo" id="Project" order="5" sideWeight="0.49842766" visible="true" weight="0.25053304" />
+      <window_info anchor="bottom" id="Docker" order="6" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Build" />
+      <window_info anchor="right" id="Database" order="1" show_stripe_button="false" weight="0.32995737" />
+      <window_info anchor="bottom" id="Find" order="8" />
+      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
+      <window_info anchor="bottom" id="Debug" order="10" weight="0.4" />
+      <window_info id="Favorites" order="0" side_tool="true" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="4" weight="0.25" />
+      <window_info anchor="bottom" id="Cvs" order="11" weight="0.25" />
+      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="2" type="SLIDING" weight="0.4" />
+      <window_info anchor="right" id="Ant Build" order="3" weight="0.25" />
+      <window_info anchor="bottom" id="Inspection" order="12" weight="0.4" />
+      <window_info anchor="bottom" id="Message" order="7" />
+    </layout>
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+  <component name="UnityUnitTestConfiguration" currentTestLauncher="NUnit" />
+  <component name="VcsContentAnnotationSettings">
+    <option name="myLimit" value="2678400000" />
+  </component>
+  <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/BotCommands.Net.Tests/Class1.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="187">
+          <caret line="11" column="12" selection-start-line="11" selection-start-column="12" selection-end-line="11" selection-end-column="12" />
+          <folding>
+            <marker date="1536489541494" expanded="true" signature="6:60" ph="..." />
+            <marker date="1536489541494" expanded="true" signature="93:215" ph="{...}" />
+            <marker date="1536489541494" expanded="true" signature="119:213" ph="{...}" />
+            <marker date="1536489541494" expanded="true" signature="174:207" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/BotCommands.Net.Tests/Commands/TestCommand.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="85">
+          <caret line="5" column="30" selection-start-line="5" selection-start-column="30" selection-end-line="5" selection-end-column="30" />
+          <folding>
+            <marker date="1536490433126" expanded="true" signature="6:59" ph="..." />
+            <marker date="1536490433126" expanded="true" signature="97:297" ph="{...}" />
+            <marker date="1536490433126" expanded="true" signature="175:295" ph="{...}" />
+            <marker date="1536490433126" expanded="true" signature="213:289" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/BotCommands.Net/Interfaces/IBotCommand.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="170">
+          <caret line="10" column="105" selection-start-line="10" selection-start-column="105" selection-end-line="10" selection-end-column="105" />
+          <folding>
+            <marker date="1536489387914" expanded="true" signature="32:440" ph="{...}" />
+            <marker date="1536489387914" expanded="true" signature="39:128" ph="/// The interface which all commands must implement. ... " />
+            <marker date="1536489387914" expanded="true" signature="161:438" ph="{...}" />
+            <marker date="1536489387914" expanded="true" signature="176:406" ph="/// Called when the command is executed without additional arguments. ... " />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/BotCommands.Net/Core/Commander.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="170">
+          <caret line="10" column="12" selection-start-line="10" selection-start-column="12" selection-end-line="10" selection-end-column="12" />
+          <folding>
+            <marker date="1536489122106" expanded="true" signature="57:712" ph="{...}" />
+            <marker date="1536489122106" expanded="true" signature="93:710" ph="{...}" />
+            <marker date="1536489122106" expanded="true" signature="172:205" ph="{...}" />
+            <marker date="1536489122106" expanded="true" signature="223:368" ph="/// Register a command. ... " />
+            <marker date="1536489122106" expanded="true" signature="431:464" ph="{...}" />
+            <marker date="1536489122106" expanded="true" signature="482:629" ph="/// Gather all top level types that implement &lt;see cref=&quot;IBotCommand&quot;/&gt; and register them as commands. ... " />
+            <marker date="1536489122106" expanded="true" signature="671:704" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/BotCommands.Net/Attributes/CommandDescription.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="221">
+          <caret line="13" column="85" selection-start-line="13" selection-start-column="85" selection-end-line="13" selection-end-column="85" />
+          <folding>
+            <marker date="1536490528972" expanded="true" signature="47:863" ph="{...}" />
+            <marker date="1536490528972" expanded="true" signature="175:861" ph="{...}" />
+            <marker date="1536490528972" expanded="true" signature="242:581" ph="/// Provide a description for a given command - Used for automating &quot;Help&quot; command creation. ... " />
+            <marker date="1536490528972" expanded="true" signature="635:855" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/BotCommands.Net/Attributes/CommandAliases.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="391">
+          <caret line="24" column="1" lean-forward="true" selection-start-line="24" selection-start-column="1" selection-end-line="24" selection-end-column="1" />
+          <folding>
+            <marker date="1536490632044" expanded="false" signature="6:47" ph="..." />
+            <marker date="1536490632044" expanded="true" signature="138:920" ph="{...}" />
+            <marker date="1536490632044" expanded="true" signature="262:918" ph="{...}" />
+            <marker date="1536490632044" expanded="true" signature="340:631" ph="/// Provide aliases for a given command. ... " />
+            <marker date="1536490632044" expanded="true" signature="686:912" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+  </component>
+</project>

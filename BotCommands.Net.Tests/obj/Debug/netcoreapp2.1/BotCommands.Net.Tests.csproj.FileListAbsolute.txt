@@ -1,0 +1,14 @@
+S:\Projects\CSharp\BotCommands.Net\BotCommands.Net.Tests\bin\Debug\netcoreapp2.1\xunit.runner.visualstudio.dotnetcore.testadapter.dll
+S:\Projects\CSharp\BotCommands.Net\BotCommands.Net.Tests\bin\Debug\netcoreapp2.1\xunit.runner.reporters.netcoreapp10.dll
+S:\Projects\CSharp\BotCommands.Net\BotCommands.Net.Tests\bin\Debug\netcoreapp2.1\xunit.runner.utility.netcoreapp10.dll
+S:\Projects\CSharp\BotCommands.Net\BotCommands.Net.Tests\bin\Debug\netcoreapp2.1\BotCommands.Net.Tests.deps.json
+S:\Projects\CSharp\BotCommands.Net\BotCommands.Net.Tests\bin\Debug\netcoreapp2.1\BotCommands.Net.Tests.runtimeconfig.json
+S:\Projects\CSharp\BotCommands.Net\BotCommands.Net.Tests\bin\Debug\netcoreapp2.1\BotCommands.Net.Tests.runtimeconfig.dev.json
+S:\Projects\CSharp\BotCommands.Net\BotCommands.Net.Tests\bin\Debug\netcoreapp2.1\BotCommands.Net.Tests.dll
+S:\Projects\CSharp\BotCommands.Net\BotCommands.Net.Tests\bin\Debug\netcoreapp2.1\BotCommands.Net.Tests.pdb
+S:\Projects\CSharp\BotCommands.Net\BotCommands.Net.Tests\obj\Debug\netcoreapp2.1\BotCommands.Net.Tests.csprojAssemblyReference.cache
+S:\Projects\CSharp\BotCommands.Net\BotCommands.Net.Tests\obj\Debug\netcoreapp2.1\BotCommands.Net.Tests.csproj.CoreCompileInputs.cache
+S:\Projects\CSharp\BotCommands.Net\BotCommands.Net.Tests\obj\Debug\netcoreapp2.1\BotCommands.Net.Tests.AssemblyInfoInputs.cache
+S:\Projects\CSharp\BotCommands.Net\BotCommands.Net.Tests\obj\Debug\netcoreapp2.1\BotCommands.Net.Tests.AssemblyInfo.cs
+S:\Projects\CSharp\BotCommands.Net\BotCommands.Net.Tests\obj\Debug\netcoreapp2.1\BotCommands.Net.Tests.dll
+S:\Projects\CSharp\BotCommands.Net\BotCommands.Net.Tests\obj\Debug\netcoreapp2.1\BotCommands.Net.Tests.pdb

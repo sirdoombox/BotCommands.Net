@@ -1,7 +1,14 @@
-﻿namespace BotCommands.Net.Tests.Commands
+﻿using BotCommands.Attributes;
+using BotCommands.Interfaces;
+
+namespace BotCommands.Tests.Commands
 {
-    public class TestCommand
+    [CommandDescription("anus")]
+    public class TestCommand : IBotCommand
     {
-        
+        public string Execute()
+        {
+            throw new System.NotImplementedException();
+        }
     }
 }
