@@ -10,14 +10,26 @@
         <e p="Attributes" t="Include">
           <e p="CommandAliases.cs" t="Include" />
           <e p="CommandDescription.cs" t="Include" />
+          <e p="CommandSupportsRemainders.cs" t="Include" />
+          <e p="ModuleAliases.cs" t="Include" />
         </e>
         <e p="bin" t="ExcludeRecursive" />
         <e p="BotCommands.Net.csproj" t="IncludeRecursive" />
+        <e p="Builders" t="Include">
+          <e p="ModuleBuilder.cs" t="Include" />
+        </e>
+        <e p="Context" t="Include">
+          <e p="IContext.cs" t="Include" />
+        </e>
         <e p="Core" t="Include">
           <e p="Commander.cs" t="Include" />
         </e>
+        <e p="Entities" t="Include">
+          <e p="Command.cs" t="Include" />
+          <e p="Module.cs" t="Include" />
+        </e>
         <e p="Interfaces" t="Include">
-          <e p="IBotCommand.cs" t="Include" />
+          <e p="IBotCommandModule.cs" t="Include" />
         </e>
         <e p="obj" t="ExcludeRecursive">
           <e p="Debug" t="Include">
@@ -26,14 +38,21 @@
             </e>
           </e>
         </e>
+        <e p="Parsing" t="Include">
+          <e p="ParsedArgument.cs" t="Include" />
+          <e p="ParsedCommand.cs" t="Include" />
+          <e p="Parser.cs" t="Include" />
+        </e>
       </e>
       <e p="BotCommands.Net.sln" t="IncludeFlat" />
       <e p="BotCommands.Net.Tests" t="IncludeRecursive">
         <e p="bin" t="ExcludeRecursive" />
         <e p="BotCommands.Net.Tests.csproj" t="IncludeRecursive" />
-        <e p="Class1.cs" t="Include" />
         <e p="Commands" t="Include">
-          <e p="TestCommand.cs" t="Include" />
+          <e p="TestCommandModule.cs" t="Include" />
+        </e>
+        <e p="Context" t="Include">
+          <e p="TestContext.cs" t="Include" />
         </e>
         <e p="obj" t="ExcludeRecursive">
           <e p="Debug" t="Include">
@@ -43,6 +62,10 @@
             </e>
           </e>
         </e>
+        <e p="Services" t="Include">
+          <e p="TestService.cs" t="Include" />
+        </e>
+        <e p="Tests.cs" t="Include" />
       </e>
       <e p="packages" t="ExcludeRecursive" />
     </e>

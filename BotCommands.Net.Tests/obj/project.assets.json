@@ -5792,7 +5792,8 @@
       ],
       "sources": {
         "https://api.nuget.org/v3/index.json": {},
-        "https://www.myget.org/F/dsharpplus-nightly/api/v3/index.json": {}
+        "https://www.myget.org/F/dsharpplus-nightly/api/v3/index.json": {},
+        "https://www.myget.org/F/finitereality/api/v3/index.json": {}
       },
       "frameworks": {
         "netcoreapp2.1": {

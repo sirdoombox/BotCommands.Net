@@ -12,3 +12,6 @@ S:\Projects\CSharp\BotCommands.Net\BotCommands.Net.Tests\obj\Debug\netcoreapp2.1
 S:\Projects\CSharp\BotCommands.Net\BotCommands.Net.Tests\obj\Debug\netcoreapp2.1\BotCommands.Net.Tests.AssemblyInfo.cs
 S:\Projects\CSharp\BotCommands.Net\BotCommands.Net.Tests\obj\Debug\netcoreapp2.1\BotCommands.Net.Tests.dll
 S:\Projects\CSharp\BotCommands.Net\BotCommands.Net.Tests\obj\Debug\netcoreapp2.1\BotCommands.Net.Tests.pdb
+S:\Projects\CSharp\BotCommands.Net\BotCommands.Net.Tests\bin\Debug\netcoreapp2.1\BotCommands.Net.dll
+S:\Projects\CSharp\BotCommands.Net\BotCommands.Net.Tests\bin\Debug\netcoreapp2.1\BotCommands.Net.pdb
+S:\Projects\CSharp\BotCommands.Net\BotCommands.Net.Tests\obj\Debug\netcoreapp2.1\BotCommands.Net.Tests.csproj.CopyComplete

@@ -4,8 +4,8 @@ using System.Linq;
 
 namespace BotCommands.Attributes
 {
-    [AttributeUsage(AttributeTargets.Method)]
-    public sealed class CommandAliases : Attribute
+    [AttributeUsage(AttributeTargets.Class)]
+    public sealed class ModuleAliases : Attribute
     {
         public IReadOnlyList<string> Aliases { get; }
         
@@ -14,7 +14,7 @@ namespace BotCommands.Attributes
         /// </summary>
         /// <param name="aliases">Aliases for the command.</param>
         /// <exception cref="ArgumentException">Thrown if any of the <paramref name="aliases"/> are null, empty or whitespace.</exception>
-        public CommandAliases(params string[] aliases)
+        public ModuleAliases(params string[] aliases)
         {
             if(aliases.Any(string.IsNullOrWhiteSpace))
                 throw new ArgumentException("Alias strings must not be null, empty or whitespaces.");

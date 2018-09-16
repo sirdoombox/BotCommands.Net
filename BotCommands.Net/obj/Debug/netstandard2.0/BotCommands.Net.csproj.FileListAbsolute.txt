@@ -1,0 +1,9 @@
+S:\Projects\CSharp\BotCommands.Net\BotCommands.Net\bin\Debug\netstandard2.0\BotCommands.Net.deps.json
+S:\Projects\CSharp\BotCommands.Net\BotCommands.Net\bin\Debug\netstandard2.0\BotCommands.Net.dll
+S:\Projects\CSharp\BotCommands.Net\BotCommands.Net\bin\Debug\netstandard2.0\BotCommands.Net.pdb
+S:\Projects\CSharp\BotCommands.Net\BotCommands.Net\obj\Debug\netstandard2.0\BotCommands.Net.csprojAssemblyReference.cache
+S:\Projects\CSharp\BotCommands.Net\BotCommands.Net\obj\Debug\netstandard2.0\BotCommands.Net.csproj.CoreCompileInputs.cache
+S:\Projects\CSharp\BotCommands.Net\BotCommands.Net\obj\Debug\netstandard2.0\BotCommands.Net.AssemblyInfoInputs.cache
+S:\Projects\CSharp\BotCommands.Net\BotCommands.Net\obj\Debug\netstandard2.0\BotCommands.Net.AssemblyInfo.cs
+S:\Projects\CSharp\BotCommands.Net\BotCommands.Net\obj\Debug\netstandard2.0\BotCommands.Net.dll
+S:\Projects\CSharp\BotCommands.Net\BotCommands.Net\obj\Debug\netstandard2.0\BotCommands.Net.pdb

@@ -8,6 +8,7 @@
     ".NETCoreApp,Version=v2.1": {
       "BotCommands.Net.Tests/1.0.0": {
         "dependencies": {
+          "BotCommands.Net": "1.0.0",
           "xunit": "2.4.0",
           "xunit.runner.visualstudio": "2.4.0"
         },
@@ -1075,6 +1076,11 @@
         "dependencies": {
           "Microsoft.NET.Test.Sdk": "15.0.0"
         }
+      },
+      "BotCommands.Net/1.0.0": {
+        "runtime": {
+          "BotCommands.Net.dll": {}
+        }
       }
     }
   },
@@ -1622,6 +1628,11 @@
       "sha512": "sha512-spS399J48cRVHJL4BRPT3FXBlINlJ6hh9f/8VfgkPRVjsqTU+CuDxvqsFzdj6++k+HxfFJP0ZPnbnLVNeH8zhQ==",
       "path": "xunit.runner.visualstudio/2.4.0",
       "hashPath": "xunit.runner.visualstudio.2.4.0.nupkg.sha512"
+    },
+    "BotCommands.Net/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
     }
   }
 }
