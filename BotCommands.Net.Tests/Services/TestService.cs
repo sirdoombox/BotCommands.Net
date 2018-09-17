@@ -1,4 +1,4 @@
-﻿namespace BotCommands.Net.Tests.Services
+﻿namespace BotCommands.Tests.Services
 {
     public class TestService
     {

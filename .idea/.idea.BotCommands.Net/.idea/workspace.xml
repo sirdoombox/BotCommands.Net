@@ -2,19 +2,37 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="bcaaa82a-0cb2-4e3d-9557-580925b02e26" name="Default" comment="">
+      <change afterPath="$PROJECT_DIR$/BotCommands.Net/Entities/MatchedCommand.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/BotCommands.Net/Execution/CommandExecution.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/BotCommands.Net/Properties/AssemblyInfo.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.BotCommands.Net/.idea/contentModel.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.BotCommands.Net/.idea/contentModel.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.BotCommands.Net/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.BotCommands.Net/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/BotCommands.Net.Example/Program.cs" beforeDir="false" afterPath="$PROJECT_DIR$/BotCommands.Net.Example/Program.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/BotCommands.Net.Example/bin/Debug/netcoreapp2.1/BotCommands.Net.Example.dll" beforeDir="false" afterPath="$PROJECT_DIR$/BotCommands.Net.Example/bin/Debug/netcoreapp2.1/BotCommands.Net.Example.dll" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/BotCommands.Net.Example/bin/Debug/netcoreapp2.1/BotCommands.Net.Example.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/BotCommands.Net.Example/bin/Debug/netcoreapp2.1/BotCommands.Net.Example.pdb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/BotCommands.Net.Example/bin/Debug/netcoreapp2.1/BotCommands.Net.dll" beforeDir="false" afterPath="$PROJECT_DIR$/BotCommands.Net.Example/bin/Debug/netcoreapp2.1/BotCommands.Net.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/BotCommands.Net.Example/bin/Debug/netcoreapp2.1/BotCommands.Net.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/BotCommands.Net.Example/bin/Debug/netcoreapp2.1/BotCommands.Net.pdb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/BotCommands.Net.Example/obj/Debug/netcoreapp2.1/BotCommands.Net.Example.csprojAssemblyReference.cache" beforeDir="false" afterPath="$PROJECT_DIR$/BotCommands.Net.Example/obj/Debug/netcoreapp2.1/BotCommands.Net.Example.csprojAssemblyReference.cache" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/BotCommands.Net.Example/obj/Debug/netcoreapp2.1/BotCommands.Net.Example.dll" beforeDir="false" afterPath="$PROJECT_DIR$/BotCommands.Net.Example/obj/Debug/netcoreapp2.1/BotCommands.Net.Example.dll" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/BotCommands.Net.Example/obj/Debug/netcoreapp2.1/BotCommands.Net.Example.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/BotCommands.Net.Example/obj/Debug/netcoreapp2.1/BotCommands.Net.Example.pdb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/BotCommands.Net.Tests/bin/Debug/netcoreapp2.1/BotCommands.Net.Tests.dll" beforeDir="false" afterPath="$PROJECT_DIR$/BotCommands.Net.Tests/bin/Debug/netcoreapp2.1/BotCommands.Net.Tests.dll" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/BotCommands.Net.Tests/bin/Debug/netcoreapp2.1/BotCommands.Net.Tests.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/BotCommands.Net.Tests/bin/Debug/netcoreapp2.1/BotCommands.Net.Tests.pdb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/BotCommands.Net.Tests/bin/Debug/netcoreapp2.1/BotCommands.Net.dll" beforeDir="false" afterPath="$PROJECT_DIR$/BotCommands.Net.Tests/bin/Debug/netcoreapp2.1/BotCommands.Net.dll" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/BotCommands.Net.Tests/bin/Debug/netcoreapp2.1/BotCommands.Net.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/BotCommands.Net.Tests/bin/Debug/netcoreapp2.1/BotCommands.Net.pdb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/BotCommands.Net.Tests/obj/Debug/netcoreapp2.1/BotCommands.Net.Tests.csprojAssemblyReference.cache" beforeDir="false" afterPath="$PROJECT_DIR$/BotCommands.Net.Tests/obj/Debug/netcoreapp2.1/BotCommands.Net.Tests.csprojAssemblyReference.cache" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/BotCommands.Net.Tests/obj/Debug/netcoreapp2.1/BotCommands.Net.Tests.dll" beforeDir="false" afterPath="$PROJECT_DIR$/BotCommands.Net.Tests/obj/Debug/netcoreapp2.1/BotCommands.Net.Tests.dll" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/BotCommands.Net.Tests/obj/Debug/netcoreapp2.1/BotCommands.Net.Tests.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/BotCommands.Net.Tests/obj/Debug/netcoreapp2.1/BotCommands.Net.Tests.pdb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/BotCommands.Net.Tests/Commands/TestCommandModule.cs" beforeDir="false" afterPath="$PROJECT_DIR$/BotCommands.Net.Tests/Commands/TestCommandModule.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/BotCommands.Net.Tests/Context/TestContext.cs" beforeDir="false" afterPath="$PROJECT_DIR$/BotCommands.Net.Tests/Context/TestContext.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/BotCommands.Net.Tests/Services/TestService.cs" beforeDir="false" afterPath="$PROJECT_DIR$/BotCommands.Net.Tests/Services/TestService.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/BotCommands.Net.Tests/Tests.cs" beforeDir="false" afterPath="$PROJECT_DIR$/BotCommands.Net.Tests/Tests.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/BotCommands.Net.Tests/obj/Debug/netcoreapp2.1/BotCommands.Net.Tests.Program.cs" beforeDir="false" afterPath="$PROJECT_DIR$/BotCommands.Net.Tests/obj/Debug/netcoreapp2.1/BotCommands.Net.Tests.Program.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/BotCommands.Net/Builders/ModuleBuilder.cs" beforeDir="false" afterPath="$PROJECT_DIR$/BotCommands.Net/Builders/ModuleBuilder.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/BotCommands.Net/Core/Commander.cs" beforeDir="false" afterPath="$PROJECT_DIR$/BotCommands.Net/Core/Commander.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/BotCommands.Net/Entities/Module.cs" beforeDir="false" afterPath="$PROJECT_DIR$/BotCommands.Net/Entities/Module.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/BotCommands.Net/Interfaces/IContext.cs" beforeDir="false" afterPath="$PROJECT_DIR$/BotCommands.Net/Interfaces/IContext.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/BotCommands.Net/Interfaces/IModule.cs" beforeDir="false" afterPath="$PROJECT_DIR$/BotCommands.Net/Interfaces/IModule.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/BotCommands.Net/Matching/CommandMatcher.cs" beforeDir="false" afterPath="$PROJECT_DIR$/BotCommands.Net/Matching/CommandMatcher.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/BotCommands.Net/Parsing/ParsedCommand.cs" beforeDir="false" afterPath="$PROJECT_DIR$/BotCommands.Net/Parsing/ParsedCommand.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/BotCommands.Net/Parsing/Parser.cs" beforeDir="false" afterPath="$PROJECT_DIR$/BotCommands.Net/Parsing/Parser.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/BotCommands.Net/bin/Debug/netstandard2.0/BotCommands.Net.dll" beforeDir="false" afterPath="$PROJECT_DIR$/BotCommands.Net/bin/Debug/netstandard2.0/BotCommands.Net.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/BotCommands.Net/bin/Debug/netstandard2.0/BotCommands.Net.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/BotCommands.Net/bin/Debug/netstandard2.0/BotCommands.Net.pdb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/BotCommands.Net/obj/Debug/netstandard2.0/BotCommands.Net.csproj.CoreCompileInputs.cache" beforeDir="false" afterPath="$PROJECT_DIR$/BotCommands.Net/obj/Debug/netstandard2.0/BotCommands.Net.csproj.CoreCompileInputs.cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/BotCommands.Net/obj/Debug/netstandard2.0/BotCommands.Net.dll" beforeDir="false" afterPath="$PROJECT_DIR$/BotCommands.Net/obj/Debug/netstandard2.0/BotCommands.Net.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/BotCommands.Net/obj/Debug/netstandard2.0/BotCommands.Net.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/BotCommands.Net/obj/Debug/netstandard2.0/BotCommands.Net.pdb" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -25,29 +43,88 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file leaf-file-name="Program.cs" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/BotCommands.Net.Example/Program.cs">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="227">
+              <caret line="74" column="22" selection-start-line="74" selection-start-column="22" selection-end-line="74" selection-end-column="22" />
+              <folding>
+                <marker date="1537201022759" expanded="false" signature="6:209" ph="..." />
+                <marker date="1537201022759" expanded="true" signature="244:3427" ph="{...}" />
+                <marker date="1537201022759" expanded="true" signature="264:733" ph="{...}" />
+                <marker date="1537201022759" expanded="true" signature="310:727" ph="{...}" />
+                <marker date="1537201022759" expanded="true" signature="537:717" ph="{...}" />
+                <marker date="1537201022759" expanded="true" signature="822:2111" ph="{...}" />
+                <marker date="1537201022759" expanded="true" signature="876:1009" ph="{...}" />
+                <marker date="1537201022759" expanded="true" signature="1109:1554" ph="{...}" />
+                <marker date="1537201022759" expanded="true" signature="1171:1333" ph="{...}" />
+                <marker date="1537201022759" expanded="true" signature="1408:1544" ph="{...}" />
+                <marker date="1537201022759" expanded="true" signature="1664:2105" ph="{...}" />
+                <marker date="1537201022759" expanded="true" signature="1726:1891" ph="{...}" />
+                <marker date="1537201022759" expanded="true" signature="1959:2095" ph="{...}" />
+                <marker date="1537201022759" expanded="true" signature="2214:3194" ph="{...}" />
+                <marker date="1537201022759" expanded="true" signature="2268:2337" ph="{...}" />
+                <marker date="1537201022759" expanded="true" signature="2489:2650" ph="{...}" />
+                <marker date="1537201022759" expanded="true" signature="2787:2933" ph="{...}" />
+                <marker date="1537201022759" expanded="true" signature="3062:3188" ph="{...}" />
+                <marker date="1537201022759" expanded="true" signature="3238:3425" ph="{...}" />
+                <marker date="1537201022759" expanded="true" signature="3368:3419" ph="{...}" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
       <file leaf-file-name="Commander.cs" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/BotCommands.Net/Core/Commander.cs">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="322">
-              <caret line="93" column="101" selection-start-line="93" selection-start-column="101" selection-end-line="93" selection-end-column="101" />
+            <state relative-caret-position="375">
+              <caret line="93" column="19" selection-start-line="93" selection-start-column="19" selection-end-line="93" selection-end-column="19" />
               <folding>
-                <marker date="1537180742621" expanded="false" signature="6:264" ph="..." />
-                <marker date="1537180742621" expanded="true" signature="292:4896" ph="{...}" />
-                <marker date="1537180742621" expanded="true" signature="364:4894" ph="{...}" />
-                <marker date="1537180742621" expanded="true" signature="745:989" ph="{...}" />
-                <marker date="1537180742621" expanded="true" signature="999:1239" ph="/// Provides &lt;c&gt;VERY&lt;/c&gt; simplistic &lt;c&gt;CONSTRUCTOR ONLY&lt;/c&gt; DI for modules. ... " />
-                <marker date="1537180742621" expanded="true" signature="1509:1653" ph="{...}" />
-                <marker date="1537180742621" expanded="true" signature="1663:1963" ph="/// Creates an instance of the type and returns it. This method requires the service has a parameterless construc ... " />
-                <marker date="1537180742621" expanded="true" signature="2004:2162" ph="{...}" />
-                <marker date="1537180742621" expanded="true" signature="2180:2376" ph="/// Register a module, it's commands, sub modules, sub commands and so on. ... " />
-                <marker date="1537180742621" expanded="true" signature="2444:2632" ph="{...}" />
-                <marker date="1537180742621" expanded="true" signature="2650:2845" ph="/// Gather all top level types that implement &lt;see cref=&quot;IModule{TContext}&quot;/&gt; and register them as commands. ... " />
-                <marker date="1537180742621" expanded="true" signature="2886:2951" ph="{...}" />
-                <marker date="1537180742621" expanded="true" signature="2961:3327" ph="/// Processes a context generated from whatever service you are providing commands for. ... " />
-                <marker date="1537180742621" expanded="true" signature="3387:4152" ph="{...}" />
-                <marker date="1537180742621" expanded="true" signature="3445:4142" ph="{...}" />
-                <marker date="1537180742621" expanded="true" signature="3999:4128" ph="/* TODO: More comprehensive execution pipeline with logging and the like. ... */" />
-                <marker date="1537180742621" expanded="true" signature="4369:4888" ph="{...}" />
+                <marker date="1537201042718" expanded="false" signature="6:313" ph="..." />
+                <marker date="1537201042718" expanded="true" signature="341:3946" ph="{...}" />
+                <marker date="1537201042718" expanded="true" signature="413:3944" ph="{...}" />
+                <marker date="1537201042718" expanded="true" signature="848:1141" ph="{...}" />
+                <marker date="1537201042718" expanded="true" signature="1151:1391" ph="/// Provides &lt;c&gt;VERY&lt;/c&gt; simplistic &lt;c&gt;CONSTRUCTOR ONLY&lt;/c&gt; DI for modules. ... " />
+                <marker date="1537201042718" expanded="true" signature="1661:1805" ph="{...}" />
+                <marker date="1537201042718" expanded="true" signature="1815:2115" ph="/// Creates an instance of the type and returns it. This method requires the service has a parameterless construc ... " />
+                <marker date="1537201042718" expanded="true" signature="2156:2314" ph="{...}" />
+                <marker date="1537201042718" expanded="true" signature="2332:2528" ph="/// Register a module, it's commands, sub modules, sub commands and so on. ... " />
+                <marker date="1537201042718" expanded="true" signature="2596:2784" ph="{...}" />
+                <marker date="1537201042718" expanded="true" signature="2802:2997" ph="/// Gather all top level types that implement &lt;see cref=&quot;IModule{TContext}&quot;/&gt; and register them as commands. ... " />
+                <marker date="1537201042718" expanded="true" signature="3038:3103" ph="{...}" />
+                <marker date="1537201042718" expanded="true" signature="3113:3479" ph="/// Processes a context generated from whatever service you are providing commands for. ... " />
+                <marker date="1537201042718" expanded="true" signature="3539:3938" ph="{...}" />
+                <marker date="1537201042718" expanded="true" signature="3597:3928" ph="{...}" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="CommandExecution.cs" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/BotCommands.Net/Execution/CommandExecution.cs">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="192">
+              <caret line="12" column="9" lean-forward="true" selection-start-line="12" selection-start-column="9" selection-end-line="12" selection-end-column="9" />
+              <folding>
+                <marker date="1537201042733" expanded="true" signature="6:103" ph="..." />
+                <marker date="1537201042733" expanded="true" signature="136:1423" ph="{...}" />
+                <marker date="1537201042733" expanded="true" signature="181:1421" ph="{...}" />
+                <marker date="1537201042733" expanded="true" signature="373:636" ph="{...}" />
+                <marker date="1537201042733" expanded="true" signature="753:1415" ph="{...}" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="MatchedCommand.cs" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/BotCommands.Net/Entities/MatchedCommand.cs">
+          <provider selected="true" editor-type-id="text-editor">
+            <state>
+              <caret column="30" selection-start-column="30" selection-end-column="30" />
+              <folding>
+                <marker date="1537196339955" expanded="true" signature="30:548" ph="{...}" />
+                <marker date="1537196339955" expanded="true" signature="67:546" ph="{...}" />
+                <marker date="1537196339955" expanded="true" signature="383:540" ph="{...}" />
               </folding>
             </state>
           </provider>
@@ -56,81 +133,21 @@
       <file leaf-file-name="CommandMatcher.cs" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/BotCommands.Net/Matching/CommandMatcher.cs">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="436">
-              <caret line="39" column="16" selection-start-line="39" selection-start-column="16" selection-end-line="39" selection-end-column="16" />
+            <state relative-caret-position="166">
+              <caret line="36" column="29" selection-start-line="36" selection-start-column="29" selection-end-line="36" selection-end-column="29" />
               <folding>
-                <marker date="1537178680274" expanded="true" signature="6:148" ph="..." />
-                <marker date="1537178680274" expanded="true" signature="180:3719" ph="{...}" />
-                <marker date="1537178680274" expanded="true" signature="252:3717" ph="{...}" />
-                <marker date="1537178680274" expanded="true" signature="393:1039" ph="{...}" />
-                <marker date="1537178680274" expanded="true" signature="1352:1994" ph="{...}" />
-                <marker date="1537178680274" expanded="true" signature="1418:1984" ph="{...}" />
-                <marker date="1537178680274" expanded="true" signature="2111:2745" ph="{...}" />
-                <marker date="1537178680274" expanded="true" signature="2851:3125" ph="{...}" />
-                <marker date="1537178680274" expanded="true" signature="2926:3090" ph="{...}" />
-                <marker date="1537178680274" expanded="true" signature="3245:3711" ph="{...}" />
-                <marker date="1537178680274" expanded="true" signature="3512:3676" ph="{...}" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Program.cs" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/BotCommands.Net.Example/Program.cs">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="419">
-              <caret line="46" column="33" selection-start-line="46" selection-start-column="33" selection-end-line="46" selection-end-column="33" />
-              <folding>
-                <marker date="1537182394315" expanded="true" signature="6:183" ph="..." />
-                <marker date="1537182394315" expanded="true" signature="218:1710" ph="{...}" />
-                <marker date="1537182394315" expanded="true" signature="238:650" ph="{...}" />
-                <marker date="1537182394315" expanded="true" signature="284:644" ph="{...}" />
-                <marker date="1537182394315" expanded="true" signature="454:634" ph="{...}" />
-                <marker date="1537182394315" expanded="true" signature="739:1477" ph="{...}" />
-                <marker date="1537182394315" expanded="true" signature="793:926" ph="{...}" />
-                <marker date="1537182394315" expanded="true" signature="1026:1471" ph="{...}" />
-                <marker date="1537182394315" expanded="true" signature="1088:1250" ph="{...}" />
-                <marker date="1537182394315" expanded="true" signature="1325:1461" ph="{...}" />
-                <marker date="1537182394315" expanded="true" signature="1521:1708" ph="{...}" />
-                <marker date="1537182394315" expanded="true" signature="1651:1702" ph="{...}" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="ModuleBuilder.cs" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/BotCommands.Net/Builders/ModuleBuilder.cs">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="749">
-              <caret line="75" column="17" selection-start-line="75" selection-start-column="17" selection-end-line="75" selection-end-column="17" />
-              <folding>
-                <marker date="1537181063155" expanded="false" signature="6:206" ph="..." />
-                <marker date="1537181063155" expanded="true" signature="238:3857" ph="{...}" />
-                <marker date="1537181063155" expanded="true" signature="316:3855" ph="{...}" />
-                <marker date="1537181063155" expanded="true" signature="422:502" ph="{...}" />
-                <marker date="1537181063155" expanded="true" signature="551:888" ph="{...}" />
-                <marker date="1537181063155" expanded="true" signature="1163:1647" ph="{...}" />
-                <marker date="1537181063155" expanded="true" signature="1418:1637" ph="{...}" />
-                <marker date="1537181063155" expanded="true" signature="1704:2608" ph="{...}" />
-                <marker date="1537181063155" expanded="true" signature="2130:2438" ph="{...}" />
-                <marker date="1537181063155" expanded="true" signature="2675:3703" ph="{...}" />
-                <marker date="1537181063155" expanded="true" signature="2849:3652" ph="{...}" />
-                <marker date="1537181063155" expanded="true" signature="3024:3336" ph="{...}" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="ParsedCommand.cs" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/BotCommands.Net/Parsing/ParsedCommand.cs">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="204">
-              <caret line="13" column="17" selection-start-line="13" selection-start-column="17" selection-end-line="13" selection-end-column="17" />
-              <folding>
-                <marker date="1537178778315" expanded="false" signature="6:60" ph="..." />
-                <marker date="1537178778315" expanded="true" signature="91:435" ph="{...}" />
-                <marker date="1537178778315" expanded="true" signature="127:433" ph="{...}" />
-                <marker date="1537178778315" expanded="true" signature="337:427" ph="{...}" />
+                <marker date="1537201022730" expanded="false" signature="6:151" ph="..." />
+                <marker date="1537201022730" expanded="true" signature="183:4528" ph="{...}" />
+                <marker date="1537201022730" expanded="true" signature="255:4526" ph="{...}" />
+                <marker date="1537201022730" expanded="true" signature="379:1207" ph="{...}" />
+                <marker date="1537201022730" expanded="true" signature="1555:2199" ph="{...}" />
+                <marker date="1537201022730" expanded="true" signature="1621:2189" ph="{...}" />
+                <marker date="1537201022730" expanded="true" signature="2343:3283" ph="{...}" />
+                <marker date="1537201022730" expanded="true" signature="2928:3202" ph="{...}" />
+                <marker date="1537201022730" expanded="true" signature="3389:3788" ph="{...}" />
+                <marker date="1537201022730" expanded="true" signature="3589:3753" ph="{...}" />
+                <marker date="1537201022730" expanded="true" signature="3916:4520" ph="{...}" />
+                <marker date="1537201022730" expanded="true" signature="4319:4480" ph="{...}" />
               </folding>
             </state>
           </provider>
@@ -139,52 +156,46 @@
       <file leaf-file-name="Tests.cs" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/BotCommands.Net.Tests/Tests.cs">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="68">
-              <caret line="8" column="22" selection-start-line="8" selection-start-column="22" selection-end-line="8" selection-end-column="22" />
+            <state relative-caret-position="306">
+              <caret line="18" column="30" selection-start-line="18" selection-start-column="30" selection-end-line="18" selection-end-column="30" />
               <folding>
-                <marker date="1537181140484" expanded="false" signature="6:145" ph="..." />
-                <marker date="1537181140484" expanded="true" signature="178:529" ph="{...}" />
-                <marker date="1537181140484" expanded="true" signature="203:527" ph="{...}" />
-                <marker date="1537181140484" expanded="true" signature="296:521" ph="{...}" />
+                <marker date="1537201022745" expanded="true" signature="6:137" ph="..." />
+                <marker date="1537201022745" expanded="true" signature="166:517" ph="{...}" />
+                <marker date="1537201022745" expanded="true" signature="191:515" ph="{...}" />
+                <marker date="1537201022745" expanded="true" signature="284:509" ph="{...}" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="TestCommandModule.cs" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/BotCommands.Net.Tests/Commands/TestCommandModule.cs">
+      <file leaf-file-name="ModuleBuilder.cs" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/BotCommands.Net/Builders/ModuleBuilder.cs">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="238">
-              <caret line="24" column="32" selection-start-line="24" selection-start-column="32" selection-end-line="24" selection-end-column="32" />
+            <state relative-caret-position="663">
+              <caret line="54" column="2" selection-start-line="54" selection-start-column="2" selection-end-line="54" selection-end-column="2" />
               <folding>
-                <marker date="1537181123804" expanded="false" signature="6:231" ph="..." />
-                <marker date="1537181123804" expanded="true" signature="269:2039" ph="{...}" />
-                <marker date="1537181123804" expanded="true" signature="361:2037" ph="{...}" />
-                <marker date="1537181123804" expanded="true" signature="474:600" ph="{...}" />
-                <marker date="1537181123804" expanded="true" signature="660:713" ph="{...}" />
-                <marker date="1537181123804" expanded="true" signature="794:880" ph="{...}" />
-                <marker date="1537181123804" expanded="true" signature="989:2031" ph="{...}" />
-                <marker date="1537181123804" expanded="true" signature="1129:1280" ph="{...}" />
-                <marker date="1537181123804" expanded="true" signature="1342:1399" ph="{...}" />
-                <marker date="1537181123804" expanded="true" signature="1531:2021" ph="{...}" />
-                <marker date="1537181123804" expanded="true" signature="1694:1872" ph="{...}" />
-                <marker date="1537181123804" expanded="true" signature="1938:2007" ph="{...}" />
+                <marker date="1537201022695" expanded="false" signature="6:179" ph="..." />
+                <marker date="1537201022695" expanded="true" signature="211:3834" ph="{...}" />
+                <marker date="1537201022695" expanded="true" signature="289:3832" ph="{...}" />
+                <marker date="1537201022695" expanded="true" signature="395:475" ph="{...}" />
+                <marker date="1537201022695" expanded="true" signature="524:861" ph="{...}" />
+                <marker date="1537201022695" expanded="true" signature="1136:1620" ph="{...}" />
+                <marker date="1537201022695" expanded="true" signature="1391:1610" ph="{...}" />
+                <marker date="1537201022695" expanded="true" signature="1677:2581" ph="{...}" />
+                <marker date="1537201022695" expanded="true" signature="2103:2411" ph="{...}" />
+                <marker date="1537201022695" expanded="true" signature="2648:3680" ph="{...}" />
+                <marker date="1537201022695" expanded="true" signature="2822:3629" ph="{...}" />
+                <marker date="1537201022695" expanded="true" signature="2997:3313" ph="{...}" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Command.cs" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/BotCommands.Net/Entities/Command.cs">
+      <file leaf-file-name="AssemblyInfo.cs" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/BotCommands.Net/Properties/AssemblyInfo.cs">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="221">
-              <caret line="13" column="54" selection-start-line="13" selection-start-column="54" selection-end-line="13" selection-end-column="54" />
-              <folding>
-                <marker date="1537181067208" expanded="true" signature="6:121" ph="..." />
-                <marker date="1537181067208" expanded="true" signature="153:638" ph="{...}" />
-                <marker date="1537181067208" expanded="true" signature="189:636" ph="{...}" />
-                <marker date="1537181067208" expanded="true" signature="597:630" ph="{...}" />
-              </folding>
+            <state relative-caret-position="34">
+              <caret line="2" column="55" selection-start-line="2" selection-start-column="55" selection-end-line="2" selection-end-column="55" />
             </state>
           </provider>
         </entry>
@@ -192,13 +203,13 @@
       <file leaf-file-name="Module.cs" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/BotCommands.Net/Entities/Module.cs">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="255">
-              <caret line="15" column="60" selection-start-line="15" selection-start-column="60" selection-end-line="15" selection-end-column="60" />
+            <state relative-caret-position="153">
+              <caret line="10" column="38" selection-start-line="10" selection-start-column="38" selection-end-line="10" selection-end-column="38" />
               <folding>
-                <marker date="1537181110446" expanded="true" signature="6:90" ph="..." />
-                <marker date="1537181110446" expanded="true" signature="122:694" ph="{...}" />
-                <marker date="1537181110446" expanded="true" signature="129:217" ph="/// A Module will maintain an instance of the type  ... " />
-                <marker date="1537181110446" expanded="true" signature="284:692" ph="{...}" />
+                <marker date="1537201158232" expanded="false" signature="6:63" ph="..." />
+                <marker date="1537201158232" expanded="true" signature="95:603" ph="{...}" />
+                <marker date="1537201158232" expanded="true" signature="102:190" ph="/// A Module will maintain an instance of the type  ... " />
+                <marker date="1537201158232" expanded="true" signature="257:601" ph="{...}" />
               </folding>
             </state>
           </provider>
@@ -207,14 +218,14 @@
       <file leaf-file-name="Parser.cs" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/BotCommands.Net/Parsing/Parser.cs">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="408">
-              <caret line="26" column="68" selection-start-line="26" selection-start-column="68" selection-end-line="26" selection-end-column="68" />
+            <state relative-caret-position="221">
+              <caret line="13" column="9" selection-start-line="13" selection-start-column="9" selection-end-line="13" selection-end-column="78" />
               <folding>
-                <marker date="1537178830105" expanded="false" signature="6:79" ph="..." />
-                <marker date="1537178830105" expanded="true" signature="110:1302" ph="{...}" />
-                <marker date="1537178830105" expanded="true" signature="174:1300" ph="{...}" />
-                <marker date="1537178830105" expanded="true" signature="256:1294" ph="{...}" />
-                <marker date="1537178830105" expanded="true" signature="568:1149" ph="{...}" />
+                <marker date="1537201022777" expanded="true" signature="6:82" ph="..." />
+                <marker date="1537201022777" expanded="true" signature="113:1305" ph="{...}" />
+                <marker date="1537201022777" expanded="true" signature="177:1303" ph="{...}" />
+                <marker date="1537201022777" expanded="true" signature="259:1297" ph="{...}" />
+                <marker date="1537201022777" expanded="true" signature="571:1152" ph="{...}" />
               </folding>
             </state>
           </provider>
@@ -226,8 +237,10 @@
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="HighlightingSettingsPerFile">
+    <setting file="file://$PROJECT_DIR$/BotCommands.Net/Execution/CommandExecution.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/BotCommands.Net/Parsing/ParsedCommand.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/BotCommands.Net/Interfaces/IContext.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/BotCommands.Net/Properties/AssemblyInfo.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/BotCommands.Net/Interfaces/IModule.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/BotCommands.Net.Tests/Context/TestContext.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/BotCommands.Net.Tests/Services/TestService.cs" root0="FORCE_HIGHLIGHTING" />
@@ -244,6 +257,7 @@
     <setting file="file://$PROJECT_DIR$/BotCommands.Net/Attributes/ModuleAliases.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/BotCommands.Net/Parsing/ParsedArgument.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/BotCommands.Net/Builders/ModuleBuilder.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/BotCommands.Net/Entities/MatchedCommand.cs" root0="FORCE_HIGHLIGHTING" />
   </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
@@ -265,16 +279,19 @@
         <option value="$PROJECT_DIR$/BotCommands.Net/Parsing/ParsedArgument.cs" />
         <option value="$PROJECT_DIR$/BotCommands.Net.Tests/Class1.cs" />
         <option value="$PROJECT_DIR$/BotCommands.Net/Interfaces/IModule.cs" />
-        <option value="$PROJECT_DIR$/BotCommands.Net/Matching/CommandMatcher.cs" />
         <option value="$PROJECT_DIR$/BotCommands.Net/Parsing/ParsedCommand.cs" />
         <option value="$PROJECT_DIR$/BotCommands.Net/Parsing/Parser.cs" />
-        <option value="$PROJECT_DIR$/BotCommands.Net/Core/Commander.cs" />
-        <option value="$PROJECT_DIR$/BotCommands.Net/Builders/ModuleBuilder.cs" />
         <option value="$PROJECT_DIR$/BotCommands.Net/Entities/Command.cs" />
-        <option value="$PROJECT_DIR$/BotCommands.Net/Entities/Module.cs" />
         <option value="$PROJECT_DIR$/BotCommands.Net.Tests/Commands/TestCommandModule.cs" />
-        <option value="$PROJECT_DIR$/BotCommands.Net.Tests/Tests.cs" />
+        <option value="$PROJECT_DIR$/BotCommands.Net/Builders/ModuleBuilder.cs" />
+        <option value="$PROJECT_DIR$/BotCommands.Net/Entities/MatchedCommand.cs" />
         <option value="$PROJECT_DIR$/BotCommands.Net.Example/Program.cs" />
+        <option value="$PROJECT_DIR$/BotCommands.Net/Matching/CommandMatcher.cs" />
+        <option value="$PROJECT_DIR$/BotCommands.Net/Properties/AssemblyInfo.cs" />
+        <option value="$PROJECT_DIR$/BotCommands.Net.Tests/Tests.cs" />
+        <option value="$PROJECT_DIR$/BotCommands.Net/Core/Commander.cs" />
+        <option value="$PROJECT_DIR$/BotCommands.Net/Execution/CommandExecution.cs" />
+        <option value="$PROJECT_DIR$/BotCommands.Net/Entities/Module.cs" />
       </list>
     </option>
   </component>
@@ -299,13 +316,47 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scratches" />
       <pane id="SolutionExplorer">
         <subPane>
           <expand>
             <path>
               <item name="" type="13324e5d:SolutionExplorerViewPane$ProjectViewPaneTreeStructure$createRoot$1" />
               <item name="BotCommands.Net (3 projects)" type="977d5f41:SolutionExplorerNodeRider" />
+            </path>
+            <path>
+              <item name="" type="13324e5d:SolutionExplorerViewPane$ProjectViewPaneTreeStructure$createRoot$1" />
+              <item name="BotCommands.Net (3 projects)" type="977d5f41:SolutionExplorerNodeRider" />
+              <item name="BotCommands.Net" type="977d5f41:SolutionExplorerNodeRider" />
+            </path>
+            <path>
+              <item name="" type="13324e5d:SolutionExplorerViewPane$ProjectViewPaneTreeStructure$createRoot$1" />
+              <item name="BotCommands.Net (3 projects)" type="977d5f41:SolutionExplorerNodeRider" />
+              <item name="BotCommands.Net" type="977d5f41:SolutionExplorerNodeRider" />
+              <item name="Builders" type="977d5f41:SolutionExplorerNodeRider" />
+            </path>
+            <path>
+              <item name="" type="13324e5d:SolutionExplorerViewPane$ProjectViewPaneTreeStructure$createRoot$1" />
+              <item name="BotCommands.Net (3 projects)" type="977d5f41:SolutionExplorerNodeRider" />
+              <item name="BotCommands.Net" type="977d5f41:SolutionExplorerNodeRider" />
+              <item name="Core" type="977d5f41:SolutionExplorerNodeRider" />
+            </path>
+            <path>
+              <item name="" type="13324e5d:SolutionExplorerViewPane$ProjectViewPaneTreeStructure$createRoot$1" />
+              <item name="BotCommands.Net (3 projects)" type="977d5f41:SolutionExplorerNodeRider" />
+              <item name="BotCommands.Net" type="977d5f41:SolutionExplorerNodeRider" />
+              <item name="Entities" type="977d5f41:SolutionExplorerNodeRider" />
+            </path>
+            <path>
+              <item name="" type="13324e5d:SolutionExplorerViewPane$ProjectViewPaneTreeStructure$createRoot$1" />
+              <item name="BotCommands.Net (3 projects)" type="977d5f41:SolutionExplorerNodeRider" />
+              <item name="BotCommands.Net" type="977d5f41:SolutionExplorerNodeRider" />
+              <item name="Execution" type="977d5f41:SolutionExplorerNodeRider" />
+            </path>
+            <path>
+              <item name="" type="13324e5d:SolutionExplorerViewPane$ProjectViewPaneTreeStructure$createRoot$1" />
+              <item name="BotCommands.Net (3 projects)" type="977d5f41:SolutionExplorerNodeRider" />
+              <item name="BotCommands.Net" type="977d5f41:SolutionExplorerNodeRider" />
+              <item name="Properties" type="977d5f41:SolutionExplorerNodeRider" />
             </path>
             <path>
               <item name="" type="13324e5d:SolutionExplorerViewPane$ProjectViewPaneTreeStructure$createRoot$1" />
@@ -323,18 +374,31 @@
               <item name="BotCommands.Net.Tests" type="977d5f41:SolutionExplorerNodeRider" />
               <item name="Commands" type="977d5f41:SolutionExplorerNodeRider" />
             </path>
+            <path>
+              <item name="" type="13324e5d:SolutionExplorerViewPane$ProjectViewPaneTreeStructure$createRoot$1" />
+              <item name="BotCommands.Net (3 projects)" type="977d5f41:SolutionExplorerNodeRider" />
+              <item name="BotCommands.Net.Tests" type="977d5f41:SolutionExplorerNodeRider" />
+              <item name="Context" type="977d5f41:SolutionExplorerNodeRider" />
+            </path>
+            <path>
+              <item name="" type="13324e5d:SolutionExplorerViewPane$ProjectViewPaneTreeStructure$createRoot$1" />
+              <item name="BotCommands.Net (3 projects)" type="977d5f41:SolutionExplorerNodeRider" />
+              <item name="BotCommands.Net.Tests" type="977d5f41:SolutionExplorerNodeRider" />
+              <item name="Services" type="977d5f41:SolutionExplorerNodeRider" />
+            </path>
           </expand>
           <select />
         </subPane>
         <option name="show-file-system" value="false" />
         <option name="show-all-items" value="false" />
       </pane>
+      <pane id="Scratches" />
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="Rider.ProjectViewActivator.IsNotFirstRun" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="settings.editor.selected.configurable" value="Inspections-XAML" />
+    <property name="settings.editor.selected.configurable" value="discord" />
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -354,7 +418,7 @@
       <option name="PROGRAM_PARAMETERS" value="" />
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/BotCommands.Net.Example" />
       <option name="PASS_PARENT_ENVS" value="1" />
-      <option name="USE_EXTERNAL_CONSOLE" value="1" />
+      <option name="USE_EXTERNAL_CONSOLE" value="0" />
       <option name="USE_MONO" value="0" />
       <option name="PROJECT_PATH" value="$PROJECT_DIR$/BotCommands.Net.Example/BotCommands.Net.Example.csproj" />
       <option name="PROJECT_EXE_PATH_TRACKING" value="1" />
@@ -403,12 +467,13 @@
       <workItem from="1537028526129" duration="1629000" />
       <workItem from="1537031950780" duration="7429000" />
       <workItem from="1537087787181" duration="20129000" />
-      <workItem from="1537162862259" duration="12483000" />
+      <workItem from="1537162862259" duration="12515000" />
+      <workItem from="1537190540837" duration="11541000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="46220000" />
+    <option name="totallyTimeSpent" value="57793000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -423,28 +488,28 @@
     <frame x="0" y="0" width="1920" height="1050" extended-state="0" />
     <editor active="true" />
     <layout>
-      <window_info anchor="right" id="TODO" order="6" sideWeight="0.50877196" side_tool="true" visible="true" weight="0.26439232" />
+      <window_info active="true" anchor="right" id="TODO" order="6" sideWeight="0.51001054" side_tool="true" visible="true" weight="0.26705757" />
       <window_info anchor="right" id="Errors In Solution" order="0" weight="0.32995737" />
-      <window_info anchor="bottom" id="Event Log" order="0" sideWeight="0.50053304" side_tool="true" weight="0.39936775" />
-      <window_info anchor="bottom" id="Unit Tests" order="1" weight="0.32982087" />
+      <window_info anchor="bottom" id="Event Log" order="0" sideWeight="0.50053304" side_tool="true" weight="0.32982087" />
+      <window_info anchor="bottom" id="Unit Tests" order="1" weight="0.32968128" />
       <window_info anchor="bottom" id="Database Changes" order="2" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Run" order="9" />
+      <window_info anchor="bottom" id="Run" order="9" sideWeight="0.49946696" weight="0.32968128" />
       <window_info anchor="bottom" id="Version Control" order="3" weight="0.32982087" />
       <window_info anchor="bottom" id="Terminal" order="4" weight="0.32982087" />
       <window_info anchor="bottom" id="NuGet" order="5" weight="0.32982087" />
-      <window_info anchor="right" content_ui="combo" id="Project" order="5" sideWeight="0.49122807" visible="true" weight="0.26439232" />
+      <window_info anchor="right" content_ui="combo" id="Project" order="5" sideWeight="0.48998946" visible="true" weight="0.26705757" />
       <window_info anchor="bottom" id="Docker" order="6" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Build" order="13" weight="0.32982087" />
+      <window_info anchor="bottom" id="Build" order="13" weight="0.32968128" />
       <window_info anchor="bottom" id="Find" order="8" />
       <window_info anchor="right" id="Database" order="1" show_stripe_button="false" weight="0.32995737" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
-      <window_info active="true" anchor="bottom" id="Debug" order="10" sideWeight="0.49946696" visible="true" weight="0.39936775" />
+      <window_info anchor="bottom" id="Debug" order="10" sideWeight="0.49946696" weight="0.39936775" />
       <window_info id="Favorites" order="0" side_tool="true" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="12" weight="0.4" />
-      <window_info anchor="bottom" id="Cvs" order="11" weight="0.25" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="2" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="3" weight="0.25" />
+      <window_info anchor="bottom" id="Cvs" order="11" weight="0.25" />
       <window_info anchor="bottom" id="Message" order="7" />
     </layout>
   </component>
@@ -457,65 +522,24 @@
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
-      <option name="time" value="35" />
+      <option name="time" value="118" />
     </breakpoint-manager>
     <watches-manager>
+      <configuration name="DotNetProject">
+        <watch expression="command.ArgCountWithoutContext" />
+      </configuration>
       <configuration name="Unit Tests">
         <watch expression="Results" />
       </configuration>
     </watches-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/BotCommands.Net.Tests/Commands/TestCommandModule.cs">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="340">
-          <caret line="20" column="8" selection-start-line="20" selection-start-column="8" selection-end-line="20" selection-end-column="8" />
-          <folding>
-            <marker date="1537181123804" expanded="false" signature="6:231" ph="..." />
-            <marker date="1537181123804" expanded="true" signature="269:2039" ph="{...}" />
-            <marker date="1537181123804" expanded="true" signature="361:2037" ph="{...}" />
-            <marker date="1537181123804" expanded="true" signature="474:600" ph="{...}" />
-            <marker date="1537181123804" expanded="true" signature="660:713" ph="{...}" />
-            <marker date="1537181123804" expanded="true" signature="794:880" ph="{...}" />
-            <marker date="1537181123804" expanded="true" signature="989:2031" ph="{...}" />
-            <marker date="1537181123804" expanded="true" signature="1129:1280" ph="{...}" />
-            <marker date="1537181123804" expanded="true" signature="1342:1399" ph="{...}" />
-            <marker date="1537181123804" expanded="true" signature="1531:2021" ph="{...}" />
-            <marker date="1537181123804" expanded="true" signature="1694:1872" ph="{...}" />
-            <marker date="1537181123804" expanded="true" signature="1938:2007" ph="{...}" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/BotCommands.Net.Tests/Context/TestContext.cs">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="119">
-          <caret line="7" column="37" selection-start-line="7" selection-start-column="37" selection-end-line="7" selection-end-column="37" />
-          <folding>
-            <marker date="1537122066385" expanded="true" signature="109:208" ph="{...}" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/BotCommands.Net/Entities/Module.cs">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="255">
-          <caret line="15" column="37" selection-start-line="15" selection-start-column="37" selection-end-line="15" selection-end-column="37" />
-          <folding>
-            <marker date="1537181110446" expanded="true" signature="6:90" ph="..." />
-            <marker date="1537181110446" expanded="true" signature="122:694" ph="{...}" />
-            <marker date="1537181110446" expanded="true" signature="129:217" ph="/// A Module will maintain an instance of the type  ... " />
-            <marker date="1537181110446" expanded="true" signature="284:692" ph="{...}" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/BotCommands.Net/Entities/Command.cs">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="238">
           <caret line="14" column="12" selection-start-line="14" selection-start-column="12" selection-end-line="14" selection-end-column="12" />
           <folding>
-            <marker date="1537181067208" expanded="true" signature="6:121" ph="..." />
+            <marker date="1537181067208" expanded="false" signature="6:121" ph="..." />
             <marker date="1537181067208" expanded="true" signature="153:638" ph="{...}" />
             <marker date="1537181067208" expanded="true" signature="189:636" ph="{...}" />
             <marker date="1537181067208" expanded="true" signature="597:630" ph="{...}" />
@@ -528,34 +552,26 @@
         <state relative-caret-position="238">
           <caret line="14" column="31" selection-start-line="14" selection-start-column="31" selection-end-line="14" selection-end-column="31" />
           <folding>
-            <marker date="1537180742621" expanded="false" signature="6:264" ph="..." />
-            <marker date="1537180742621" expanded="true" signature="292:4896" ph="{...}" />
-            <marker date="1537180742621" expanded="true" signature="364:4894" ph="{...}" />
-            <marker date="1537180742621" expanded="true" signature="745:989" ph="{...}" />
-            <marker date="1537180742621" expanded="true" signature="999:1239" ph="/// Provides &lt;c&gt;VERY&lt;/c&gt; simplistic &lt;c&gt;CONSTRUCTOR ONLY&lt;/c&gt; DI for modules. ... " />
-            <marker date="1537180742621" expanded="true" signature="1509:1653" ph="{...}" />
-            <marker date="1537180742621" expanded="true" signature="1663:1963" ph="/// Creates an instance of the type and returns it. This method requires the service has a parameterless construc ... " />
-            <marker date="1537180742621" expanded="true" signature="2004:2162" ph="{...}" />
-            <marker date="1537180742621" expanded="true" signature="2180:2376" ph="/// Register a module, it's commands, sub modules, sub commands and so on. ... " />
-            <marker date="1537180742621" expanded="true" signature="2444:2632" ph="{...}" />
-            <marker date="1537180742621" expanded="true" signature="2650:2845" ph="/// Gather all top level types that implement &lt;see cref=&quot;IModule{TContext}&quot;/&gt; and register them as commands. ... " />
-            <marker date="1537180742621" expanded="true" signature="2886:2951" ph="{...}" />
-            <marker date="1537180742621" expanded="true" signature="2961:3327" ph="/// Processes a context generated from whatever service you are providing commands for. ... " />
-            <marker date="1537180742621" expanded="true" signature="3387:4152" ph="{...}" />
-            <marker date="1537180742621" expanded="true" signature="3445:4142" ph="{...}" />
-            <marker date="1537180742621" expanded="true" signature="3999:4128" ph="/* TODO: More comprehensive execution pipeline with logging and the like. ... */" />
-            <marker date="1537180742621" expanded="true" signature="4369:4888" ph="{...}" />
+            <marker date="1537201042718" expanded="false" signature="6:313" ph="..." />
+            <marker date="1537201042718" expanded="true" signature="341:3946" ph="{...}" />
+            <marker date="1537201042718" expanded="true" signature="413:3944" ph="{...}" />
+            <marker date="1537201042718" expanded="true" signature="848:1141" ph="{...}" />
+            <marker date="1537201042718" expanded="true" signature="1151:1391" ph="/// Provides &lt;c&gt;VERY&lt;/c&gt; simplistic &lt;c&gt;CONSTRUCTOR ONLY&lt;/c&gt; DI for modules. ... " />
+            <marker date="1537201042718" expanded="true" signature="1661:1805" ph="{...}" />
+            <marker date="1537201042718" expanded="true" signature="1815:2115" ph="/// Creates an instance of the type and returns it. This method requires the service has a parameterless construc ... " />
+            <marker date="1537201042718" expanded="true" signature="2156:2314" ph="{...}" />
+            <marker date="1537201042718" expanded="true" signature="2332:2528" ph="/// Register a module, it's commands, sub modules, sub commands and so on. ... " />
+            <marker date="1537201042718" expanded="true" signature="2596:2784" ph="{...}" />
+            <marker date="1537201042718" expanded="true" signature="2802:2997" ph="/// Gather all top level types that implement &lt;see cref=&quot;IModule{TContext}&quot;/&gt; and register them as commands. ... " />
+            <marker date="1537201042718" expanded="true" signature="3038:3103" ph="{...}" />
+            <marker date="1537201042718" expanded="true" signature="3113:3479" ph="/// Processes a context generated from whatever service you are providing commands for. ... " />
+            <marker date="1537201042718" expanded="true" signature="3539:3938" ph="{...}" />
+            <marker date="1537201042718" expanded="true" signature="3597:3928" ph="{...}" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/BotCommands.Net/Attributes/CommandAliases.cs">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret line="3" column="18" selection-start-line="3" selection-start-column="18" selection-end-line="3" selection-end-column="18" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/BotCommands.Net/Attributes/CommandAliases.cs" />
     <entry file="file://$PROJECT_DIR$/BotCommands.Net/Attributes/CommandDescription.cs">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="221">
@@ -567,13 +583,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="255">
           <caret line="15" column="5" selection-start-line="15" selection-start-column="5" selection-end-line="15" selection-end-column="5" />
-          <folding>
-            <marker date="1537175720536" expanded="false" signature="6:56" ph="..." />
-            <marker date="1537175720536" expanded="true" signature="90:628" ph="{...}" />
-            <marker date="1537175720536" expanded="true" signature="97:186" ph="/// The interface which all commands must implement. ... " />
-            <marker date="1537175720536" expanded="true" signature="254:626" ph="{...}" />
-            <marker date="1537175720536" expanded="true" signature="269:584" ph="/// Called when the command is executed without additional arguments. ... " />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -581,9 +590,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="85">
           <caret line="5" column="28" selection-start-line="5" selection-start-column="28" selection-end-line="5" selection-end-column="28" />
-          <folding>
-            <marker date="1537122066443" expanded="true" signature="61:136" ph="{...}" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -599,18 +605,17 @@
         <state relative-caret-position="119">
           <caret line="8" column="30" selection-start-line="8" selection-start-column="30" selection-end-line="8" selection-end-column="30" />
           <folding>
-            <marker date="1537181123804" expanded="false" signature="6:231" ph="..." />
-            <marker date="1537181123804" expanded="true" signature="269:2039" ph="{...}" />
-            <marker date="1537181123804" expanded="true" signature="361:2037" ph="{...}" />
-            <marker date="1537181123804" expanded="true" signature="474:600" ph="{...}" />
-            <marker date="1537181123804" expanded="true" signature="660:713" ph="{...}" />
-            <marker date="1537181123804" expanded="true" signature="794:880" ph="{...}" />
-            <marker date="1537181123804" expanded="true" signature="989:2031" ph="{...}" />
-            <marker date="1537181123804" expanded="true" signature="1129:1280" ph="{...}" />
-            <marker date="1537181123804" expanded="true" signature="1342:1399" ph="{...}" />
-            <marker date="1537181123804" expanded="true" signature="1531:2021" ph="{...}" />
-            <marker date="1537181123804" expanded="true" signature="1694:1872" ph="{...}" />
-            <marker date="1537181123804" expanded="true" signature="1938:2007" ph="{...}" />
+            <marker date="1537201021711" expanded="false" signature="6:223" ph="..." />
+            <marker date="1537201021711" expanded="true" signature="353:2029" ph="{...}" />
+            <marker date="1537201021711" expanded="true" signature="466:592" ph="{...}" />
+            <marker date="1537201021711" expanded="true" signature="652:705" ph="{...}" />
+            <marker date="1537201021711" expanded="true" signature="786:872" ph="{...}" />
+            <marker date="1537201021711" expanded="true" signature="981:2023" ph="{...}" />
+            <marker date="1537201021711" expanded="true" signature="1121:1272" ph="{...}" />
+            <marker date="1537201021711" expanded="true" signature="1334:1391" ph="{...}" />
+            <marker date="1537201021711" expanded="true" signature="1523:2013" ph="{...}" />
+            <marker date="1537201021711" expanded="true" signature="1686:1864" ph="{...}" />
+            <marker date="1537201021711" expanded="true" signature="1930:1999" ph="{...}" />
           </folding>
         </state>
       </provider>
@@ -620,10 +625,10 @@
         <state relative-caret-position="204">
           <caret line="13" column="48" selection-start-line="13" selection-start-column="48" selection-end-line="13" selection-end-column="48" />
           <folding>
-            <marker date="1537181110446" expanded="true" signature="6:90" ph="..." />
-            <marker date="1537181110446" expanded="true" signature="122:694" ph="{...}" />
-            <marker date="1537181110446" expanded="true" signature="129:217" ph="/// A Module will maintain an instance of the type  ... " />
-            <marker date="1537181110446" expanded="true" signature="284:692" ph="{...}" />
+            <marker date="1537201158232" expanded="false" signature="6:63" ph="..." />
+            <marker date="1537201158232" expanded="true" signature="95:603" ph="{...}" />
+            <marker date="1537201158232" expanded="true" signature="102:190" ph="/// A Module will maintain an instance of the type  ... " />
+            <marker date="1537201158232" expanded="true" signature="257:601" ph="{...}" />
           </folding>
         </state>
       </provider>
@@ -633,34 +638,26 @@
         <state relative-caret-position="238">
           <caret line="14" column="31" selection-start-line="14" selection-start-column="31" selection-end-line="14" selection-end-column="31" />
           <folding>
-            <marker date="1537180742621" expanded="false" signature="6:264" ph="..." />
-            <marker date="1537180742621" expanded="true" signature="292:4896" ph="{...}" />
-            <marker date="1537180742621" expanded="true" signature="364:4894" ph="{...}" />
-            <marker date="1537180742621" expanded="true" signature="745:989" ph="{...}" />
-            <marker date="1537180742621" expanded="true" signature="999:1239" ph="/// Provides &lt;c&gt;VERY&lt;/c&gt; simplistic &lt;c&gt;CONSTRUCTOR ONLY&lt;/c&gt; DI for modules. ... " />
-            <marker date="1537180742621" expanded="true" signature="1509:1653" ph="{...}" />
-            <marker date="1537180742621" expanded="true" signature="1663:1963" ph="/// Creates an instance of the type and returns it. This method requires the service has a parameterless construc ... " />
-            <marker date="1537180742621" expanded="true" signature="2004:2162" ph="{...}" />
-            <marker date="1537180742621" expanded="true" signature="2180:2376" ph="/// Register a module, it's commands, sub modules, sub commands and so on. ... " />
-            <marker date="1537180742621" expanded="true" signature="2444:2632" ph="{...}" />
-            <marker date="1537180742621" expanded="true" signature="2650:2845" ph="/// Gather all top level types that implement &lt;see cref=&quot;IModule{TContext}&quot;/&gt; and register them as commands. ... " />
-            <marker date="1537180742621" expanded="true" signature="2886:2951" ph="{...}" />
-            <marker date="1537180742621" expanded="true" signature="2961:3327" ph="/// Processes a context generated from whatever service you are providing commands for. ... " />
-            <marker date="1537180742621" expanded="true" signature="3387:4152" ph="{...}" />
-            <marker date="1537180742621" expanded="true" signature="3445:4142" ph="{...}" />
-            <marker date="1537180742621" expanded="true" signature="3999:4128" ph="/* TODO: More comprehensive execution pipeline with logging and the like. ... */" />
-            <marker date="1537180742621" expanded="true" signature="4369:4888" ph="{...}" />
+            <marker date="1537201042718" expanded="false" signature="6:313" ph="..." />
+            <marker date="1537201042718" expanded="true" signature="341:3946" ph="{...}" />
+            <marker date="1537201042718" expanded="true" signature="413:3944" ph="{...}" />
+            <marker date="1537201042718" expanded="true" signature="848:1141" ph="{...}" />
+            <marker date="1537201042718" expanded="true" signature="1151:1391" ph="/// Provides &lt;c&gt;VERY&lt;/c&gt; simplistic &lt;c&gt;CONSTRUCTOR ONLY&lt;/c&gt; DI for modules. ... " />
+            <marker date="1537201042718" expanded="true" signature="1661:1805" ph="{...}" />
+            <marker date="1537201042718" expanded="true" signature="1815:2115" ph="/// Creates an instance of the type and returns it. This method requires the service has a parameterless construc ... " />
+            <marker date="1537201042718" expanded="true" signature="2156:2314" ph="{...}" />
+            <marker date="1537201042718" expanded="true" signature="2332:2528" ph="/// Register a module, it's commands, sub modules, sub commands and so on. ... " />
+            <marker date="1537201042718" expanded="true" signature="2596:2784" ph="{...}" />
+            <marker date="1537201042718" expanded="true" signature="2802:2997" ph="/// Gather all top level types that implement &lt;see cref=&quot;IModule{TContext}&quot;/&gt; and register them as commands. ... " />
+            <marker date="1537201042718" expanded="true" signature="3038:3103" ph="{...}" />
+            <marker date="1537201042718" expanded="true" signature="3113:3479" ph="/// Processes a context generated from whatever service you are providing commands for. ... " />
+            <marker date="1537201042718" expanded="true" signature="3539:3938" ph="{...}" />
+            <marker date="1537201042718" expanded="true" signature="3597:3928" ph="{...}" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/BotCommands.Net/Attributes/CommandAliases.cs">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="323">
-          <caret line="22" column="9" selection-start-line="22" selection-start-column="9" selection-end-line="22" selection-end-column="9" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/BotCommands.Net/Attributes/CommandAliases.cs" />
     <entry file="file://$PROJECT_DIR$/BotCommands.Net/Attributes/CommandDescription.cs">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="221">
@@ -672,13 +669,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="170">
           <caret line="10" column="105" selection-start-line="10" selection-start-column="105" selection-end-line="10" selection-end-column="105" />
-          <folding>
-            <marker date="1537175720536" expanded="false" signature="6:56" ph="..." />
-            <marker date="1537175720536" expanded="true" signature="90:628" ph="{...}" />
-            <marker date="1537175720536" expanded="true" signature="97:186" ph="/// The interface which all commands must implement. ... " />
-            <marker date="1537175720536" expanded="true" signature="254:626" ph="{...}" />
-            <marker date="1537175720536" expanded="true" signature="269:584" ph="/// Called when the command is executed without additional arguments. ... " />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -694,18 +684,17 @@
         <state relative-caret-position="153">
           <caret line="10" column="55" selection-start-line="10" selection-start-column="55" selection-end-line="10" selection-end-column="55" />
           <folding>
-            <marker date="1537181123804" expanded="false" signature="6:231" ph="..." />
-            <marker date="1537181123804" expanded="true" signature="269:2039" ph="{...}" />
-            <marker date="1537181123804" expanded="true" signature="361:2037" ph="{...}" />
-            <marker date="1537181123804" expanded="true" signature="474:600" ph="{...}" />
-            <marker date="1537181123804" expanded="true" signature="660:713" ph="{...}" />
-            <marker date="1537181123804" expanded="true" signature="794:880" ph="{...}" />
-            <marker date="1537181123804" expanded="true" signature="989:2031" ph="{...}" />
-            <marker date="1537181123804" expanded="true" signature="1129:1280" ph="{...}" />
-            <marker date="1537181123804" expanded="true" signature="1342:1399" ph="{...}" />
-            <marker date="1537181123804" expanded="true" signature="1531:2021" ph="{...}" />
-            <marker date="1537181123804" expanded="true" signature="1694:1872" ph="{...}" />
-            <marker date="1537181123804" expanded="true" signature="1938:2007" ph="{...}" />
+            <marker date="1537201021711" expanded="false" signature="6:223" ph="..." />
+            <marker date="1537201021711" expanded="true" signature="353:2029" ph="{...}" />
+            <marker date="1537201021711" expanded="true" signature="466:592" ph="{...}" />
+            <marker date="1537201021711" expanded="true" signature="652:705" ph="{...}" />
+            <marker date="1537201021711" expanded="true" signature="786:872" ph="{...}" />
+            <marker date="1537201021711" expanded="true" signature="981:2023" ph="{...}" />
+            <marker date="1537201021711" expanded="true" signature="1121:1272" ph="{...}" />
+            <marker date="1537201021711" expanded="true" signature="1334:1391" ph="{...}" />
+            <marker date="1537201021711" expanded="true" signature="1523:2013" ph="{...}" />
+            <marker date="1537201021711" expanded="true" signature="1686:1864" ph="{...}" />
+            <marker date="1537201021711" expanded="true" signature="1930:1999" ph="{...}" />
           </folding>
         </state>
       </provider>
@@ -715,10 +704,10 @@
         <state relative-caret-position="102">
           <caret line="6" column="75" lean-forward="true" selection-start-line="6" selection-start-column="75" selection-end-line="6" selection-end-column="75" />
           <folding>
-            <marker date="1537181110446" expanded="true" signature="6:90" ph="..." />
-            <marker date="1537181110446" expanded="true" signature="122:694" ph="{...}" />
-            <marker date="1537181110446" expanded="true" signature="129:217" ph="/// A Module will maintain an instance of the type  ... " />
-            <marker date="1537181110446" expanded="true" signature="284:692" ph="{...}" />
+            <marker date="1537201158232" expanded="false" signature="6:63" ph="..." />
+            <marker date="1537201158232" expanded="true" signature="95:603" ph="{...}" />
+            <marker date="1537201158232" expanded="true" signature="102:190" ph="/// A Module will maintain an instance of the type  ... " />
+            <marker date="1537201158232" expanded="true" signature="257:601" ph="{...}" />
           </folding>
         </state>
       </provider>
@@ -728,23 +717,21 @@
         <state relative-caret-position="170">
           <caret line="10" column="12" selection-start-line="10" selection-start-column="12" selection-end-line="10" selection-end-column="12" />
           <folding>
-            <marker date="1537180742621" expanded="false" signature="6:264" ph="..." />
-            <marker date="1537180742621" expanded="true" signature="292:4896" ph="{...}" />
-            <marker date="1537180742621" expanded="true" signature="364:4894" ph="{...}" />
-            <marker date="1537180742621" expanded="true" signature="745:989" ph="{...}" />
-            <marker date="1537180742621" expanded="true" signature="999:1239" ph="/// Provides &lt;c&gt;VERY&lt;/c&gt; simplistic &lt;c&gt;CONSTRUCTOR ONLY&lt;/c&gt; DI for modules. ... " />
-            <marker date="1537180742621" expanded="true" signature="1509:1653" ph="{...}" />
-            <marker date="1537180742621" expanded="true" signature="1663:1963" ph="/// Creates an instance of the type and returns it. This method requires the service has a parameterless construc ... " />
-            <marker date="1537180742621" expanded="true" signature="2004:2162" ph="{...}" />
-            <marker date="1537180742621" expanded="true" signature="2180:2376" ph="/// Register a module, it's commands, sub modules, sub commands and so on. ... " />
-            <marker date="1537180742621" expanded="true" signature="2444:2632" ph="{...}" />
-            <marker date="1537180742621" expanded="true" signature="2650:2845" ph="/// Gather all top level types that implement &lt;see cref=&quot;IModule{TContext}&quot;/&gt; and register them as commands. ... " />
-            <marker date="1537180742621" expanded="true" signature="2886:2951" ph="{...}" />
-            <marker date="1537180742621" expanded="true" signature="2961:3327" ph="/// Processes a context generated from whatever service you are providing commands for. ... " />
-            <marker date="1537180742621" expanded="true" signature="3387:4152" ph="{...}" />
-            <marker date="1537180742621" expanded="true" signature="3445:4142" ph="{...}" />
-            <marker date="1537180742621" expanded="true" signature="3999:4128" ph="/* TODO: More comprehensive execution pipeline with logging and the like. ... */" />
-            <marker date="1537180742621" expanded="true" signature="4369:4888" ph="{...}" />
+            <marker date="1537201042718" expanded="false" signature="6:313" ph="..." />
+            <marker date="1537201042718" expanded="true" signature="341:3946" ph="{...}" />
+            <marker date="1537201042718" expanded="true" signature="413:3944" ph="{...}" />
+            <marker date="1537201042718" expanded="true" signature="848:1141" ph="{...}" />
+            <marker date="1537201042718" expanded="true" signature="1151:1391" ph="/// Provides &lt;c&gt;VERY&lt;/c&gt; simplistic &lt;c&gt;CONSTRUCTOR ONLY&lt;/c&gt; DI for modules. ... " />
+            <marker date="1537201042718" expanded="true" signature="1661:1805" ph="{...}" />
+            <marker date="1537201042718" expanded="true" signature="1815:2115" ph="/// Creates an instance of the type and returns it. This method requires the service has a parameterless construc ... " />
+            <marker date="1537201042718" expanded="true" signature="2156:2314" ph="{...}" />
+            <marker date="1537201042718" expanded="true" signature="2332:2528" ph="/// Register a module, it's commands, sub modules, sub commands and so on. ... " />
+            <marker date="1537201042718" expanded="true" signature="2596:2784" ph="{...}" />
+            <marker date="1537201042718" expanded="true" signature="2802:2997" ph="/// Gather all top level types that implement &lt;see cref=&quot;IModule{TContext}&quot;/&gt; and register them as commands. ... " />
+            <marker date="1537201042718" expanded="true" signature="3038:3103" ph="{...}" />
+            <marker date="1537201042718" expanded="true" signature="3113:3479" ph="/// Processes a context generated from whatever service you are providing commands for. ... " />
+            <marker date="1537201042718" expanded="true" signature="3539:3938" ph="{...}" />
+            <marker date="1537201042718" expanded="true" signature="3597:3928" ph="{...}" />
           </folding>
         </state>
       </provider>
@@ -760,13 +747,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="170">
           <caret line="10" column="105" selection-start-line="10" selection-start-column="105" selection-end-line="10" selection-end-column="105" />
-          <folding>
-            <marker date="1537175720536" expanded="false" signature="6:56" ph="..." />
-            <marker date="1537175720536" expanded="true" signature="90:628" ph="{...}" />
-            <marker date="1537175720536" expanded="true" signature="97:186" ph="/// The interface which all commands must implement. ... " />
-            <marker date="1537175720536" expanded="true" signature="254:626" ph="{...}" />
-            <marker date="1537175720536" expanded="true" signature="269:584" ph="/// Called when the command is executed without additional arguments. ... " />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -782,51 +762,42 @@
         <state relative-caret-position="85">
           <caret line="5" column="30" selection-start-line="5" selection-start-column="30" selection-end-line="5" selection-end-column="30" />
           <folding>
-            <marker date="1537181123804" expanded="false" signature="6:231" ph="..." />
-            <marker date="1537181123804" expanded="true" signature="269:2039" ph="{...}" />
-            <marker date="1537181123804" expanded="true" signature="361:2037" ph="{...}" />
-            <marker date="1537181123804" expanded="true" signature="474:600" ph="{...}" />
-            <marker date="1537181123804" expanded="true" signature="660:713" ph="{...}" />
-            <marker date="1537181123804" expanded="true" signature="794:880" ph="{...}" />
-            <marker date="1537181123804" expanded="true" signature="989:2031" ph="{...}" />
-            <marker date="1537181123804" expanded="true" signature="1129:1280" ph="{...}" />
-            <marker date="1537181123804" expanded="true" signature="1342:1399" ph="{...}" />
-            <marker date="1537181123804" expanded="true" signature="1531:2021" ph="{...}" />
-            <marker date="1537181123804" expanded="true" signature="1694:1872" ph="{...}" />
-            <marker date="1537181123804" expanded="true" signature="1938:2007" ph="{...}" />
+            <marker date="1537201021711" expanded="false" signature="6:223" ph="..." />
+            <marker date="1537201021711" expanded="true" signature="353:2029" ph="{...}" />
+            <marker date="1537201021711" expanded="true" signature="466:592" ph="{...}" />
+            <marker date="1537201021711" expanded="true" signature="652:705" ph="{...}" />
+            <marker date="1537201021711" expanded="true" signature="786:872" ph="{...}" />
+            <marker date="1537201021711" expanded="true" signature="981:2023" ph="{...}" />
+            <marker date="1537201021711" expanded="true" signature="1121:1272" ph="{...}" />
+            <marker date="1537201021711" expanded="true" signature="1334:1391" ph="{...}" />
+            <marker date="1537201021711" expanded="true" signature="1523:2013" ph="{...}" />
+            <marker date="1537201021711" expanded="true" signature="1686:1864" ph="{...}" />
+            <marker date="1537201021711" expanded="true" signature="1930:1999" ph="{...}" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/BotCommands.Net/Attributes/CommandAliases.cs">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="357">
-          <caret line="24" column="1" selection-start-line="24" selection-start-column="1" selection-end-line="24" selection-end-column="1" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/BotCommands.Net/Attributes/CommandAliases.cs" />
     <entry file="file://$PROJECT_DIR$/BotCommands.Net/Core/Commander.cs">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="170">
           <caret line="10" column="12" selection-start-line="10" selection-start-column="12" selection-end-line="10" selection-end-column="12" />
           <folding>
-            <marker date="1537180742621" expanded="false" signature="6:264" ph="..." />
-            <marker date="1537180742621" expanded="true" signature="292:4896" ph="{...}" />
-            <marker date="1537180742621" expanded="true" signature="364:4894" ph="{...}" />
-            <marker date="1537180742621" expanded="true" signature="745:989" ph="{...}" />
-            <marker date="1537180742621" expanded="true" signature="999:1239" ph="/// Provides &lt;c&gt;VERY&lt;/c&gt; simplistic &lt;c&gt;CONSTRUCTOR ONLY&lt;/c&gt; DI for modules. ... " />
-            <marker date="1537180742621" expanded="true" signature="1509:1653" ph="{...}" />
-            <marker date="1537180742621" expanded="true" signature="1663:1963" ph="/// Creates an instance of the type and returns it. This method requires the service has a parameterless construc ... " />
-            <marker date="1537180742621" expanded="true" signature="2004:2162" ph="{...}" />
-            <marker date="1537180742621" expanded="true" signature="2180:2376" ph="/// Register a module, it's commands, sub modules, sub commands and so on. ... " />
-            <marker date="1537180742621" expanded="true" signature="2444:2632" ph="{...}" />
-            <marker date="1537180742621" expanded="true" signature="2650:2845" ph="/// Gather all top level types that implement &lt;see cref=&quot;IModule{TContext}&quot;/&gt; and register them as commands. ... " />
-            <marker date="1537180742621" expanded="true" signature="2886:2951" ph="{...}" />
-            <marker date="1537180742621" expanded="true" signature="2961:3327" ph="/// Processes a context generated from whatever service you are providing commands for. ... " />
-            <marker date="1537180742621" expanded="true" signature="3387:4152" ph="{...}" />
-            <marker date="1537180742621" expanded="true" signature="3445:4142" ph="{...}" />
-            <marker date="1537180742621" expanded="true" signature="3999:4128" ph="/* TODO: More comprehensive execution pipeline with logging and the like. ... */" />
-            <marker date="1537180742621" expanded="true" signature="4369:4888" ph="{...}" />
+            <marker date="1537201042718" expanded="false" signature="6:313" ph="..." />
+            <marker date="1537201042718" expanded="true" signature="341:3946" ph="{...}" />
+            <marker date="1537201042718" expanded="true" signature="413:3944" ph="{...}" />
+            <marker date="1537201042718" expanded="true" signature="848:1141" ph="{...}" />
+            <marker date="1537201042718" expanded="true" signature="1151:1391" ph="/// Provides &lt;c&gt;VERY&lt;/c&gt; simplistic &lt;c&gt;CONSTRUCTOR ONLY&lt;/c&gt; DI for modules. ... " />
+            <marker date="1537201042718" expanded="true" signature="1661:1805" ph="{...}" />
+            <marker date="1537201042718" expanded="true" signature="1815:2115" ph="/// Creates an instance of the type and returns it. This method requires the service has a parameterless construc ... " />
+            <marker date="1537201042718" expanded="true" signature="2156:2314" ph="{...}" />
+            <marker date="1537201042718" expanded="true" signature="2332:2528" ph="/// Register a module, it's commands, sub modules, sub commands and so on. ... " />
+            <marker date="1537201042718" expanded="true" signature="2596:2784" ph="{...}" />
+            <marker date="1537201042718" expanded="true" signature="2802:2997" ph="/// Gather all top level types that implement &lt;see cref=&quot;IModule{TContext}&quot;/&gt; and register them as commands. ... " />
+            <marker date="1537201042718" expanded="true" signature="3038:3103" ph="{...}" />
+            <marker date="1537201042718" expanded="true" signature="3113:3479" ph="/// Processes a context generated from whatever service you are providing commands for. ... " />
+            <marker date="1537201042718" expanded="true" signature="3539:3938" ph="{...}" />
+            <marker date="1537201042718" expanded="true" signature="3597:3928" ph="{...}" />
           </folding>
         </state>
       </provider>
@@ -842,13 +813,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="170">
           <caret line="10" column="105" selection-start-line="10" selection-start-column="105" selection-end-line="10" selection-end-column="105" />
-          <folding>
-            <marker date="1537175720536" expanded="false" signature="6:56" ph="..." />
-            <marker date="1537175720536" expanded="true" signature="90:628" ph="{...}" />
-            <marker date="1537175720536" expanded="true" signature="97:186" ph="/// The interface which all commands must implement. ... " />
-            <marker date="1537175720536" expanded="true" signature="254:626" ph="{...}" />
-            <marker date="1537175720536" expanded="true" signature="269:584" ph="/// Called when the command is executed without additional arguments. ... " />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -864,29 +828,22 @@
         <state relative-caret-position="85">
           <caret line="5" column="30" selection-start-line="5" selection-start-column="30" selection-end-line="5" selection-end-column="30" />
           <folding>
-            <marker date="1537181123804" expanded="false" signature="6:231" ph="..." />
-            <marker date="1537181123804" expanded="true" signature="269:2039" ph="{...}" />
-            <marker date="1537181123804" expanded="true" signature="361:2037" ph="{...}" />
-            <marker date="1537181123804" expanded="true" signature="474:600" ph="{...}" />
-            <marker date="1537181123804" expanded="true" signature="660:713" ph="{...}" />
-            <marker date="1537181123804" expanded="true" signature="794:880" ph="{...}" />
-            <marker date="1537181123804" expanded="true" signature="989:2031" ph="{...}" />
-            <marker date="1537181123804" expanded="true" signature="1129:1280" ph="{...}" />
-            <marker date="1537181123804" expanded="true" signature="1342:1399" ph="{...}" />
-            <marker date="1537181123804" expanded="true" signature="1531:2021" ph="{...}" />
-            <marker date="1537181123804" expanded="true" signature="1694:1872" ph="{...}" />
-            <marker date="1537181123804" expanded="true" signature="1938:2007" ph="{...}" />
+            <marker date="1537201021711" expanded="false" signature="6:223" ph="..." />
+            <marker date="1537201021711" expanded="true" signature="353:2029" ph="{...}" />
+            <marker date="1537201021711" expanded="true" signature="466:592" ph="{...}" />
+            <marker date="1537201021711" expanded="true" signature="652:705" ph="{...}" />
+            <marker date="1537201021711" expanded="true" signature="786:872" ph="{...}" />
+            <marker date="1537201021711" expanded="true" signature="981:2023" ph="{...}" />
+            <marker date="1537201021711" expanded="true" signature="1121:1272" ph="{...}" />
+            <marker date="1537201021711" expanded="true" signature="1334:1391" ph="{...}" />
+            <marker date="1537201021711" expanded="true" signature="1523:2013" ph="{...}" />
+            <marker date="1537201021711" expanded="true" signature="1686:1864" ph="{...}" />
+            <marker date="1537201021711" expanded="true" signature="1930:1999" ph="{...}" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/BotCommands.Net/Attributes/CommandAliases.cs">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="391">
-          <caret line="24" column="1" lean-forward="true" selection-start-line="24" selection-start-column="1" selection-end-line="24" selection-end-column="1" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/BotCommands.Net/Attributes/CommandAliases.cs" />
     <entry file="file://$PROJECT_DIR$/BotCommands.Net/BotCommands.Net.csproj">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
@@ -904,20 +861,11 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/BotCommands.Net/Attributes/CommandAliases.cs">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="119">
-          <caret line="9" column="8" selection-start-line="9" selection-start-column="8" selection-end-line="21" selection-end-column="9" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/BotCommands.Net/Attributes/CommandAliases.cs" />
     <entry file="file://$PROJECT_DIR$/BotCommands.Net/Interfaces/IContext.cs">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="34">
           <caret line="2" column="21" selection-start-line="2" selection-start-column="21" selection-end-line="2" selection-end-column="21" />
-          <folding>
-            <marker date="1537122066443" expanded="true" signature="61:136" ph="{...}" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -925,9 +873,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="51">
           <caret line="3" column="1" selection-start-line="3" selection-start-column="1" selection-end-line="3" selection-end-column="1" />
-          <folding>
-            <marker date="1537122066385" expanded="true" signature="109:208" ph="{...}" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -935,9 +880,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="68">
           <caret line="4" column="8" selection-start-line="4" selection-start-column="8" selection-end-line="4" selection-end-column="8" />
-          <folding>
-            <marker date="1537119036953" expanded="true" signature="71:92" ph="{...}" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -945,10 +887,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="255">
           <caret line="15" column="9" selection-start-line="15" selection-start-column="9" selection-end-line="15" selection-end-column="9" />
-          <folding>
-            <marker date="1537123056515" expanded="true" signature="80:469" ph="{...}" />
-            <marker date="1537123056515" expanded="true" signature="326:463" ph="{...}" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -956,13 +894,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="68">
           <caret line="6" column="42" selection-start-line="6" selection-start-column="42" selection-end-line="6" selection-end-column="42" />
-          <folding>
-            <marker date="1537119553090" expanded="false" signature="6:66" ph="..." />
-            <marker date="1537119553090" expanded="true" signature="100:854" ph="{...}" />
-            <marker date="1537119553090" expanded="true" signature="197:852" ph="{...}" />
-            <marker date="1537119553090" expanded="true" signature="275:566" ph="/// Provide aliases for a given command. ... " />
-            <marker date="1537119553090" expanded="true" signature="620:846" ph="{...}" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -970,12 +901,25 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="153">
           <caret line="10" column="21" selection-start-line="10" selection-start-column="21" selection-end-line="10" selection-end-column="21" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/BotCommands.Net.Tests/Commands/TestCommandModule.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="289">
+          <caret line="24" column="32" selection-start-line="24" selection-start-column="32" selection-end-line="24" selection-end-column="32" />
           <folding>
-            <marker date="1537175720536" expanded="false" signature="6:56" ph="..." />
-            <marker date="1537175720536" expanded="true" signature="90:628" ph="{...}" />
-            <marker date="1537175720536" expanded="true" signature="97:186" ph="/// The interface which all commands must implement. ... " />
-            <marker date="1537175720536" expanded="true" signature="254:626" ph="{...}" />
-            <marker date="1537175720536" expanded="true" signature="269:584" ph="/// Called when the command is executed without additional arguments. ... " />
+            <marker date="1537201021711" expanded="false" signature="6:223" ph="..." />
+            <marker date="1537201021711" expanded="true" signature="353:2029" ph="{...}" />
+            <marker date="1537201021711" expanded="true" signature="466:592" ph="{...}" />
+            <marker date="1537201021711" expanded="true" signature="652:705" ph="{...}" />
+            <marker date="1537201021711" expanded="true" signature="786:872" ph="{...}" />
+            <marker date="1537201021711" expanded="true" signature="981:2023" ph="{...}" />
+            <marker date="1537201021711" expanded="true" signature="1121:1272" ph="{...}" />
+            <marker date="1537201021711" expanded="true" signature="1334:1391" ph="{...}" />
+            <marker date="1537201021711" expanded="true" signature="1523:2013" ph="{...}" />
+            <marker date="1537201021711" expanded="true" signature="1686:1864" ph="{...}" />
+            <marker date="1537201021711" expanded="true" signature="1930:1999" ph="{...}" />
           </folding>
         </state>
       </provider>
@@ -985,34 +929,20 @@
         <state relative-caret-position="204">
           <caret line="13" column="17" selection-start-line="13" selection-start-column="17" selection-end-line="13" selection-end-column="17" />
           <folding>
-            <marker date="1537178778315" expanded="false" signature="6:60" ph="..." />
-            <marker date="1537178778315" expanded="true" signature="91:435" ph="{...}" />
-            <marker date="1537178778315" expanded="true" signature="127:433" ph="{...}" />
-            <marker date="1537178778315" expanded="true" signature="337:427" ph="{...}" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/BotCommands.Net/Parsing/Parser.cs">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="408">
-          <caret line="26" column="68" selection-start-line="26" selection-start-column="68" selection-end-line="26" selection-end-column="68" />
-          <folding>
-            <marker date="1537178830105" expanded="false" signature="6:79" ph="..." />
-            <marker date="1537178830105" expanded="true" signature="110:1302" ph="{...}" />
-            <marker date="1537178830105" expanded="true" signature="174:1300" ph="{...}" />
-            <marker date="1537178830105" expanded="true" signature="256:1294" ph="{...}" />
-            <marker date="1537178830105" expanded="true" signature="568:1149" ph="{...}" />
+            <marker date="1537201021693" expanded="false" signature="6:63" ph="..." />
+            <marker date="1537201021693" expanded="true" signature="94:438" ph="{...}" />
+            <marker date="1537201021693" expanded="true" signature="130:436" ph="{...}" />
+            <marker date="1537201021693" expanded="true" signature="340:430" ph="{...}" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/BotCommands.Net/Entities/Command.cs">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="221">
-          <caret line="13" column="54" selection-start-line="13" selection-start-column="54" selection-end-line="13" selection-end-column="54" />
+        <state relative-caret-position="68">
+          <caret line="8" column="26" selection-start-line="8" selection-start-column="26" selection-end-line="8" selection-end-column="26" />
           <folding>
-            <marker date="1537181067208" expanded="true" signature="6:121" ph="..." />
+            <marker date="1537181067208" expanded="false" signature="6:121" ph="..." />
             <marker date="1537181067208" expanded="true" signature="153:638" ph="{...}" />
             <marker date="1537181067208" expanded="true" signature="189:636" ph="{...}" />
             <marker date="1537181067208" expanded="true" signature="597:630" ph="{...}" />
@@ -1020,137 +950,170 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/BotCommands.Net/Core/Commander.cs">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="322">
-          <caret line="93" column="101" selection-start-line="93" selection-start-column="101" selection-end-line="93" selection-end-column="101" />
-          <folding>
-            <marker date="1537180742621" expanded="false" signature="6:264" ph="..." />
-            <marker date="1537180742621" expanded="true" signature="292:4896" ph="{...}" />
-            <marker date="1537180742621" expanded="true" signature="364:4894" ph="{...}" />
-            <marker date="1537180742621" expanded="true" signature="745:989" ph="{...}" />
-            <marker date="1537180742621" expanded="true" signature="999:1239" ph="/// Provides &lt;c&gt;VERY&lt;/c&gt; simplistic &lt;c&gt;CONSTRUCTOR ONLY&lt;/c&gt; DI for modules. ... " />
-            <marker date="1537180742621" expanded="true" signature="1509:1653" ph="{...}" />
-            <marker date="1537180742621" expanded="true" signature="1663:1963" ph="/// Creates an instance of the type and returns it. This method requires the service has a parameterless construc ... " />
-            <marker date="1537180742621" expanded="true" signature="2004:2162" ph="{...}" />
-            <marker date="1537180742621" expanded="true" signature="2180:2376" ph="/// Register a module, it's commands, sub modules, sub commands and so on. ... " />
-            <marker date="1537180742621" expanded="true" signature="2444:2632" ph="{...}" />
-            <marker date="1537180742621" expanded="true" signature="2650:2845" ph="/// Gather all top level types that implement &lt;see cref=&quot;IModule{TContext}&quot;/&gt; and register them as commands. ... " />
-            <marker date="1537180742621" expanded="true" signature="2886:2951" ph="{...}" />
-            <marker date="1537180742621" expanded="true" signature="2961:3327" ph="/// Processes a context generated from whatever service you are providing commands for. ... " />
-            <marker date="1537180742621" expanded="true" signature="3387:4152" ph="{...}" />
-            <marker date="1537180742621" expanded="true" signature="3445:4142" ph="{...}" />
-            <marker date="1537180742621" expanded="true" signature="3999:4128" ph="/* TODO: More comprehensive execution pipeline with logging and the like. ... */" />
-            <marker date="1537180742621" expanded="true" signature="4369:4888" ph="{...}" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/BotCommands.Net/Entities/Module.cs">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="255">
-          <caret line="15" column="60" selection-start-line="15" selection-start-column="60" selection-end-line="15" selection-end-column="60" />
-          <folding>
-            <marker date="1537181110446" expanded="true" signature="6:90" ph="..." />
-            <marker date="1537181110446" expanded="true" signature="122:694" ph="{...}" />
-            <marker date="1537181110446" expanded="true" signature="129:217" ph="/// A Module will maintain an instance of the type  ... " />
-            <marker date="1537181110446" expanded="true" signature="284:692" ph="{...}" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/BotCommands.Net/Matching/CommandMatcher.cs">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="436">
-          <caret line="39" column="16" selection-start-line="39" selection-start-column="16" selection-end-line="39" selection-end-column="16" />
+        <state relative-caret-position="166">
+          <caret line="36" column="29" selection-start-line="36" selection-start-column="29" selection-end-line="36" selection-end-column="29" />
           <folding>
-            <marker date="1537178680274" expanded="true" signature="6:148" ph="..." />
-            <marker date="1537178680274" expanded="true" signature="180:3719" ph="{...}" />
-            <marker date="1537178680274" expanded="true" signature="252:3717" ph="{...}" />
-            <marker date="1537178680274" expanded="true" signature="393:1039" ph="{...}" />
-            <marker date="1537178680274" expanded="true" signature="1352:1994" ph="{...}" />
-            <marker date="1537178680274" expanded="true" signature="1418:1984" ph="{...}" />
-            <marker date="1537178680274" expanded="true" signature="2111:2745" ph="{...}" />
-            <marker date="1537178680274" expanded="true" signature="2851:3125" ph="{...}" />
-            <marker date="1537178680274" expanded="true" signature="2926:3090" ph="{...}" />
-            <marker date="1537178680274" expanded="true" signature="3245:3711" ph="{...}" />
-            <marker date="1537178680274" expanded="true" signature="3512:3676" ph="{...}" />
+            <marker date="1537201022730" expanded="false" signature="6:151" ph="..." />
+            <marker date="1537201022730" expanded="true" signature="183:4528" ph="{...}" />
+            <marker date="1537201022730" expanded="true" signature="255:4526" ph="{...}" />
+            <marker date="1537201022730" expanded="true" signature="379:1207" ph="{...}" />
+            <marker date="1537201022730" expanded="true" signature="1555:2199" ph="{...}" />
+            <marker date="1537201022730" expanded="true" signature="1621:2189" ph="{...}" />
+            <marker date="1537201022730" expanded="true" signature="2343:3283" ph="{...}" />
+            <marker date="1537201022730" expanded="true" signature="2928:3202" ph="{...}" />
+            <marker date="1537201022730" expanded="true" signature="3389:3788" ph="{...}" />
+            <marker date="1537201022730" expanded="true" signature="3589:3753" ph="{...}" />
+            <marker date="1537201022730" expanded="true" signature="3916:4520" ph="{...}" />
+            <marker date="1537201022730" expanded="true" signature="4319:4480" ph="{...}" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/BotCommands.Net/Builders/ModuleBuilder.cs">
+    <entry file="file://$PROJECT_DIR$/BotCommands.Net/Entities/MatchedCommand.cs">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="749">
-          <caret line="75" column="17" selection-start-line="75" selection-start-column="17" selection-end-line="75" selection-end-column="17" />
+        <state>
+          <caret column="30" selection-start-column="30" selection-end-column="30" />
           <folding>
-            <marker date="1537181063155" expanded="false" signature="6:206" ph="..." />
-            <marker date="1537181063155" expanded="true" signature="238:3857" ph="{...}" />
-            <marker date="1537181063155" expanded="true" signature="316:3855" ph="{...}" />
-            <marker date="1537181063155" expanded="true" signature="422:502" ph="{...}" />
-            <marker date="1537181063155" expanded="true" signature="551:888" ph="{...}" />
-            <marker date="1537181063155" expanded="true" signature="1163:1647" ph="{...}" />
-            <marker date="1537181063155" expanded="true" signature="1418:1637" ph="{...}" />
-            <marker date="1537181063155" expanded="true" signature="1704:2608" ph="{...}" />
-            <marker date="1537181063155" expanded="true" signature="2130:2438" ph="{...}" />
-            <marker date="1537181063155" expanded="true" signature="2675:3703" ph="{...}" />
-            <marker date="1537181063155" expanded="true" signature="2849:3652" ph="{...}" />
-            <marker date="1537181063155" expanded="true" signature="3024:3336" ph="{...}" />
+            <marker date="1537196339955" expanded="true" signature="30:548" ph="{...}" />
+            <marker date="1537196339955" expanded="true" signature="67:546" ph="{...}" />
+            <marker date="1537196339955" expanded="true" signature="383:540" ph="{...}" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/BotCommands.Net.Tests/Tests.cs">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="68">
-          <caret line="8" column="22" selection-start-line="8" selection-start-column="22" selection-end-line="8" selection-end-column="22" />
+        <state relative-caret-position="306">
+          <caret line="18" column="30" selection-start-line="18" selection-start-column="30" selection-end-line="18" selection-end-column="30" />
           <folding>
-            <marker date="1537181140484" expanded="false" signature="6:145" ph="..." />
-            <marker date="1537181140484" expanded="true" signature="178:529" ph="{...}" />
-            <marker date="1537181140484" expanded="true" signature="203:527" ph="{...}" />
-            <marker date="1537181140484" expanded="true" signature="296:521" ph="{...}" />
+            <marker date="1537201022745" expanded="true" signature="6:137" ph="..." />
+            <marker date="1537201022745" expanded="true" signature="166:517" ph="{...}" />
+            <marker date="1537201022745" expanded="true" signature="191:515" ph="{...}" />
+            <marker date="1537201022745" expanded="true" signature="284:509" ph="{...}" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/BotCommands.Net.Tests/Commands/TestCommandModule.cs">
+    <entry file="file://$PROJECT_DIR$/BotCommands.Net/Execution/CommandExecution.cs">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="238">
-          <caret line="24" column="32" selection-start-line="24" selection-start-column="32" selection-end-line="24" selection-end-column="32" />
+        <state relative-caret-position="192">
+          <caret line="12" column="9" lean-forward="true" selection-start-line="12" selection-start-column="9" selection-end-line="12" selection-end-column="9" />
           <folding>
-            <marker date="1537181123804" expanded="false" signature="6:231" ph="..." />
-            <marker date="1537181123804" expanded="true" signature="269:2039" ph="{...}" />
-            <marker date="1537181123804" expanded="true" signature="361:2037" ph="{...}" />
-            <marker date="1537181123804" expanded="true" signature="474:600" ph="{...}" />
-            <marker date="1537181123804" expanded="true" signature="660:713" ph="{...}" />
-            <marker date="1537181123804" expanded="true" signature="794:880" ph="{...}" />
-            <marker date="1537181123804" expanded="true" signature="989:2031" ph="{...}" />
-            <marker date="1537181123804" expanded="true" signature="1129:1280" ph="{...}" />
-            <marker date="1537181123804" expanded="true" signature="1342:1399" ph="{...}" />
-            <marker date="1537181123804" expanded="true" signature="1531:2021" ph="{...}" />
-            <marker date="1537181123804" expanded="true" signature="1694:1872" ph="{...}" />
-            <marker date="1537181123804" expanded="true" signature="1938:2007" ph="{...}" />
+            <marker date="1537201042733" expanded="true" signature="6:103" ph="..." />
+            <marker date="1537201042733" expanded="true" signature="136:1423" ph="{...}" />
+            <marker date="1537201042733" expanded="true" signature="181:1421" ph="{...}" />
+            <marker date="1537201042733" expanded="true" signature="373:636" ph="{...}" />
+            <marker date="1537201042733" expanded="true" signature="753:1415" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/BotCommands.Net/Parsing/Parser.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="221">
+          <caret line="13" column="9" selection-start-line="13" selection-start-column="9" selection-end-line="13" selection-end-column="78" />
+          <folding>
+            <marker date="1537201022777" expanded="true" signature="6:82" ph="..." />
+            <marker date="1537201022777" expanded="true" signature="113:1305" ph="{...}" />
+            <marker date="1537201022777" expanded="true" signature="177:1303" ph="{...}" />
+            <marker date="1537201022777" expanded="true" signature="259:1297" ph="{...}" />
+            <marker date="1537201022777" expanded="true" signature="571:1152" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/BotCommands.Net/Properties/AssemblyInfo.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="34">
+          <caret line="2" column="55" selection-start-line="2" selection-start-column="55" selection-end-line="2" selection-end-column="55" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/BotCommands.Net/Builders/ModuleBuilder.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="663">
+          <caret line="54" column="2" selection-start-line="54" selection-start-column="2" selection-end-line="54" selection-end-column="2" />
+          <folding>
+            <marker date="1537201022695" expanded="false" signature="6:179" ph="..." />
+            <marker date="1537201022695" expanded="true" signature="211:3834" ph="{...}" />
+            <marker date="1537201022695" expanded="true" signature="289:3832" ph="{...}" />
+            <marker date="1537201022695" expanded="true" signature="395:475" ph="{...}" />
+            <marker date="1537201022695" expanded="true" signature="524:861" ph="{...}" />
+            <marker date="1537201022695" expanded="true" signature="1136:1620" ph="{...}" />
+            <marker date="1537201022695" expanded="true" signature="1391:1610" ph="{...}" />
+            <marker date="1537201022695" expanded="true" signature="1677:2581" ph="{...}" />
+            <marker date="1537201022695" expanded="true" signature="2103:2411" ph="{...}" />
+            <marker date="1537201022695" expanded="true" signature="2648:3680" ph="{...}" />
+            <marker date="1537201022695" expanded="true" signature="2822:3629" ph="{...}" />
+            <marker date="1537201022695" expanded="true" signature="2997:3313" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/BotCommands.Net/Entities/Module.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="153">
+          <caret line="10" column="38" selection-start-line="10" selection-start-column="38" selection-end-line="10" selection-end-column="38" />
+          <folding>
+            <marker date="1537201158232" expanded="false" signature="6:63" ph="..." />
+            <marker date="1537201158232" expanded="true" signature="95:603" ph="{...}" />
+            <marker date="1537201158232" expanded="true" signature="102:190" ph="/// A Module will maintain an instance of the type  ... " />
+            <marker date="1537201158232" expanded="true" signature="257:601" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/BotCommands.Net/Core/Commander.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="375">
+          <caret line="93" column="19" selection-start-line="93" selection-start-column="19" selection-end-line="93" selection-end-column="19" />
+          <folding>
+            <marker date="1537201042718" expanded="false" signature="6:313" ph="..." />
+            <marker date="1537201042718" expanded="true" signature="341:3946" ph="{...}" />
+            <marker date="1537201042718" expanded="true" signature="413:3944" ph="{...}" />
+            <marker date="1537201042718" expanded="true" signature="848:1141" ph="{...}" />
+            <marker date="1537201042718" expanded="true" signature="1151:1391" ph="/// Provides &lt;c&gt;VERY&lt;/c&gt; simplistic &lt;c&gt;CONSTRUCTOR ONLY&lt;/c&gt; DI for modules. ... " />
+            <marker date="1537201042718" expanded="true" signature="1661:1805" ph="{...}" />
+            <marker date="1537201042718" expanded="true" signature="1815:2115" ph="/// Creates an instance of the type and returns it. This method requires the service has a parameterless construc ... " />
+            <marker date="1537201042718" expanded="true" signature="2156:2314" ph="{...}" />
+            <marker date="1537201042718" expanded="true" signature="2332:2528" ph="/// Register a module, it's commands, sub modules, sub commands and so on. ... " />
+            <marker date="1537201042718" expanded="true" signature="2596:2784" ph="{...}" />
+            <marker date="1537201042718" expanded="true" signature="2802:2997" ph="/// Gather all top level types that implement &lt;see cref=&quot;IModule{TContext}&quot;/&gt; and register them as commands. ... " />
+            <marker date="1537201042718" expanded="true" signature="3038:3103" ph="{...}" />
+            <marker date="1537201042718" expanded="true" signature="3113:3479" ph="/// Processes a context generated from whatever service you are providing commands for. ... " />
+            <marker date="1537201042718" expanded="true" signature="3539:3938" ph="{...}" />
+            <marker date="1537201042718" expanded="true" signature="3597:3928" ph="{...}" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/BotCommands.Net.Example/Program.cs">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="419">
-          <caret line="46" column="33" selection-start-line="46" selection-start-column="33" selection-end-line="46" selection-end-column="33" />
+        <state relative-caret-position="227">
+          <caret line="74" column="22" selection-start-line="74" selection-start-column="22" selection-end-line="74" selection-end-column="22" />
           <folding>
-            <marker date="1537182394315" expanded="true" signature="6:183" ph="..." />
-            <marker date="1537182394315" expanded="true" signature="218:1710" ph="{...}" />
-            <marker date="1537182394315" expanded="true" signature="238:650" ph="{...}" />
-            <marker date="1537182394315" expanded="true" signature="284:644" ph="{...}" />
-            <marker date="1537182394315" expanded="true" signature="454:634" ph="{...}" />
-            <marker date="1537182394315" expanded="true" signature="739:1477" ph="{...}" />
-            <marker date="1537182394315" expanded="true" signature="793:926" ph="{...}" />
-            <marker date="1537182394315" expanded="true" signature="1026:1471" ph="{...}" />
-            <marker date="1537182394315" expanded="true" signature="1088:1250" ph="{...}" />
-            <marker date="1537182394315" expanded="true" signature="1325:1461" ph="{...}" />
-            <marker date="1537182394315" expanded="true" signature="1521:1708" ph="{...}" />
-            <marker date="1537182394315" expanded="true" signature="1651:1702" ph="{...}" />
+            <marker date="1537201022759" expanded="false" signature="6:209" ph="..." />
+            <marker date="1537201022759" expanded="true" signature="244:3427" ph="{...}" />
+            <marker date="1537201022759" expanded="true" signature="264:733" ph="{...}" />
+            <marker date="1537201022759" expanded="true" signature="310:727" ph="{...}" />
+            <marker date="1537201022759" expanded="true" signature="537:717" ph="{...}" />
+            <marker date="1537201022759" expanded="true" signature="822:2111" ph="{...}" />
+            <marker date="1537201022759" expanded="true" signature="876:1009" ph="{...}" />
+            <marker date="1537201022759" expanded="true" signature="1109:1554" ph="{...}" />
+            <marker date="1537201022759" expanded="true" signature="1171:1333" ph="{...}" />
+            <marker date="1537201022759" expanded="true" signature="1408:1544" ph="{...}" />
+            <marker date="1537201022759" expanded="true" signature="1664:2105" ph="{...}" />
+            <marker date="1537201022759" expanded="true" signature="1726:1891" ph="{...}" />
+            <marker date="1537201022759" expanded="true" signature="1959:2095" ph="{...}" />
+            <marker date="1537201022759" expanded="true" signature="2214:3194" ph="{...}" />
+            <marker date="1537201022759" expanded="true" signature="2268:2337" ph="{...}" />
+            <marker date="1537201022759" expanded="true" signature="2489:2650" ph="{...}" />
+            <marker date="1537201022759" expanded="true" signature="2787:2933" ph="{...}" />
+            <marker date="1537201022759" expanded="true" signature="3062:3188" ph="{...}" />
+            <marker date="1537201022759" expanded="true" signature="3238:3425" ph="{...}" />
+            <marker date="1537201022759" expanded="true" signature="3368:3419" ph="{...}" />
           </folding>
         </state>
       </provider>

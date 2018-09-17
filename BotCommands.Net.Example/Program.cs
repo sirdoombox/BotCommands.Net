@@ -1,9 +1,10 @@
 ﻿using System;
 using System.ComponentModel;
+using System.Reflection;
 using System.Threading.Tasks;
 using BotCommands.Attributes;
-using BotCommands.Context;
 using BotCommands.Core;
+using BotCommands.Entities;
 using BotCommands.Interfaces;
 
 namespace BotCommands.Net.Example
@@ -14,6 +15,7 @@ namespace BotCommands.Net.Example
         {
             var cmdr = new Commander<ConsoleContext>();
             cmdr.RegisterModule<MathsModule>();
+            cmdr.RegisterModule<RemaindersTestModule>();
             cmdr.Prefix = "!";
             while (true)
             {
@@ -46,6 +48,52 @@ namespace BotCommands.Net.Example
                 Console.WriteLine($"Result: {a} + {b} = {a+b}");
                 return Task.CompletedTask;
             }
+        }
+        
+        [ModuleAliases("Multiply")]
+        public class MultiplySubModule : IModule<ConsoleContext>
+        {
+            public Task Execute(ConsoleContext ctx)
+            {
+                Console.WriteLine("Invalid use of !Mats Multiply - please supply 2 numbers");
+                return Task.CompletedTask;
+            }
+
+            public Task Multiply(ConsoleContext ctx, int a, int b)
+            {
+                Console.WriteLine($"Result: {a} x {b} = {a*b}");
+                return Task.CompletedTask;
+            }
+        }
+    }
+
+    [ModuleAliases("RemaindersTest")]
+    public class RemaindersTestModule : IModule<ConsoleContext>
+    {
+        public Task Execute(ConsoleContext ctx)
+        {
+            throw new NotImplementedException();
+        }
+
+        [CommandSupportsRemainders]
+        public Task ThreeArgRemaindersTest(ConsoleContext ctx, bool testBool, int testInt, string remainderString)
+        {
+            Console.WriteLine($"Bool: {testBool} | Int: {testInt} | Remainder: '{remainderString}'");
+            return Task.CompletedTask;
+        }
+        
+        [CommandSupportsRemainders]
+        public Task RemaindersTest(ConsoleContext ctx, int testInt, string remainderString)
+        {
+            Console.WriteLine($"IntVal: {testInt} | Remainders: '{remainderString}'");
+            return Task.CompletedTask;
+        }
+        
+        [CommandSupportsRemainders]
+        public Task OtherRemaindersTest(ConsoleContext ctx, string remainderString)
+        {
+            Console.WriteLine($"Remainders: '{remainderString}'");
+            return Task.CompletedTask;
         }
     }
 

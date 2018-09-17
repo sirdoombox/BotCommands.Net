@@ -1,4 +1,4 @@
-﻿namespace BotCommands.Context
+﻿namespace BotCommands.Interfaces
 {
     public interface IContext
     {

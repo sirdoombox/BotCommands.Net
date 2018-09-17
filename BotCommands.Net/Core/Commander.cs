@@ -1,10 +1,11 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Runtime.InteropServices.ComTypes;
 using System.Threading.Tasks;
 using BotCommands.Builders;
-using BotCommands.Context;
 using BotCommands.Entities;
+using BotCommands.Execution;
 using BotCommands.Interfaces;
 using BotCommands.Matching;
 using BotCommands.Parsing;
@@ -19,6 +20,7 @@ namespace BotCommands.Core
         private readonly ModuleBuilder<TContext> _moduleBuilder;
         private readonly Parser<TContext> _parser;
         private readonly CommandMatcher<TContext> _matcher;
+        private readonly CommandExecution _execution;
         
         private readonly List<Module<TContext>> _registeredModules;
 
@@ -28,6 +30,7 @@ namespace BotCommands.Core
             _parser = new Parser<TContext>();
             _registeredModules = new List<Module<TContext>>();
             _matcher = new CommandMatcher<TContext>();
+            _execution = new CommandExecution();
         }
 
         /// <summary>
@@ -87,28 +90,9 @@ namespace BotCommands.Core
             {
                 var parsedCommand = _parser.ParseContext(ctx, PrefixLength);
                 var commandMatch = _matcher.MatchCommand(_registeredModules, parsedCommand);
-                var commandMethod = commandMatch.match.Method;
-                var argArray =
-                    ConstructArgumentArray(commandMatch.match, parsedCommand, commandMatch.requiresRemainders);
-                var commandExecutionResult =
-                    (Task) commandMethod.Invoke(commandMatch.match.ContainingTypeInstance, argArray);
-                // TODO: More comprehensive execution pipeline with logging and the like.
+                await _execution.ExecuteCommand(commandMatch,parsedCommand);
                 // TODO: Add a bunch of new attributes.
             }
-        }
-        
-        // Holdover to run some tests - Will be moved to the execution class when i get there.
-        private object[] ConstructArgumentArray(Command command, ParsedCommand parsedCommand, bool useRemainder)
-        {
-            var argArray = new object[command.Arguments.Count];
-            argArray[0] = parsedCommand.Context;
-            for (var i = 1; i < argArray.Length; i++)
-                argArray[i] = parsedCommand.CommandArgs[i-1];
-            if (useRemainder)
-                argArray[argArray.Length - 1] =
-                    parsedCommand.CommandArgs.Skip(argArray.Length - 2).Select(x => x.ArgObj.ToString())
-                        .Aggregate((x, y) => $"{x} {y}");
-            return argArray;
         }
     }
 }

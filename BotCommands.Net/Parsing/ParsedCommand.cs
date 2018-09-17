@@ -1,5 +1,5 @@
 ﻿using System.Collections.Generic;
-using BotCommands.Context;
+using BotCommands.Interfaces;
 
 namespace BotCommands.Parsing
 {

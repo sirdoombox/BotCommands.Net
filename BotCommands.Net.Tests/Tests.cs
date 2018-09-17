@@ -1,10 +1,10 @@
 ﻿using BotCommands.Core;
-using BotCommands.Net.Tests.Context;
-using BotCommands.Net.Tests.Services;
 using BotCommands.Tests.Commands;
+using BotCommands.Tests.Context;
+using BotCommands.Tests.Services;
 using Xunit;
 
-namespace BotCommands.Net.Tests
+namespace BotCommands.Tests
 {
     public class Tests
     {

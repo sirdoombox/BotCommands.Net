@@ -3,7 +3,6 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Reflection;
 using BotCommands.Attributes;
-using BotCommands.Context;
 using BotCommands.Entities;
 using BotCommands.Interfaces;
 
@@ -75,7 +74,7 @@ namespace BotCommands.Builders
                 var newCommand = new Command
                 {
                     Method = method,
-                    Arguments = method.GetParameters().Select(x => x.GetType()).ToList(),
+                    Arguments = method.GetParameters().Select(x => x.ParameterType).ToList(),
                     SupportsRemainders = method.GetCustomAttribute<CommandSupportsRemainders>() != null,
                     ContainingTypeInstance = module.Instance
                 };

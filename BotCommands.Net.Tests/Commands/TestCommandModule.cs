@@ -3,8 +3,8 @@ using System.Threading.Tasks;
 using BotCommands.Attributes;
 using BotCommands.Entities;
 using BotCommands.Interfaces;
-using BotCommands.Net.Tests.Context;
-using BotCommands.Net.Tests.Services;
+using BotCommands.Tests.Context;
+using BotCommands.Tests.Services;
 using Xunit;
 
 namespace BotCommands.Tests.Commands

@@ -1,6 +1,6 @@
 ﻿using System.Collections.Generic;
 using System.Linq;
-using BotCommands.Context;
+using BotCommands.Interfaces;
 
 namespace BotCommands.Parsing
 {
