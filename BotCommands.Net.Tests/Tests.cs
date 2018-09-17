@@ -6,8 +6,10 @@ using Xunit;
 
 namespace BotCommands.Net.Tests
 {
-    public class Class1
+    public class Tests
     {
+        // TODO: Test Suite.
+        
         [Fact]
         public void PassingTest()
         {

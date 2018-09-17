@@ -1,5 +1,4 @@
 ﻿using System.Collections.Generic;
-using System.Reflection;
 using BotCommands.Context;
 using BotCommands.Interfaces;
 
@@ -10,12 +9,12 @@ namespace BotCommands.Entities
     /// </summary>
     public sealed class Module<TContext> where TContext : IContext
     {
-        public string Name { get; internal set; }
-        public IReadOnlyList<string> Aliases { get; internal set; }
-        public IBotCommandModule<TContext> ModuleInstance { get; internal set; }
-        public Module<TContext> Parent { get; internal set; }
-        public IReadOnlyList<Module> Children { get; internal set; }
-        public IReadOnlyList<Command> Commands { get; internal set; }
-        public object Instance { get; internal set; }
+        internal string Name { get; set; }
+        internal IReadOnlyList<string> Aliases { get; set; }
+        internal IModule<TContext> ModuleInstance { get; set; }
+        internal Module<TContext> Parent { get; set; }
+        internal List<Module<TContext>> Children { get; set; }
+        internal IReadOnlyList<Command> Commands { get; set; }
+        internal object Instance { get; set; }
     }
 }

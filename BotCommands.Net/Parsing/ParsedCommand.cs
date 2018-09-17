@@ -1,13 +1,17 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Collections.ObjectModel;
+﻿using System.Collections.Generic;
 using BotCommands.Context;
 
 namespace BotCommands.Parsing
 {
     internal struct ParsedCommand
     {
-        internal readonly IReadOnlyList<ParsedArgument> Command;
+        internal readonly IReadOnlyList<ParsedArgument> CommandArgs;
         internal readonly IContext Context;
+
+        public ParsedCommand(IReadOnlyList<ParsedArgument> commandArgs, IContext context)
+        {
+            CommandArgs = commandArgs;
+            Context = context;
+        }
     }
 }

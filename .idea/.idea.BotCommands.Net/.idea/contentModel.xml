@@ -8,7 +8,6 @@
     <e p="S:\Projects\CSharp\BotCommands.Net" t="IncludeFlat">
       <e p="BotCommands.Net" t="IncludeRecursive">
         <e p="Attributes" t="Include">
-          <e p="CommandAliases.cs" t="Include" />
           <e p="CommandDescription.cs" t="Include" />
           <e p="CommandSupportsRemainders.cs" t="Include" />
           <e p="ModuleAliases.cs" t="Include" />
@@ -18,9 +17,6 @@
         <e p="Builders" t="Include">
           <e p="ModuleBuilder.cs" t="Include" />
         </e>
-        <e p="Context" t="Include">
-          <e p="IContext.cs" t="Include" />
-        </e>
         <e p="Core" t="Include">
           <e p="Commander.cs" t="Include" />
         </e>
@@ -29,7 +25,11 @@
           <e p="Module.cs" t="Include" />
         </e>
         <e p="Interfaces" t="Include">
-          <e p="IBotCommandModule.cs" t="Include" />
+          <e p="IContext.cs" t="Include" />
+          <e p="IModule.cs" t="Include" />
+        </e>
+        <e p="Matching" t="Include">
+          <e p="CommandMatcher.cs" t="Include" />
         </e>
         <e p="obj" t="ExcludeRecursive">
           <e p="Debug" t="Include">
@@ -43,6 +43,18 @@
           <e p="ParsedCommand.cs" t="Include" />
           <e p="Parser.cs" t="Include" />
         </e>
+      </e>
+      <e p="BotCommands.Net.Example" t="IncludeRecursive">
+        <e p="bin" t="ExcludeRecursive" />
+        <e p="BotCommands.Net.Example.csproj" t="IncludeRecursive" />
+        <e p="obj" t="ExcludeRecursive">
+          <e p="Debug" t="Include">
+            <e p="netcoreapp2.1" t="Include">
+              <e p="BotCommands.Net.Example.AssemblyInfo.cs" t="Include" />
+            </e>
+          </e>
+        </e>
+        <e p="Program.cs" t="Include" />
       </e>
       <e p="BotCommands.Net.sln" t="IncludeFlat" />
       <e p="BotCommands.Net.Tests" t="IncludeRecursive">

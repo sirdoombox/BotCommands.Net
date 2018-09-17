@@ -4,6 +4,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BotCommands.Net", "BotComma
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BotCommands.Net.Tests", "BotCommands.Net.Tests\BotCommands.Net.Tests.csproj", "{F6C6D5FA-8061-433E-AC39-F65EC1A6DFE5}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BotCommands.Net.Example", "BotCommands.Net.Example\BotCommands.Net.Example.csproj", "{D876B182-E985-4A06-A44A-0C8391533AB5}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -18,5 +20,9 @@ Global
 		{F6C6D5FA-8061-433E-AC39-F65EC1A6DFE5}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{F6C6D5FA-8061-433E-AC39-F65EC1A6DFE5}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{F6C6D5FA-8061-433E-AC39-F65EC1A6DFE5}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D876B182-E985-4A06-A44A-0C8391533AB5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D876B182-E985-4A06-A44A-0C8391533AB5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D876B182-E985-4A06-A44A-0C8391533AB5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D876B182-E985-4A06-A44A-0C8391533AB5}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 EndGlobal

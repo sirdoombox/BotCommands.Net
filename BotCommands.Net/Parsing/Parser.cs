@@ -1,7 +1,5 @@
-﻿using System;
-using System.Collections.Generic;
+﻿using System.Collections.Generic;
 using System.Linq;
-using System.Runtime;
 using BotCommands.Context;
 
 namespace BotCommands.Parsing
@@ -10,7 +8,6 @@ namespace BotCommands.Parsing
     {
         internal ParsedCommand ParseContext(TContext ctx, int prefixLength)
         {
-            var result = new ParsedCommand();
             var resultContents = new List<ParsedArgument>();
             var argArray = ctx.Message.Split(' ');
             argArray[0] = argArray[0].Substring(prefixLength);
@@ -26,8 +23,8 @@ namespace BotCommands.Parsing
                 else
                     resultContents.Add(new ParsedArgument(typeof(string), arg, arg));
             }
-            return result;
-            // TODO: More robust parsing because this shit is whack.
+            return new ParsedCommand(resultContents, ctx);
+            // TODO: More robust parsing because this is pretty damn whack.
         }
     }
 }

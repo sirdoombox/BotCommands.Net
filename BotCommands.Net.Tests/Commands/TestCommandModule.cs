@@ -9,29 +9,60 @@ using Xunit;
 
 namespace BotCommands.Tests.Commands
 {
-    [CommandDescription("anus")]
     [ModuleAliases("MEMEEEES")]
-    public class TestCommandModule : IBotCommandModule<TestContext>
+    public class TestCommandModule : IModule<TestContext>
     {
         public TestService Service { get; }
         
         public TestCommandModule(TestService service)
         {
             Service = service;
-            Debug.WriteLine(service);
+            Debug.WriteLine($"CommandModule Instantiated with {service}");
         }
         
-        [CommandAliases("Dingbat")]
         public async Task Execute(TestContext ctx)
         {
             Assert.NotNull(ctx);
         }
         
-        [CommandAliases("Memelord")]
         public async Task SomeOtherMethod(TestContext ctx, string Anus)
         {
             var ass = Anus;
             var megaAss = ctx.Author;
+        }
+        
+        [ModuleAliases("Dicks")]
+        public class TestChildCommandModule : IModule<TestContext>
+        {          
+            public TestService Service { get; }
+        
+            public TestChildCommandModule(TestService service)
+            {
+                Service = service;
+                Debug.WriteLine($"TestChildCommandModule Instantiated with {service}");
+            }
+            
+            public Task Execute(TestContext ctx)
+            {
+                return null;
+            }
+            
+            [ModuleAliases("Dicks")]
+            public class TestTwiceNestedChildCommandModule : IModule<TestContext>
+            {          
+                public TestService Service { get; }
+        
+                public TestTwiceNestedChildCommandModule(TestService service)
+                {
+                    Service = service;
+                    Debug.WriteLine($"TestTwiceNestedChildCommandModule Instantiated with {service}");
+                }
+            
+                public Task Execute(TestContext ctx)
+                {
+                    return null;
+                }
+            }
         }
     }
 }
