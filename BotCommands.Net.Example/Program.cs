@@ -24,16 +24,16 @@ namespace BotCommands.Net.Example
     }
     
     [ModuleAliases("Maths")]
-    class MathsModule : IModule<ConsoleContext>
+    public class MathsModule : IModule<ConsoleContext>
     {
         public Task Execute(ConsoleContext ctx)
         {
-            Console.WriteLine("Invalid use of command - Use !Maths Add/Subtract");
+            Console.WriteLine("Invalid use of command - Use !Maths Add");
             return Task.CompletedTask;
         }
         
         [ModuleAliases("Add")]
-        class AddSubModule : IModule<ConsoleContext>
+        public class AddSubModule : IModule<ConsoleContext>
         {
             public Task Execute(ConsoleContext ctx)
             {
@@ -41,7 +41,7 @@ namespace BotCommands.Net.Example
                 return Task.CompletedTask;
             }
             
-            public Task Add(int a, int b)
+            public Task Add(ConsoleContext ctx, int a, int b)
             {
                 Console.WriteLine($"Result: {a} + {b} = {a+b}");
                 return Task.CompletedTask;
@@ -49,7 +49,7 @@ namespace BotCommands.Net.Example
         }
     }
 
-    class ConsoleContext : IContext
+    public class ConsoleContext : IContext
     {
         public string Message { get; }
         public string Author { get; }
