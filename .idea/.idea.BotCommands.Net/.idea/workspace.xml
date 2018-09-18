@@ -101,8 +101,8 @@
       <file leaf-file-name="CommandExecutionTests.cs" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/BotCommands.Net.Tests/Execution/CommandExecutionTests.cs">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="378">
-              <caret line="31" column="30" selection-start-line="31" selection-start-column="30" selection-end-line="31" selection-end-column="30" />
+            <state relative-caret-position="123">
+              <caret line="22" column="16" lean-forward="true" selection-start-line="22" selection-start-column="16" selection-end-line="22" selection-end-column="16" />
               <folding>
                 <marker date="1537280660824" expanded="true" signature="6:355" ph="..." />
                 <marker date="1537280660824" expanded="true" signature="394:1948" ph="{...}" />
@@ -321,12 +321,12 @@
       <workItem from="1537190540837" duration="11541000" />
       <workItem from="1537258970826" duration="2175000" />
       <workItem from="1537265932190" duration="187000" />
-      <workItem from="1537266148512" duration="8793000" />
+      <workItem from="1537266148512" duration="9215000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="68948000" />
+    <option name="totallyTimeSpent" value="69370000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -339,6 +339,7 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1920" height="1080" extended-state="0" />
+    <editor active="true" />
     <layout>
       <window_info anchor="right" id="TODO" order="6" sideWeight="0.5130058" side_tool="true" visible="true" weight="0.2750533" />
       <window_info anchor="right" id="Errors In Solution" order="0" weight="0.32995737" />
@@ -1029,8 +1030,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/BotCommands.Net.Tests/Execution/CommandExecutionTests.cs">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="378">
-          <caret line="31" column="30" selection-start-line="31" selection-start-column="30" selection-end-line="31" selection-end-column="30" />
+        <state relative-caret-position="123">
+          <caret line="22" column="16" lean-forward="true" selection-start-line="22" selection-start-column="16" selection-end-line="22" selection-end-column="16" />
           <folding>
             <marker date="1537280660824" expanded="true" signature="6:355" ph="..." />
             <marker date="1537280660824" expanded="true" signature="394:1948" ph="{...}" />
