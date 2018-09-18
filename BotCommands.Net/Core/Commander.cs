@@ -23,7 +23,7 @@ namespace BotCommands.Core
         private readonly CommandMatcher<TContext> _matcher;
         private readonly CommandExecution _execution;
         
-        private readonly List<Module<TContext>> _registeredModules;
+        private List<Module<TContext>> _registeredModules;
 
         public Commander()
         {
@@ -73,11 +73,11 @@ namespace BotCommands.Core
         
         /// <summary>
         /// Gather all top level types that implement <see cref="IModule{TContext}"/> and register them as commands.
-        /// NOTE: I don't recommend this.
+        /// NOTE: It will wipe out all currently registered commands and start from scratch. I don't recommend this.
         /// </summary>
         public void RegisterAllModules()
         {
-            // TODO: Implement Register All.
+            _registeredModules = _moduleBuilder.BuildAllModules();
         }
 
         /// <summary>
@@ -94,7 +94,6 @@ namespace BotCommands.Core
                 var result = _execution.ExecuteCommand(commandMatch, parsedCommand);
                 await result.Item1;
                 OnCommmandExecuted?.Invoke(this, result.Item2);
-                // TODO: Add a bunch of new attributes.
             }
         }
     }

@@ -32,6 +32,7 @@ namespace BotCommands.Net.Example
     }
     
     [ModuleNames("Maths")]
+    [ModuleRequiresPermissions(typeof(AdminCommandPermissions))]
     public class MathsModule : IModule<ConsoleContext>
     {
         public Task Execute(ConsoleContext ctx)
@@ -78,7 +79,7 @@ namespace BotCommands.Net.Example
     {
         public Task Execute(ConsoleContext ctx)
         {
-            throw new NotImplementedException();
+            return Task.CompletedTask;
         }
 
         [CommandSupportsRemainders]
