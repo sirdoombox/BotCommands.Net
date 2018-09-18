@@ -10,7 +10,6 @@ namespace BotCommands.Builders
 {
     internal sealed class ModuleBuilder<TContext> where TContext : IContext
     {
-
         private readonly Dictionary<Type, object> _dependencies;
 
         internal ModuleBuilder()
@@ -49,7 +48,10 @@ namespace BotCommands.Builders
         private Module<TContext> BuildModule(Type type)
         {
             var newModule = new Module<TContext>();
-            newModule.Aliases = type.GetCustomAttribute<ModuleAliases>().Aliases;
+            var namesAttrib = type.GetCustomAttribute<ModuleNames>();
+            if(namesAttrib == null)
+                throw new Exception($"{type.Name} MUST have the [ModuleNames()] attribute.");
+            newModule.Names = type.GetCustomAttribute<ModuleNames>().Names;
             var ctor = type.GetConstructors().First();
             var paramsLayout = ctor.GetParameters().Select(x => x.ParameterType).ToArray();
             var paramsInstanceArray = new object[paramsLayout.Length];
@@ -61,6 +63,7 @@ namespace BotCommands.Builders
             }
             newModule.Instance = Activator.CreateInstance(type, paramsInstanceArray);
             BuildModuleCommands(newModule);
+            BuildModuleRecursive(newModule);
             return newModule;
         }
 
@@ -79,7 +82,7 @@ namespace BotCommands.Builders
                     ContainingTypeInstance = module.Instance
                 };
                 if(newCommand.SupportsRemainders && newCommand.Arguments.Last() != typeof(string))
-                    throw new Exception($"In order for {newCommand.Method.Name} in {module.Name} to support remainders, the final argument MUST be a string.");
+                    throw new Exception($"In order for {newCommand.Method.Name} in {module.Instance.GetType().Name} to support remainders, the final argument MUST be a string.");
                 commands.Add(newCommand);
             }
 

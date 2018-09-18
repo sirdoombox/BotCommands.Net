@@ -10,7 +10,7 @@
         <e p="Attributes" t="Include">
           <e p="CommandDescription.cs" t="Include" />
           <e p="CommandSupportsRemainders.cs" t="Include" />
-          <e p="ModuleAliases.cs" t="Include" />
+          <e p="ModuleNames.cs" t="Include" />
         </e>
         <e p="bin" t="ExcludeRecursive" />
         <e p="BotCommands.Net.csproj" t="IncludeRecursive" />
@@ -67,11 +67,21 @@
       <e p="BotCommands.Net.Tests" t="IncludeRecursive">
         <e p="bin" t="ExcludeRecursive" />
         <e p="BotCommands.Net.Tests.csproj" t="IncludeRecursive" />
-        <e p="Commands" t="Include">
-          <e p="TestCommandModule.cs" t="Include" />
+        <e p="Builders" t="Include">
+          <e p="ModuleBuilderTests.cs" t="Include" />
         </e>
-        <e p="Context" t="Include">
+        <e p="Contexts" t="Include">
           <e p="TestContext.cs" t="Include" />
+        </e>
+        <e p="Execution" t="Include">
+          <e p="CommandExecutionTests.cs" t="Include" />
+        </e>
+        <e p="Matching" t="Include">
+          <e p="CommanderMatcherTests.cs" t="Include" />
+        </e>
+        <e p="Modules" t="Include">
+          <e p="InvalidTestModule.cs" t="Include" />
+          <e p="TestModule.cs" t="Include" />
         </e>
         <e p="obj" t="ExcludeRecursive">
           <e p="Debug" t="Include">
@@ -81,10 +91,12 @@
             </e>
           </e>
         </e>
+        <e p="Parsing" t="Include">
+          <e p="ParserTests.cs" t="Include" />
+        </e>
         <e p="Services" t="Include">
           <e p="TestService.cs" t="Include" />
         </e>
-        <e p="Tests.cs" t="Include" />
       </e>
       <e p="packages" t="ExcludeRecursive" />
     </e>

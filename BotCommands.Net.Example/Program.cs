@@ -9,9 +9,11 @@ using BotCommands.Interfaces;
 
 namespace BotCommands.Net.Example
 {
-    class Program
+    // TODO: Tidy up example and make it actually good.
+
+    internal class Program
     {
-        static void Main(string[] args)
+        private static void Main(string[] args)
         {
             var cmdr = new Commander<ConsoleContext>();
             cmdr.RegisterModule<MathsModule>();
@@ -25,7 +27,7 @@ namespace BotCommands.Net.Example
         }
     }
     
-    [ModuleAliases("Maths")]
+    [ModuleNames("Maths")]
     public class MathsModule : IModule<ConsoleContext>
     {
         public Task Execute(ConsoleContext ctx)
@@ -34,7 +36,7 @@ namespace BotCommands.Net.Example
             return Task.CompletedTask;
         }
         
-        [ModuleAliases("Add")]
+        [ModuleNames("Add")]
         public class AddSubModule : IModule<ConsoleContext>
         {
             public Task Execute(ConsoleContext ctx)
@@ -50,7 +52,7 @@ namespace BotCommands.Net.Example
             }
         }
         
-        [ModuleAliases("Multiply")]
+        [ModuleNames("Multiply")]
         public class MultiplySubModule : IModule<ConsoleContext>
         {
             public Task Execute(ConsoleContext ctx)
@@ -67,7 +69,7 @@ namespace BotCommands.Net.Example
         }
     }
 
-    [ModuleAliases("RemaindersTest")]
+    [ModuleNames("RemaindersTest")]
     public class RemaindersTestModule : IModule<ConsoleContext>
     {
         public Task Execute(ConsoleContext ctx)

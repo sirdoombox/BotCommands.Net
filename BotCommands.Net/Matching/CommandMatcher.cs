@@ -27,7 +27,7 @@ namespace BotCommands.Matching
         }
 
         private bool ModuleIsMatchToString(Module<TContext> module, string toCompare) =>
-            module.Aliases.Any(x => string.Compare(x, toCompare, StringComparison.InvariantCultureIgnoreCase) == 0);
+            module.Names.Any(x => string.Compare(x, toCompare, StringComparison.InvariantCultureIgnoreCase) == 0);
 
         private (int submoduleIncrement, Module<TContext> matchSubmodule) TryMatchSubModule(Module<TContext> module, ParsedCommand command)
         {

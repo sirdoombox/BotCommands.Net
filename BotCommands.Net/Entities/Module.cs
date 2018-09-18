@@ -8,8 +8,7 @@ namespace BotCommands.Entities
     /// </summary>
     public sealed class Module<TContext> where TContext : IContext
     {
-        internal string Name { get; set; }
-        internal IReadOnlyList<string> Aliases { get; set; }
+        internal IReadOnlyList<string> Names { get; set; }
         internal Module<TContext> Parent { get; set; }
         internal List<Module<TContext>> Children { get; set; }
         internal IReadOnlyList<Command> Commands { get; set; }

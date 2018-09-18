@@ -9,58 +9,59 @@ using Xunit;
 
 namespace BotCommands.Tests.Commands
 {
-    [ModuleAliases("MEMEEEES")]
-    public class TestCommandModule : IModule<TestContext>
+    [ModuleNames("TestModule")]
+    public class TestModule : IModule<TestContext>
     {
         public TestService Service { get; }
         
-        public TestCommandModule(TestService service)
+        public TestModule(TestService service)
         {
             Service = service;
-            Debug.WriteLine($"CommandModule Instantiated with {service}");
         }
         
         public async Task Execute(TestContext ctx)
         {
-            Assert.NotNull(ctx);
+            
         }
         
-        public async Task SomeOtherMethod(TestContext ctx, string Anus)
+        public async Task SomeOtherMethod(TestContext ctx, string testArg)
         {
-            var ass = Anus;
-            var megaAss = ctx.Author;
+            
         }
         
-        [ModuleAliases("Dicks")]
-        public class TestChildCommandModule : IModule<TestContext>
+        [ModuleNames("TestChildModule")]
+        public class TestChildModule : IModule<TestContext>
         {          
             public TestService Service { get; }
         
-            public TestChildCommandModule(TestService service)
+            public TestChildModule(TestService service)
             {
                 Service = service;
-                Debug.WriteLine($"TestChildCommandModule Instantiated with {service}");
             }
             
             public Task Execute(TestContext ctx)
             {
-                return null;
+                return Task.CompletedTask;
+            }
+
+            public Task SomeOtherCommand(TestContext ctx, int testValue)
+            {
+                return Task.CompletedTask;
             }
             
-            [ModuleAliases("Dicks")]
-            public class TestTwiceNestedChildCommandModule : IModule<TestContext>
+            [ModuleNames("TestTwiceNestedChildModule")]
+            public class TestTwiceNestedChildModule : IModule<TestContext>
             {          
                 public TestService Service { get; }
         
-                public TestTwiceNestedChildCommandModule(TestService service)
+                public TestTwiceNestedChildModule(TestService service)
                 {
                     Service = service;
-                    Debug.WriteLine($"TestTwiceNestedChildCommandModule Instantiated with {service}");
                 }
             
                 public Task Execute(TestContext ctx)
                 {
-                    return null;
+                    return Task.CompletedTask;
                 }
             }
         }
