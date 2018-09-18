@@ -1,49 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="bcaaa82a-0cb2-4e3d-9557-580925b02e26" name="Default" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/.idea.BotCommands.Net/.idea/markdown-navigator.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/.idea.BotCommands.Net/.idea/markdown-navigator/profiles_settings.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/BotCommands.Net.Tests/Builders/ModuleBuilderTests.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/BotCommands.Net.Tests/Execution/CommandExecutionTests.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/BotCommands.Net.Tests/Matching/CommanderMatcherTests.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/BotCommands.Net.Tests/Modules/InvalidTestModule.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/BotCommands.Net.Tests/Parsing/ParserTests.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.BotCommands.Net/.idea/contentModel.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.BotCommands.Net/.idea/contentModel.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.BotCommands.Net/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.BotCommands.Net/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/BotCommands.Net.Example/Program.cs" beforeDir="false" afterPath="$PROJECT_DIR$/BotCommands.Net.Example/Program.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/BotCommands.Net.Example/bin/Debug/netcoreapp2.1/BotCommands.Net.Example.dll" beforeDir="false" afterPath="$PROJECT_DIR$/BotCommands.Net.Example/bin/Debug/netcoreapp2.1/BotCommands.Net.Example.dll" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/BotCommands.Net.Example/bin/Debug/netcoreapp2.1/BotCommands.Net.Example.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/BotCommands.Net.Example/bin/Debug/netcoreapp2.1/BotCommands.Net.Example.pdb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/BotCommands.Net.Example/bin/Debug/netcoreapp2.1/BotCommands.Net.dll" beforeDir="false" afterPath="$PROJECT_DIR$/BotCommands.Net.Example/bin/Debug/netcoreapp2.1/BotCommands.Net.dll" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/BotCommands.Net.Example/bin/Debug/netcoreapp2.1/BotCommands.Net.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/BotCommands.Net.Example/bin/Debug/netcoreapp2.1/BotCommands.Net.pdb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/BotCommands.Net.Example/obj/Debug/netcoreapp2.1/BotCommands.Net.Example.csprojAssemblyReference.cache" beforeDir="false" afterPath="$PROJECT_DIR$/BotCommands.Net.Example/obj/Debug/netcoreapp2.1/BotCommands.Net.Example.csprojAssemblyReference.cache" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/BotCommands.Net.Example/obj/Debug/netcoreapp2.1/BotCommands.Net.Example.dll" beforeDir="false" afterPath="$PROJECT_DIR$/BotCommands.Net.Example/obj/Debug/netcoreapp2.1/BotCommands.Net.Example.dll" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/BotCommands.Net.Example/obj/Debug/netcoreapp2.1/BotCommands.Net.Example.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/BotCommands.Net.Example/obj/Debug/netcoreapp2.1/BotCommands.Net.Example.pdb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/BotCommands.Net.Tests/BotCommands.Net.Tests.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/BotCommands.Net.Tests/BotCommands.Net.Tests.csproj" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/BotCommands.Net.Tests/Commands/TestCommandModule.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/BotCommands.Net.Tests/Context/TestContext.cs" beforeDir="false" afterPath="$PROJECT_DIR$/BotCommands.Net.Tests/Contexts/TestContext.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/BotCommands.Net.Tests/Services/TestService.cs" beforeDir="false" afterPath="$PROJECT_DIR$/BotCommands.Net.Tests/Services/TestService.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/BotCommands.Net.Tests/Tests.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/BotCommands.Net.Tests/bin/Debug/netcoreapp2.1/BotCommands.Net.Tests.dll" beforeDir="false" afterPath="$PROJECT_DIR$/BotCommands.Net.Tests/bin/Debug/netcoreapp2.1/BotCommands.Net.Tests.dll" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/BotCommands.Net.Tests/bin/Debug/netcoreapp2.1/BotCommands.Net.Tests.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/BotCommands.Net.Tests/bin/Debug/netcoreapp2.1/BotCommands.Net.Tests.pdb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/BotCommands.Net.Tests/bin/Debug/netcoreapp2.1/BotCommands.Net.dll" beforeDir="false" afterPath="$PROJECT_DIR$/BotCommands.Net.Tests/bin/Debug/netcoreapp2.1/BotCommands.Net.dll" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/BotCommands.Net.Tests/bin/Debug/netcoreapp2.1/BotCommands.Net.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/BotCommands.Net.Tests/bin/Debug/netcoreapp2.1/BotCommands.Net.pdb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/BotCommands.Net.Tests/obj/Debug/netcoreapp2.1/BotCommands.Net.Tests.Program.cs" beforeDir="false" afterPath="$PROJECT_DIR$/BotCommands.Net.Tests/obj/Debug/netcoreapp2.1/BotCommands.Net.Tests.Program.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/BotCommands.Net.Tests/obj/Debug/netcoreapp2.1/BotCommands.Net.Tests.csproj.CoreCompileInputs.cache" beforeDir="false" afterPath="$PROJECT_DIR$/BotCommands.Net.Tests/obj/Debug/netcoreapp2.1/BotCommands.Net.Tests.csproj.CoreCompileInputs.cache" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/BotCommands.Net.Tests/obj/Debug/netcoreapp2.1/BotCommands.Net.Tests.csprojAssemblyReference.cache" beforeDir="false" afterPath="$PROJECT_DIR$/BotCommands.Net.Tests/obj/Debug/netcoreapp2.1/BotCommands.Net.Tests.csprojAssemblyReference.cache" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/BotCommands.Net.Tests/obj/Debug/netcoreapp2.1/BotCommands.Net.Tests.dll" beforeDir="false" afterPath="$PROJECT_DIR$/BotCommands.Net.Tests/obj/Debug/netcoreapp2.1/BotCommands.Net.Tests.dll" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/BotCommands.Net.Tests/obj/Debug/netcoreapp2.1/BotCommands.Net.Tests.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/BotCommands.Net.Tests/obj/Debug/netcoreapp2.1/BotCommands.Net.Tests.pdb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/BotCommands.Net/Attributes/ModuleAliases.cs" beforeDir="false" afterPath="$PROJECT_DIR$/BotCommands.Net/Attributes/ModuleNames.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/BotCommands.Net/Builders/ModuleBuilder.cs" beforeDir="false" afterPath="$PROJECT_DIR$/BotCommands.Net/Builders/ModuleBuilder.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/BotCommands.Net/Entities/Module.cs" beforeDir="false" afterPath="$PROJECT_DIR$/BotCommands.Net/Entities/Module.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/BotCommands.Net/Interfaces/IContext.cs" beforeDir="false" afterPath="$PROJECT_DIR$/BotCommands.Net/Interfaces/IContext.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/BotCommands.Net/Matching/CommandMatcher.cs" beforeDir="false" afterPath="$PROJECT_DIR$/BotCommands.Net/Matching/CommandMatcher.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/BotCommands.Net/bin/Debug/netstandard2.0/BotCommands.Net.dll" beforeDir="false" afterPath="$PROJECT_DIR$/BotCommands.Net/bin/Debug/netstandard2.0/BotCommands.Net.dll" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/BotCommands.Net/bin/Debug/netstandard2.0/BotCommands.Net.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/BotCommands.Net/bin/Debug/netstandard2.0/BotCommands.Net.pdb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/BotCommands.Net/obj/Debug/netstandard2.0/BotCommands.Net.csproj.CoreCompileInputs.cache" beforeDir="false" afterPath="$PROJECT_DIR$/BotCommands.Net/obj/Debug/netstandard2.0/BotCommands.Net.csproj.CoreCompileInputs.cache" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/BotCommands.Net/obj/Debug/netstandard2.0/BotCommands.Net.dll" beforeDir="false" afterPath="$PROJECT_DIR$/BotCommands.Net/obj/Debug/netstandard2.0/BotCommands.Net.dll" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/BotCommands.Net/obj/Debug/netstandard2.0/BotCommands.Net.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/BotCommands.Net/obj/Debug/netstandard2.0/BotCommands.Net.pdb" afterDir="false" />
-    </list>
+    <list default="true" id="bcaaa82a-0cb2-4e3d-9557-580925b02e26" name="Default" comment="" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -143,8 +101,8 @@
       <file leaf-file-name="CommandExecutionTests.cs" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/BotCommands.Net.Tests/Execution/CommandExecutionTests.cs">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="344">
-              <caret line="31" column="30" lean-forward="true" selection-start-line="31" selection-start-column="30" selection-end-line="31" selection-end-column="30" />
+            <state relative-caret-position="378">
+              <caret line="31" column="30" selection-start-line="31" selection-start-column="30" selection-end-line="31" selection-end-column="30" />
               <folding>
                 <marker date="1537280660824" expanded="true" signature="6:355" ph="..." />
                 <marker date="1537280660824" expanded="true" signature="394:1948" ph="{...}" />
@@ -272,84 +230,12 @@
             <path>
               <item name="" type="13324e5d:SolutionExplorerViewPane$ProjectViewPaneTreeStructure$createRoot$1" />
               <item name="BotCommands.Net (3 projects)" type="977d5f41:SolutionExplorerNodeRider" />
-              <item name="BotCommands.Net" type="977d5f41:SolutionExplorerNodeRider" />
-              <item name="Attributes" type="977d5f41:SolutionExplorerNodeRider" />
-            </path>
-            <path>
-              <item name="" type="13324e5d:SolutionExplorerViewPane$ProjectViewPaneTreeStructure$createRoot$1" />
-              <item name="BotCommands.Net (3 projects)" type="977d5f41:SolutionExplorerNodeRider" />
-              <item name="BotCommands.Net" type="977d5f41:SolutionExplorerNodeRider" />
-              <item name="Builders" type="977d5f41:SolutionExplorerNodeRider" />
-            </path>
-            <path>
-              <item name="" type="13324e5d:SolutionExplorerViewPane$ProjectViewPaneTreeStructure$createRoot$1" />
-              <item name="BotCommands.Net (3 projects)" type="977d5f41:SolutionExplorerNodeRider" />
-              <item name="BotCommands.Net" type="977d5f41:SolutionExplorerNodeRider" />
-              <item name="Core" type="977d5f41:SolutionExplorerNodeRider" />
-            </path>
-            <path>
-              <item name="" type="13324e5d:SolutionExplorerViewPane$ProjectViewPaneTreeStructure$createRoot$1" />
-              <item name="BotCommands.Net (3 projects)" type="977d5f41:SolutionExplorerNodeRider" />
-              <item name="BotCommands.Net" type="977d5f41:SolutionExplorerNodeRider" />
-              <item name="Entities" type="977d5f41:SolutionExplorerNodeRider" />
-            </path>
-            <path>
-              <item name="" type="13324e5d:SolutionExplorerViewPane$ProjectViewPaneTreeStructure$createRoot$1" />
-              <item name="BotCommands.Net (3 projects)" type="977d5f41:SolutionExplorerNodeRider" />
-              <item name="BotCommands.Net" type="977d5f41:SolutionExplorerNodeRider" />
-              <item name="Execution" type="977d5f41:SolutionExplorerNodeRider" />
-            </path>
-            <path>
-              <item name="" type="13324e5d:SolutionExplorerViewPane$ProjectViewPaneTreeStructure$createRoot$1" />
-              <item name="BotCommands.Net (3 projects)" type="977d5f41:SolutionExplorerNodeRider" />
-              <item name="BotCommands.Net" type="977d5f41:SolutionExplorerNodeRider" />
-              <item name="Interfaces" type="977d5f41:SolutionExplorerNodeRider" />
-            </path>
-            <path>
-              <item name="" type="13324e5d:SolutionExplorerViewPane$ProjectViewPaneTreeStructure$createRoot$1" />
-              <item name="BotCommands.Net (3 projects)" type="977d5f41:SolutionExplorerNodeRider" />
-              <item name="BotCommands.Net" type="977d5f41:SolutionExplorerNodeRider" />
-              <item name="Matching" type="977d5f41:SolutionExplorerNodeRider" />
-            </path>
-            <path>
-              <item name="" type="13324e5d:SolutionExplorerViewPane$ProjectViewPaneTreeStructure$createRoot$1" />
-              <item name="BotCommands.Net (3 projects)" type="977d5f41:SolutionExplorerNodeRider" />
-              <item name="BotCommands.Net" type="977d5f41:SolutionExplorerNodeRider" />
-              <item name="Parsing" type="977d5f41:SolutionExplorerNodeRider" />
-            </path>
-            <path>
-              <item name="" type="13324e5d:SolutionExplorerViewPane$ProjectViewPaneTreeStructure$createRoot$1" />
-              <item name="BotCommands.Net (3 projects)" type="977d5f41:SolutionExplorerNodeRider" />
               <item name="BotCommands.Net.Example" type="977d5f41:SolutionExplorerNodeRider" />
             </path>
             <path>
               <item name="" type="13324e5d:SolutionExplorerViewPane$ProjectViewPaneTreeStructure$createRoot$1" />
               <item name="BotCommands.Net (3 projects)" type="977d5f41:SolutionExplorerNodeRider" />
               <item name="BotCommands.Net.Tests" type="977d5f41:SolutionExplorerNodeRider" />
-            </path>
-            <path>
-              <item name="" type="13324e5d:SolutionExplorerViewPane$ProjectViewPaneTreeStructure$createRoot$1" />
-              <item name="BotCommands.Net (3 projects)" type="977d5f41:SolutionExplorerNodeRider" />
-              <item name="BotCommands.Net.Tests" type="977d5f41:SolutionExplorerNodeRider" />
-              <item name="Execution" type="977d5f41:SolutionExplorerNodeRider" />
-            </path>
-            <path>
-              <item name="" type="13324e5d:SolutionExplorerViewPane$ProjectViewPaneTreeStructure$createRoot$1" />
-              <item name="BotCommands.Net (3 projects)" type="977d5f41:SolutionExplorerNodeRider" />
-              <item name="BotCommands.Net.Tests" type="977d5f41:SolutionExplorerNodeRider" />
-              <item name="Matching" type="977d5f41:SolutionExplorerNodeRider" />
-            </path>
-            <path>
-              <item name="" type="13324e5d:SolutionExplorerViewPane$ProjectViewPaneTreeStructure$createRoot$1" />
-              <item name="BotCommands.Net (3 projects)" type="977d5f41:SolutionExplorerNodeRider" />
-              <item name="BotCommands.Net.Tests" type="977d5f41:SolutionExplorerNodeRider" />
-              <item name="Modules" type="977d5f41:SolutionExplorerNodeRider" />
-            </path>
-            <path>
-              <item name="" type="13324e5d:SolutionExplorerViewPane$ProjectViewPaneTreeStructure$createRoot$1" />
-              <item name="BotCommands.Net (3 projects)" type="977d5f41:SolutionExplorerNodeRider" />
-              <item name="BotCommands.Net.Tests" type="977d5f41:SolutionExplorerNodeRider" />
-              <item name="Parsing" type="977d5f41:SolutionExplorerNodeRider" />
             </path>
           </expand>
           <select />
@@ -435,12 +321,12 @@
       <workItem from="1537190540837" duration="11541000" />
       <workItem from="1537258970826" duration="2175000" />
       <workItem from="1537265932190" duration="187000" />
-      <workItem from="1537266148512" duration="8286000" />
+      <workItem from="1537266148512" duration="8793000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="68441000" />
+    <option name="totallyTimeSpent" value="68948000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -453,18 +339,17 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1920" height="1080" extended-state="0" />
-    <editor active="true" />
     <layout>
       <window_info anchor="right" id="TODO" order="6" sideWeight="0.5130058" side_tool="true" visible="true" weight="0.2750533" />
       <window_info anchor="right" id="Errors In Solution" order="0" weight="0.32995737" />
       <window_info anchor="bottom" id="Event Log" order="0" sideWeight="0.50053304" side_tool="true" weight="0.32982087" />
-      <window_info active="true" anchor="bottom" id="Unit Tests" order="1" visible="true" weight="0.31075698" />
+      <window_info anchor="bottom" id="Unit Tests" order="1" visible="true" weight="0.31075698" />
       <window_info anchor="bottom" id="Database Changes" order="2" show_stripe_button="false" />
       <window_info anchor="bottom" id="Run" order="9" sideWeight="0.49946696" weight="0.32968128" />
       <window_info anchor="bottom" id="Version Control" order="3" weight="0.32982087" />
       <window_info anchor="bottom" id="Terminal" order="4" weight="0.32982087" />
       <window_info anchor="bottom" id="NuGet" order="5" weight="0.32982087" />
-      <window_info anchor="right" content_ui="combo" id="Project" order="5" sideWeight="0.4869942" visible="true" weight="0.2750533" />
+      <window_info active="true" anchor="right" content_ui="combo" id="Project" order="5" sideWeight="0.4869942" visible="true" weight="0.2750533" />
       <window_info anchor="bottom" id="Docker" order="6" show_stripe_button="false" />
       <window_info anchor="bottom" id="Build" order="13" weight="0.32968128" />
       <window_info anchor="right" id="Database" order="1" show_stripe_button="false" weight="0.32995737" />
@@ -1144,8 +1029,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/BotCommands.Net.Tests/Execution/CommandExecutionTests.cs">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="344">
-          <caret line="31" column="30" lean-forward="true" selection-start-line="31" selection-start-column="30" selection-end-line="31" selection-end-column="30" />
+        <state relative-caret-position="378">
+          <caret line="31" column="30" selection-start-line="31" selection-start-column="30" selection-end-line="31" selection-end-column="30" />
           <folding>
             <marker date="1537280660824" expanded="true" signature="6:355" ph="..." />
             <marker date="1537280660824" expanded="true" signature="394:1948" ph="{...}" />
