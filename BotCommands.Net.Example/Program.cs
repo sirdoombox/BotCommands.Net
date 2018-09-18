@@ -1,10 +1,7 @@
 ﻿using System;
-using System.ComponentModel;
-using System.Reflection;
 using System.Threading.Tasks;
 using BotCommands.Attributes;
 using BotCommands.Core;
-using BotCommands.Entities;
 using BotCommands.Interfaces;
 
 namespace BotCommands.Net.Example
@@ -19,6 +16,13 @@ namespace BotCommands.Net.Example
             cmdr.RegisterModule<MathsModule>();
             cmdr.RegisterModule<RemaindersTestModule>();
             cmdr.Prefix = "!";
+            cmdr.OnCommmandExecuted += (source, eventArgs) =>
+            {
+                Console.ForegroundColor = ConsoleColor.Red;
+                Console.Write($"{eventArgs.Status}");
+                Console.ForegroundColor = ConsoleColor.White;
+                Console.WriteLine($": {eventArgs.Context.Message}");
+            };
             while (true)
             {
                 var newContext = new ConsoleContext(Console.ReadLine());

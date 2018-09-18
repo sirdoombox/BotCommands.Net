@@ -1,19 +1,23 @@
 ﻿using System.Linq;
 using System.Threading.Tasks;
 using BotCommands.Entities;
+using BotCommands.Events;
 using BotCommands.Parsing;
 
 namespace BotCommands.Execution
 {
     internal sealed class CommandExecution
     {
-        // TODO: More comprehensive execution pipeline with logging and the like.
         
-        internal Task ExecuteCommand(MatchedCommand commandMatch, ParsedCommand parsedCommand)
+        internal (Task,CommandExecutedEventArgs) ExecuteCommand(MatchedCommand commandMatch, ParsedCommand parsedCommand)
         {
-            var commandMethod = commandMatch.Command.Method;
+            var commandMethod = commandMatch.Command?.Method;
+            if (commandMethod is null)
+                return (Task.CompletedTask,
+                    new CommandExecutedEventArgs(EventExecutionStatus.CommandNotFound, parsedCommand.Context));
             var argArray = ConstructArgumentArray(commandMatch, parsedCommand);
-            return (Task)commandMethod.Invoke(commandMatch.Command.ContainingTypeInstance, argArray);
+            return ((Task)commandMethod.Invoke(commandMatch.Command.ContainingTypeInstance, argArray),
+                new CommandExecutedEventArgs(EventExecutionStatus.Executed, parsedCommand.Context));
         }
         
         private object[] ConstructArgumentArray(MatchedCommand matchedCommand, ParsedCommand parsedCommand)

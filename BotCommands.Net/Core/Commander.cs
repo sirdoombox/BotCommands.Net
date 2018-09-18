@@ -1,10 +1,9 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.Linq;
-using System.Runtime.InteropServices.ComTypes;
 using System.Threading.Tasks;
 using BotCommands.Builders;
 using BotCommands.Entities;
+using BotCommands.Events;
 using BotCommands.Execution;
 using BotCommands.Interfaces;
 using BotCommands.Matching;
@@ -16,6 +15,8 @@ namespace BotCommands.Core
     {
         public string Prefix { get; set; }
         public int PrefixLength => Prefix.Length;
+
+        public event CommandExecutedEvent<TContext> OnCommmandExecuted;
 
         private readonly ModuleBuilder<TContext> _moduleBuilder;
         private readonly Parser<TContext> _parser;
@@ -90,7 +91,9 @@ namespace BotCommands.Core
             {
                 var parsedCommand = _parser.ParseContext(ctx, PrefixLength);
                 var commandMatch = _matcher.MatchCommand(_registeredModules, parsedCommand);
-                await _execution.ExecuteCommand(commandMatch,parsedCommand);
+                var result = _execution.ExecuteCommand(commandMatch, parsedCommand);
+                await result.Item1;
+                OnCommmandExecuted?.Invoke(this, result.Item2);
                 // TODO: Add a bunch of new attributes.
             }
         }

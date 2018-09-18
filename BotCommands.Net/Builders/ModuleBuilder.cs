@@ -26,6 +26,14 @@ namespace BotCommands.Builders
             _dependencies.Add(obj.GetType(), obj);
         }
 
+        internal List<Module<TContext>> BuildAllModules()
+        {
+            var types = Assembly.GetCallingAssembly()
+                .GetTypes()
+                .Where(x => typeof(IModule<TContext>).IsAssignableFrom(x) && !x.IsNested);
+            return types.Select(BuildModule).ToList();
+        }
+
         internal Module<TContext> BuildModule<T>() where T : IModule<TContext> =>
             BuildModule(typeof(T));
         

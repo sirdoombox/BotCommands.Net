@@ -1,5 +1,4 @@
-﻿using System.Linq;
-using BotCommands.Parsing;
+﻿using BotCommands.Parsing;
 using BotCommands.Tests.Context;
 using Xunit;
 

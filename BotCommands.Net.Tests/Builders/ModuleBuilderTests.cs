@@ -1,10 +1,7 @@
 ﻿using System;
 using System.Linq;
-using System.Threading.Tasks;
-using BotCommands.Attributes;
 using BotCommands.Builders;
 using BotCommands.Entities;
-using BotCommands.Interfaces;
 using BotCommands.Tests.Commands;
 using BotCommands.Tests.Context;
 using BotCommands.Tests.Services;
@@ -63,6 +60,13 @@ namespace BotCommands.Tests.Builders
             var twiceNestedChild = firstChild.Children.First();
             Assert.Equal(firstChild.Instance.GetType(), typeof(TestModule.TestChildModule));
             Assert.Equal(twiceNestedChild.Instance.GetType(), typeof(TestModule.TestChildModule.TestTwiceNestedChildModule));
+        }
+
+        [Fact]
+        public void BuildAllModules_ShouldReturnValidModuleList()
+        {
+            var moduleBuilder = new ModuleBuilder<TestContext>();
+            Assert.Throws<Exception>(() => moduleBuilder.BuildAllModules());
         }
 
         private Module<TestContext> BuildValidModule()

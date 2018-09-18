@@ -1,11 +1,8 @@
-﻿using System.Diagnostics;
-using System.Threading.Tasks;
+﻿using System.Threading.Tasks;
 using BotCommands.Attributes;
-using BotCommands.Entities;
 using BotCommands.Interfaces;
 using BotCommands.Tests.Context;
 using BotCommands.Tests.Services;
-using Xunit;
 
 namespace BotCommands.Tests.Commands
 {

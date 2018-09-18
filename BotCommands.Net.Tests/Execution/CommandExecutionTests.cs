@@ -1,5 +1,4 @@
 ﻿using System.Collections.Generic;
-using System.Runtime.InteropServices;
 using System.Threading.Tasks;
 using BotCommands.Builders;
 using BotCommands.Entities;
@@ -28,7 +27,7 @@ namespace BotCommands.Tests.Execution
         private async Task CommandExecutionShouldNotThrowExceptions_WhenValidCommandIsExecuted(string commandText)
         {
             var matchedCommand = MatchCommand(commandText);
-            await _execution.ExecuteCommand(matchedCommand.Item1, matchedCommand.Item2);
+            await _execution.ExecuteCommand(matchedCommand.Item1, matchedCommand.Item2).Item1;
             Assert.True(true);
         }
         
