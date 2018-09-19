@@ -21,7 +21,7 @@ namespace BotCommands.Core
         private readonly ModuleBuilder<TContext> _moduleBuilder;
         private readonly Parser<TContext> _parser;
         private readonly CommandMatcher<TContext> _matcher;
-        private readonly CommandExecution _execution;
+        private readonly CommandExecution<TContext> _execution;
         
         private List<Module<TContext>> _registeredModules;
 
@@ -31,7 +31,7 @@ namespace BotCommands.Core
             _parser = new Parser<TContext>();
             _registeredModules = new List<Module<TContext>>();
             _matcher = new CommandMatcher<TContext>();
-            _execution = new CommandExecution();
+            _execution = new CommandExecution<TContext>();
         }
 
         /// <summary>

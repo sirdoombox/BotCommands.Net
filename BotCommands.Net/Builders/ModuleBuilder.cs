@@ -70,6 +70,8 @@ namespace BotCommands.Builders
                 paramsInstanceArray[i] = _dependencies[paramsLayout[i]];
             }
             newModule.Instance = Activator.CreateInstance(type, paramsInstanceArray);
+            newModule.ModuleRequiresPermissionValidation =
+                type.GetInterfaces().Any(x => x == typeof(IModulePermissions<TContext>));
             BuildModuleCommands(newModule);
             BuildModuleRecursive(newModule);
             return newModule;
@@ -77,23 +79,22 @@ namespace BotCommands.Builders
 
         private void BuildModuleCommands(Module<TContext> module)
         {
-            var commands = new List<Command>();
+            var commands = new List<Command<TContext>>();
             var allMethods = module.Instance.GetType().GetMethods();
             foreach (var method in allMethods)
             {
+                // TODO: Find a better way to filter this method out.
+                if (method.Name == "UserHasSufficientPermissions") continue; 
                 if (!ParameterIsCommandContext(method.GetParameters().FirstOrDefault())) continue;
-                var newCommand = new Command
+                var newCommand = new Command<TContext>
                 {
                     Method = method,
                     Arguments = method.GetParameters().Select(x => x.ParameterType).ToList(),
-                    SupportsRemainders = method.GetCustomAttribute<CommandSupportsRemainders>() != null,
-                    ContainingTypeInstance = module.Instance
+                    DeclaringModuleInstance = module.Instance,
+                    DeclaringModule = module
                 };
-                if(newCommand.SupportsRemainders && newCommand.Arguments.Last() != typeof(string))
-                    throw new Exception($"In order for {newCommand.Method.Name} in {module.Instance.GetType().Name} to support remainders, the final argument MUST be a string.");
                 commands.Add(newCommand);
             }
-
             module.Commands = commands;
         }
 

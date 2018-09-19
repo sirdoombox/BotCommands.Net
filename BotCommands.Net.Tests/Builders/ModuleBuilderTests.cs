@@ -16,7 +16,7 @@ namespace BotCommands.Tests.Builders
         public void BuiltTestModule_ShouldHaveTwoCommands()
         {
             var builtModule = BuildValidModule();
-            Assert.Equal(builtModule.Commands.Count, 2);
+            Assert.Equal(builtModule.Commands.Count, 4);
         }
 
         [Fact]
@@ -25,7 +25,9 @@ namespace BotCommands.Tests.Builders
             var builtModule = BuildValidModule();
             Assert.Collection(builtModule.Commands, 
                 item => Assert.Equal(item.ArgCountWithoutContext, 0),
-                item => Assert.Equal(item.ArgCountWithoutContext, 1));
+                item => Assert.Equal(item.ArgCountWithoutContext, 1),
+                item => Assert.Equal(item.ArgCountWithoutContext, 2),
+                item => Assert.Equal(item.ArgCountWithoutContext, 3));
         }
 
         [Fact]

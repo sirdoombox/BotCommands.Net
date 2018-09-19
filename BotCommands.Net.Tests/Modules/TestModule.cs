@@ -25,6 +25,16 @@ namespace BotCommands.Tests.Commands
         {
             
         }
+
+        public async Task SomeMethodWithArrayArgument(TestContext ctx, bool[] bools, string testString)
+        {
+            
+        }
+
+        public async Task SomeOtherMethodWithArrayArguments(TestContext ctx, string testString, int[] intArray, bool boolTest)
+        {
+            
+        }
         
         [ModuleNames("TestChildModule")]
         public class TestChildModule : IModule<TestContext>
@@ -47,7 +57,7 @@ namespace BotCommands.Tests.Commands
             }
             
             [ModuleNames("TestTwiceNestedChildModule")]
-            public class TestTwiceNestedChildModule : IModule<TestContext>
+            public class TestTwiceNestedChildModule : IModule<TestContext>, IModulePermissions<TestContext>
             {          
                 public TestService Service { get; }
         
@@ -59,6 +69,11 @@ namespace BotCommands.Tests.Commands
                 public Task Execute(TestContext ctx)
                 {
                     return Task.CompletedTask;
+                }
+
+                public bool UserHasSufficientPermissions(TestContext ctx)
+                {
+                    return false;
                 }
             }
         }

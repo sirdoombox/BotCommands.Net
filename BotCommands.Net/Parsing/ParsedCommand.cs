@@ -3,14 +3,15 @@ using BotCommands.Interfaces;
 
 namespace BotCommands.Parsing
 {
-    internal struct ParsedCommand
+    internal class ParsedCommand
     {
-        internal readonly IReadOnlyList<ParsedArgument> CommandArgs;
+        internal readonly ParsedArgument FullArgsStart;
+        internal ParsedArgument CommandArgsStart;
         internal readonly IContext Context;
 
-        public ParsedCommand(IReadOnlyList<ParsedArgument> commandArgs, IContext context)
+        public ParsedCommand(ParsedArgument fullArgsStart, IContext context)
         {
-            CommandArgs = commandArgs;
+            FullArgsStart = fullArgsStart;
             Context = context;
         }
     }

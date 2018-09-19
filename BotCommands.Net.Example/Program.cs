@@ -1,10 +1,11 @@
 ﻿using System;
+using System.Linq;
 using System.Threading.Tasks;
 using BotCommands.Attributes;
 using BotCommands.Core;
 using BotCommands.Interfaces;
 
-namespace BotCommands.Net.Example
+namespace BotCommands.Example
 {
     // TODO: Tidy up example and make it actually good.
 
@@ -32,9 +33,14 @@ namespace BotCommands.Net.Example
     }
     
     [ModuleNames("Maths")]
-    [ModuleRequiresPermissions(typeof(AdminCommandPermissions))]
-    public class MathsModule : IModule<ConsoleContext>
+    public class MathsModule : IModule<ConsoleContext>, IModulePermissions<ConsoleContext>
     {
+        
+        public bool UserHasSufficientPermissions(ConsoleContext ctx)
+        {
+            return true;
+        }
+        
         public Task Execute(ConsoleContext ctx)
         {
             Console.WriteLine("Invalid use of command - Use !Maths Add");
@@ -58,11 +64,11 @@ namespace BotCommands.Net.Example
         }
         
         [ModuleNames("Multiply")]
-        public class MultiplySubModule : IModule<ConsoleContext>
+        public class MultiplySubModule : IModule<ConsoleContext>, IModulePermissions<ConsoleContext>
         {
             public Task Execute(ConsoleContext ctx)
             {
-                Console.WriteLine("Invalid use of !Mats Multiply - please supply 2 numbers");
+                Console.WriteLine("Invalid use of !Maths Multiply - please supply 2 numbers");
                 return Task.CompletedTask;
             }
 
@@ -70,6 +76,11 @@ namespace BotCommands.Net.Example
             {
                 Console.WriteLine($"Result: {a} x {b} = {a*b}");
                 return Task.CompletedTask;
+            }
+
+            public bool UserHasSufficientPermissions(ConsoleContext ctx)
+            {
+                return false;
             }
         }
     }
@@ -82,24 +93,21 @@ namespace BotCommands.Net.Example
             return Task.CompletedTask;
         }
 
-        [CommandSupportsRemainders]
-        public Task ThreeArgRemaindersTest(ConsoleContext ctx, bool testBool, int testInt, string remainderString)
+        public Task ThreeArgRemaindersTest(ConsoleContext ctx, bool testBool, int testInt, string[] remainderString)
         {
-            Console.WriteLine($"Bool: {testBool} | Int: {testInt} | Remainder: '{remainderString}'");
+            Console.WriteLine($"Bool: {testBool} | Int: {testInt} | Remainder: '{remainderString.Aggregate((x,y) => $"{x} {y}")}'");
             return Task.CompletedTask;
         }
         
-        [CommandSupportsRemainders]
-        public Task RemaindersTest(ConsoleContext ctx, int testInt, string remainderString)
+        public Task RemaindersTest(ConsoleContext ctx, int testInt, string[] remainderString)
         {
-            Console.WriteLine($"IntVal: {testInt} | Remainders: '{remainderString}'");
+            Console.WriteLine($"IntVal: {testInt} | Remainders: '{remainderString.Aggregate((x,y) => $"{x} {y}")}'");
             return Task.CompletedTask;
         }
         
-        [CommandSupportsRemainders]
-        public Task OtherRemaindersTest(ConsoleContext ctx, string remainderString)
+        public Task OtherRemaindersTest(ConsoleContext ctx, string[] remainderString)
         {
-            Console.WriteLine($"Remainders: '{remainderString}'");
+            Console.WriteLine($"Remainders: '{remainderString.Aggregate((x,y) => $"{x} {y}")}'");
             return Task.CompletedTask;
         }
     }

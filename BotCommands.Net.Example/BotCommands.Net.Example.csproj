@@ -2,6 +2,7 @@
   <PropertyGroup>
     <OutputType>Exe</OutputType>
     <TargetFramework>netcoreapp2.1</TargetFramework>
+    <RootNamespace>BotCommands.Example</RootNamespace>
   </PropertyGroup>
   <ItemGroup>
     <ProjectReference Include="..\BotCommands.Net\BotCommands.Net.csproj" />

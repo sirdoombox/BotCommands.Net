@@ -15,12 +15,16 @@ namespace BotCommands.Tests.Parsing
         {
             var context = new TestContext{Message = data};
             var parserResult = _parser.ParseContext(context, 1);
-            Assert.Collection(parserResult.CommandArgs, 
-                item => Assert.Equal(item.ArgType, typeof(string)), 
-                item => Assert.Equal(item.ArgType, typeof(int)),
-                item => Assert.Equal(item.ArgType, typeof(bool)),
-                item => Assert.Equal(item.ArgType, typeof(double)),
-                item => Assert.Equal(item.ArgType, typeof(string)));
+            var currArg = parserResult.FullArgsStart;
+            Assert.Equal(currArg.ArgType, typeof(string));
+            currArg = currArg.Next;
+            Assert.Equal(currArg.ArgType, typeof(int));
+            currArg = currArg.Next;
+            Assert.Equal(currArg.ArgType, typeof(bool));
+            currArg = currArg.Next;
+            Assert.Equal(currArg.ArgType, typeof(double));
+            currArg = currArg.Next;
+            Assert.Equal(currArg.ArgType, typeof(string));
         }
         
         [Theory]
@@ -30,12 +34,16 @@ namespace BotCommands.Tests.Parsing
         {
             var context = new TestContext {Message = data};
             var parserResult = _parser.ParseContext(context, 1);
-            Assert.Collection(parserResult.CommandArgs, 
-                item => Assert.Equal(item.ArgType, typeof(string)),
-                item => Assert.Equal(item.ArgType, typeof(bool)), 
-                item => Assert.Equal(item.ArgType, typeof(int)),
-                item => Assert.Equal(item.ArgType, typeof(string)),
-                item => Assert.Equal(item.ArgType, typeof(double)));
+            var currArg = parserResult.FullArgsStart;
+            Assert.Equal(currArg.ArgType, typeof(string));
+            currArg = currArg.Next;
+            Assert.Equal(currArg.ArgType, typeof(bool));
+            currArg = currArg.Next;
+            Assert.Equal(currArg.ArgType, typeof(int));
+            currArg = currArg.Next;
+            Assert.Equal(currArg.ArgType, typeof(string));
+            currArg = currArg.Next;
+            Assert.Equal(currArg.ArgType, typeof(double));
         }
     }
 }

@@ -10,92 +10,75 @@ namespace BotCommands.Matching
     internal class CommandMatcher<TContext> where TContext : IContext
     {
         
-        internal MatchedCommand MatchCommand(IReadOnlyList<Module<TContext>> modules, ParsedCommand command)
+        internal Command<TContext> MatchCommand(IReadOnlyList<Module<TContext>> modules, ParsedCommand command)
         {
-            var commandArgs = command.CommandArgs;
+            var commandArgs = command.FullArgsStart;
             if (commandArgs is null)
-                return default(MatchedCommand);
-            if (commandArgs.FirstOrDefault()?.ArgType != typeof(string))
-                return default(MatchedCommand);
+                return default(Command<TContext>);
+            if (commandArgs.ArgType != typeof(string))
+                return default(Command<TContext>);
             var matchModule = modules.FirstOrDefault(x =>
-                ModuleIsMatchToString(x, (string) commandArgs.FirstOrDefault()?.ArgObj));
+                ModuleIsMatchToString(x, (string)commandArgs.ArgObj));
             if (matchModule is null)
-                return default(MatchedCommand);
+                return default(Command<TContext>);
             var matchedSubModule = TryMatchSubModule(matchModule, command);
-            var matchedCommand = TryMatchCommand(matchedSubModule.Item2, matchedSubModule.Item1, command);
-            return new MatchedCommand(matchedCommand.command, matchedSubModule.submoduleIncrement, matchedCommand.remainderIncrement);
+            command.CommandArgsStart = matchedSubModule.newStart;
+            var matchedCommand = TryMatchCommand(matchedSubModule.Item2, command);
+            return matchedCommand;
         }
 
         private bool ModuleIsMatchToString(Module<TContext> module, string toCompare) =>
             module.Names.Any(x => string.Compare(x, toCompare, StringComparison.InvariantCultureIgnoreCase) == 0);
 
-        private (int submoduleIncrement, Module<TContext> matchSubmodule) TryMatchSubModule(Module<TContext> module, ParsedCommand command)
+        private (ParsedArgument newStart, Module<TContext> matchSubmodule) TryMatchSubModule(Module<TContext> module, ParsedCommand command)
         {
-            var increment = 1;
+            var arg = command.FullArgsStart.Next;
             while (true)
             {
-                if (increment >= command.CommandArgs.Count)
-                    return (increment, module);
-                var arg = command.CommandArgs[increment];
+                if (arg == null)
+                    return (null, module);
                 if (arg.ArgType != typeof(string)) 
-                    return (increment,module);
-                var matchModule = module.Children?.FirstOrDefault(x => ModuleIsMatchToString(x, (string) arg.ArgObj));
+                    return (arg, module);
+                var matchModule = module.Children?.FirstOrDefault(x => ModuleIsMatchToString(x, (string)arg.ArgObj));
                 if (matchModule is null) 
-                    return (increment,module);
+                    return (arg, module);
                 module = matchModule;
-                increment++;
+                arg = arg.Next;
             }
         }
 
-        private (Command command, int remainderIncrement) TryMatchCommand(Module<TContext> module, int commandArgStart, ParsedCommand command)
+        private Command<TContext> TryMatchCommand(Module<TContext> module, ParsedCommand command)
         {
-            //var commandArgs = command.CommandArgs.Skip(commandArgStart);
-            var hardCommandMatch = 
-                module.Commands.FirstOrDefault(x => ArgumentSignatureMatch(x, command, commandArgStart));
-            if (hardCommandMatch != null)
-                return (hardCommandMatch,-1);
-            if (!module.Commands.Any(x => x.SupportsRemainders))
-                return (null,-1);
-            var remainderIncrement = -1;
-            var commandMatchWithRemainders =
-                module.Commands.Where(x => x.SupportsRemainders).FirstOrDefault(x =>
-                {
-                    var sigMatch = ArgumentSignatureMatchWithRemainders(x, command, commandArgStart);
-                    if (sigMatch < 0) return false;
-                    remainderIncrement = sigMatch;
-                    return true;
-                });
-            return (commandMatchWithRemainders, remainderIncrement);
+            return module.Commands.FirstOrDefault(x => ArgumentSignatureMatch(x, command));
         }
 
-        private bool ArgumentSignatureMatch(Command command, ParsedCommand parsedCommand, int increment)
+        private bool ArgumentSignatureMatch(Command<TContext> command, ParsedCommand parsedCommand)
         {
-            if (command.ArgCountWithoutContext != parsedCommand.CommandArgs.Count - increment)
+            if (command.ArgCountWithoutContext <= 0 && parsedCommand.CommandArgsStart is null)
+                return true;
+            if (command.ArgCountWithoutContext <= 0)
                 return false;
-            foreach (var arg in command.ArgumentsWithoutContext)
+            var currArg = parsedCommand.CommandArgsStart;
+            for(var i = 0; i < command.ArgCountWithoutContext;)
             {
-                if (parsedCommand.CommandArgs[increment].ArgType != arg)
+                var commandArg = command.ArgumentsWithoutContext[i];
+                if (commandArg.IsArray && currArg.ArgType.IsAssignableFrom(commandArg.GetElementType()))
+                {
+                    currArg = currArg.Next;
+                    if (currArg == null && command.ArgumentsWithoutContext.Count == i)
+                        return true;
+                    if (currArg == null)
+                        return false;
+                    if (!currArg.ArgType.IsAssignableFrom(commandArg.GetElementType()))
+                        i++;
+                    continue;
+                }
+                if (commandArg != currArg.ArgType)
                     return false;
-                increment++;
+                i++;
+                currArg = currArg.Next;
             }
             return true;
-        }
-
-        private int ArgumentSignatureMatchWithRemainders(Command command, ParsedCommand parsedCommand, int subModuleIncrement)
-        {
-            var increment = subModuleIncrement;
-            if (command.ArgCountWithoutContext == 1)
-                return 1;
-            if (command.ArgumentsWithoutContext.Last() != typeof(string))
-                return 0;
-            var argsWithoutRemainderString = command.ArgumentsWithoutContext.Reverse().Skip(1).Reverse();
-            foreach (var arg in argsWithoutRemainderString)
-            {
-                if (parsedCommand.CommandArgs[increment].ArgType != arg)
-                    return -1;
-                increment++;
-            }
-            return increment;
         }
     }
 }

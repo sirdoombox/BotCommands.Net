@@ -7,6 +7,7 @@ namespace BotCommands.Parsing
         internal Type ArgType { get; }
         internal string StringRepresentation { get; }
         internal object ArgObj { get; }
+        internal ParsedArgument Next { get; set; }
                 
         internal ParsedArgument(Type argType, string stringRepresentation, object argObj)
         {
