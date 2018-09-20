@@ -21,7 +21,7 @@ namespace BotCommands.Tests.Commands
             
         }
         
-        public async Task SomeOtherMethod(TestContext ctx, string testArg)
+        public async Task SomeOtherMethod(TestContext ctx, string[] testArg)
         {
             
         }
