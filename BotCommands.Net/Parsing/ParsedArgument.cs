@@ -8,6 +8,7 @@ namespace BotCommands.Parsing
         internal string StringRepresentation { get; }
         internal object ArgObj { get; }
         internal ParsedArgument Next { get; set; }
+        internal bool IsPartOfArray { get; set; } = false;
                 
         internal ParsedArgument(Type argType, string stringRepresentation, object argObj)
         {

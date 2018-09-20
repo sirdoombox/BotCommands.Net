@@ -64,6 +64,7 @@ namespace BotCommands.Matching
                 var commandArg = command.ArgumentsWithoutContext[i];
                 if (commandArg.IsArray && currArg.ArgType.IsAssignableFrom(commandArg.GetElementType()))
                 {
+                    currArg.IsPartOfArray = true;
                     currArg = currArg.Next;
                     if (currArg == null && command.ArgumentsWithoutContext.Count == i)
                         return true;

@@ -39,7 +39,7 @@ namespace BotCommands.Execution
                 if (commandArg.IsArray)
                 {
                     var arrayList = new List<object>();
-                    while (currArg.ArgType.IsAssignableFrom(commandArg.GetElementType()))
+                    while (currArg.IsPartOfArray)
                     {
                         arrayList.Add(currArg.ArgObj);
                         if (currArg.Next == null)
@@ -49,7 +49,6 @@ namespace BotCommands.Execution
                     var newArray = Array.CreateInstance(commandArg.GetElementType(), arrayList.Count);
                     Array.Copy(arrayList.ToArray(), newArray, newArray.Length);
                     argArray[j] = newArray;
-                    i++;
                     continue;
                 }
                 argArray[j] = currArg?.ArgObj;
