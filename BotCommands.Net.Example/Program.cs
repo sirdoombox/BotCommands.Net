@@ -3,6 +3,7 @@ using System.Linq;
 using System.Threading.Tasks;
 using BotCommands.Attributes;
 using BotCommands.Core;
+using BotCommands.Events;
 using BotCommands.Interfaces;
 
 namespace BotCommands.Example
@@ -15,11 +16,21 @@ namespace BotCommands.Example
         {
             var cmdr = new Commander<ConsoleContext>();
             cmdr.RegisterModule<MathsModule>();
-            cmdr.RegisterModule<RemaindersTestModule>();
             cmdr.Prefix = "!";
             cmdr.OnCommmandExecuted += (source, eventArgs) =>
             {
-                Console.ForegroundColor = ConsoleColor.Red;
+                switch (eventArgs.Status)
+                {
+                    case EventExecutionStatus.Executed:
+                        Console.ForegroundColor = ConsoleColor.Green;
+                        break;
+                    case EventExecutionStatus.InsufficientPermissions:
+                        Console.ForegroundColor = ConsoleColor.Yellow;
+                        break;
+                    case EventExecutionStatus.CommandNotFound:
+                        Console.ForegroundColor = ConsoleColor.Red;
+                        break;
+                }
                 Console.Write($"{eventArgs.Status}");
                 Console.ForegroundColor = ConsoleColor.White;
                 Console.WriteLine($": {eventArgs.Context.Message}");
@@ -33,14 +44,8 @@ namespace BotCommands.Example
     }
     
     [ModuleNames("Maths")]
-    public class MathsModule : IModule<ConsoleContext>, IModulePermissions<ConsoleContext>
+    public class MathsModule : IModule<ConsoleContext>
     {
-        
-        public bool UserHasSufficientPermissions(ConsoleContext ctx)
-        {
-            return true;
-        }
-        
         public Task Execute(ConsoleContext ctx)
         {
             Console.WriteLine("Invalid use of command - Use !Maths Add");
@@ -52,13 +57,15 @@ namespace BotCommands.Example
         {
             public Task Execute(ConsoleContext ctx)
             {
-                Console.WriteLine("Invalid use of !Maths Add - please supply 2 numbers.");
+                Console.WriteLine("Invalid use of !Maths Add - please supply at least 1 number.");
                 return Task.CompletedTask;
             }
             
-            public Task Add(ConsoleContext ctx, int a, int b)
+            public Task Add(ConsoleContext ctx, int[] input)
             {
-                Console.WriteLine($"Result: {a} + {b} = {a+b}");
+                var stringRepresentation = input.Select(x => x.ToString()).Aggregate((x, y) => $"{x} + {y}");
+                var result = input.Aggregate((x, y) => x + y);
+                Console.WriteLine($"Result: {stringRepresentation} = {result}");
                 return Task.CompletedTask;
             }
         }
@@ -68,47 +75,24 @@ namespace BotCommands.Example
         {
             public Task Execute(ConsoleContext ctx)
             {
-                Console.WriteLine("Invalid use of !Maths Multiply - please supply 2 numbers");
+                Console.WriteLine("Invalid use of !Maths Multiply - please supply at least 1 number.");
                 return Task.CompletedTask;
             }
 
-            public Task Multiply(ConsoleContext ctx, int a, int b)
+            public Task Multiply(ConsoleContext ctx, int[] input)
             {
-                Console.WriteLine($"Result: {a} x {b} = {a*b}");
+                var stringRepresentation = input.Select(x => x.ToString()).Aggregate((x, y) => $"{x} x {y}");
+                var result = input.Aggregate((x, y) => x * y);
+                Console.WriteLine($"Result: {stringRepresentation} = {result}");
                 return Task.CompletedTask;
             }
 
             public bool UserHasSufficientPermissions(ConsoleContext ctx)
             {
-                return false;
+                // Provide your own logic to test if the user who provided the context is sufficiently
+                // elevated to utilise this command.
+                return true;
             }
-        }
-    }
-
-    [ModuleNames("RemaindersTest")]
-    public class RemaindersTestModule : IModule<ConsoleContext>
-    {
-        public Task Execute(ConsoleContext ctx)
-        {
-            return Task.CompletedTask;
-        }
-
-        public Task ThreeArgRemaindersTest(ConsoleContext ctx, bool testBool, int testInt, string[] remainderString)
-        {
-            Console.WriteLine($"Bool: {testBool} | Int: {testInt} | Remainder: '{remainderString.Aggregate((x,y) => $"{x} {y}")}'");
-            return Task.CompletedTask;
-        }
-        
-        public Task RemaindersTest(ConsoleContext ctx, int testInt, string[] remainderString)
-        {
-            Console.WriteLine($"IntVal: {testInt} | Remainders: '{remainderString.Aggregate((x,y) => $"{x} {y}")}'");
-            return Task.CompletedTask;
-        }
-        
-        public Task OtherRemaindersTest(ConsoleContext ctx, string[] remainderString)
-        {
-            Console.WriteLine($"Remainders: '{remainderString.Aggregate((x,y) => $"{x} {y}")}'");
-            return Task.CompletedTask;
         }
     }
 
