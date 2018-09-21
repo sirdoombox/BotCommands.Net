@@ -2,8 +2,10 @@
 using System.Linq;
 using BotCommands.Builders;
 using BotCommands.Entities;
-using BotCommands.Tests.Commands;
-using BotCommands.Tests.Context;
+using BotCommands.Tests.Contexts;
+using BotCommands.Tests.Modules;
+using BotCommands.Tests.Modules.InvalidTestModules;
+using BotCommands.Tests.Modules.ValidTestModules;
 using BotCommands.Tests.Services;
 using Xunit;
 
@@ -44,7 +46,7 @@ namespace BotCommands.Tests.Builders
         public void BuildingModuleWithoutNamesAttribute_ShouldThrowException()
         {
             var moduleBuilder = new ModuleBuilder<TestContext>();
-            Assert.Throws<Exception>(() => moduleBuilder.BuildModule<InvalidTestModule>());
+            Assert.Throws<Exception>(() => moduleBuilder.BuildModule<InvalidTestModuleNoNamesAttribute>());
         }
 
         [Fact]
@@ -62,6 +64,14 @@ namespace BotCommands.Tests.Builders
             var twiceNestedChild = firstChild.Children.First();
             Assert.Equal(firstChild.Instance.GetType(), typeof(TestModule.TestChildModule));
             Assert.Equal(twiceNestedChild.Instance.GetType(), typeof(TestModule.TestChildModule.TestTwiceNestedChildModule));
+        }
+
+        [Fact]
+        public void ModuleWithInvalidCommand_ShouldThrowException()
+        {
+            var moduleBuilder = new ModuleBuilder<TestContext>();
+            Assert.Throws<Exception>(() =>
+                moduleBuilder.BuildModule<InvalidTestModuleIncorrectCommandArgumentLayout>());
         }
 
         [Fact]

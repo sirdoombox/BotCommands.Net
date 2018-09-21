@@ -1,10 +1,10 @@
 ﻿using System.Threading.Tasks;
 using BotCommands.Interfaces;
-using BotCommands.Tests.Context;
+using BotCommands.Tests.Contexts;
 
-namespace BotCommands.Tests.Commands
+namespace BotCommands.Tests.Modules.InvalidTestModules
 {
-    public class InvalidTestModule : IModule<TestContext>
+    public class InvalidTestModuleNoNamesAttribute : IModule<TestContext>
     {
         public Task Execute(TestContext ctx)
         {

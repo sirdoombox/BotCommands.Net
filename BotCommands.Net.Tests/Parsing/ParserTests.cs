@@ -1,5 +1,5 @@
 ﻿using BotCommands.Parsing;
-using BotCommands.Tests.Context;
+using BotCommands.Tests.Contexts;
 using Xunit;
 
 namespace BotCommands.Tests.Parsing

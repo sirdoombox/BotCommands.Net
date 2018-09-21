@@ -13,7 +13,6 @@ namespace BotCommands.Execution
 {
     internal sealed class CommandExecution<TContext> where TContext : IContext
     {
-        
         internal (Task,CommandExecutedEventArgs) ExecuteCommand(Command<TContext> commandMatch, ParsedCommand parsedCommand)
         {
             var commandMethod = commandMatch?.Method;
@@ -29,7 +28,6 @@ namespace BotCommands.Execution
         
         private object[] ConstructArgumentArray(Command<TContext> matchedCommand, ParsedCommand parsedCommand)
         {
-            // TODO: Fix this so it works properly.
             var argArray = new object[matchedCommand.Arguments.Count];
             argArray[0] = parsedCommand.Context;
             var currArg = parsedCommand.CommandArgsStart;

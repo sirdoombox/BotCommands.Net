@@ -3,8 +3,8 @@ using BotCommands.Builders;
 using BotCommands.Entities;
 using BotCommands.Matching;
 using BotCommands.Parsing;
-using BotCommands.Tests.Commands;
-using BotCommands.Tests.Context;
+using BotCommands.Tests.Contexts;
+using BotCommands.Tests.Modules.ValidTestModules;
 using BotCommands.Tests.Services;
 using Xunit;
 

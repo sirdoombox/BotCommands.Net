@@ -1,6 +1,6 @@
 ﻿using BotCommands.Interfaces;
 
-namespace BotCommands.Tests.Context
+namespace BotCommands.Tests.Contexts
 {
     public class TestContext : IContext
     {

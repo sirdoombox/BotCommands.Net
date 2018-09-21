@@ -37,21 +37,6 @@ namespace BotCommands.Builders
         internal Module<TContext> BuildModule<T>() where T : IModule<TContext> =>
             BuildModule(typeof(T));
         
-        // Recurses through nested types to create a full map for that module.
-        internal void BuildModuleRecursive(Module<TContext> module)
-        {
-            var nestedTypes = module.Instance.GetType().GetNestedTypes();
-            if (nestedTypes.Length <= 0)
-                return;
-            module.Children = new List<Module<TContext>>();
-            foreach (var type in nestedTypes)
-            {
-                var newModule = BuildModule(type);
-                module.Children.Add(newModule);
-                newModule.Parent = module;
-                BuildModuleRecursive(newModule);
-            }
-        }
 
         private Module<TContext> BuildModule(Type type)
         {
@@ -73,8 +58,45 @@ namespace BotCommands.Builders
             newModule.ModuleRequiresPermissionValidation =
                 type.GetInterfaces().Any(x => x == typeof(IModulePermissions<TContext>));
             BuildModuleCommands(newModule);
+            VerifyModuleCommandsArguments(newModule);
             BuildModuleRecursive(newModule);
             return newModule;
+        }
+        
+        // Recurses through nested types to create a full map for that module.
+        internal void BuildModuleRecursive(Module<TContext> module)
+        {
+            var nestedTypes = module.Instance.GetType().GetNestedTypes();
+            if (nestedTypes.Length <= 0)
+                return;
+            module.Children = new List<Module<TContext>>();
+            foreach (var type in nestedTypes)
+            {
+                var newModule = BuildModule(type);
+                module.Children.Add(newModule);
+                newModule.Parent = module;
+                BuildModuleRecursive(newModule);
+            }
+        }
+
+        private void VerifyModuleCommandsArguments(Module<TContext> module)
+        {
+            foreach (var command in module.Commands)
+            {
+                for (int i = 1; i < command.ArgCountWithoutContext; i++)
+                {
+                    var prevArg = command.ArgumentsWithoutContext[i - 1];
+                    var arg = command.ArgumentsWithoutContext[i];
+                    if (arg.IsArray)
+                    {
+                        if(arg.GetElementType() == prevArg)
+                            throw new Exception($"{command.Method.Name} is invalid - you cannot have an array next to an argument of the same type.");
+                    }
+                    if (!prevArg.IsArray) continue;
+                    if(prevArg.GetElementType() == arg)
+                        throw new Exception($"{command.Method.Name} is invalid - you cannot have an array next to an argument of the same type.");
+                }
+            }
         }
 
         private void BuildModuleCommands(Module<TContext> module)
