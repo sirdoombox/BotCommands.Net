@@ -4,7 +4,7 @@ using BotCommands.Interfaces;
 using BotCommands.Tests.Contexts;
 using BotCommands.Tests.Services;
 
-namespace BotCommands.Tests.Modules.ValidTestModule
+namespace BotCommands.Tests.Modules.ValidTestModules
 {
     public partial class TestModule
     {
