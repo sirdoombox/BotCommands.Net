@@ -19,7 +19,7 @@ namespace BotCommands.Tests.Builders.Internal
         public void BuiltTestModule_ShouldHaveTwoCommands()
         {
             var builtModule = BuildValidModule();
-            Assert.Equal(builtModule.Commands.Count, 4);
+            Assert.Equal(4, builtModule.Commands.Count);
         }
 
         [Fact]
@@ -40,7 +40,7 @@ namespace BotCommands.Tests.Builders.Internal
             moduleBuilder.AddDependency(new TestService(int.MaxValue));
             moduleBuilder.AddDependency("Unused Dependency String.");
             var builtModule = moduleBuilder.BuildModule(typeof(TestModule));
-            Assert.Equal(((TestModule)builtModule.Instance).Service.TestValue, int.MaxValue);
+            Assert.Equal(int.MaxValue, ((TestModule)builtModule.Instance).Service.TestValue);
         }
 
         [Fact]
@@ -63,8 +63,8 @@ namespace BotCommands.Tests.Builders.Internal
             var builtModule = BuildValidModule();
             var firstChild = builtModule.Children.First();
             var twiceNestedChild = firstChild.Children.First();
-            Assert.Equal(firstChild.Instance.GetType(), typeof(TestModule.TestChildModule));
-            Assert.Equal(twiceNestedChild.Instance.GetType(), typeof(TestModule.TestChildModule.TestTwiceNestedChildModule));
+            Assert.Equal(typeof(TestModule.TestChildModule), firstChild.Instance.GetType());
+            Assert.Equal(typeof(TestModule.TestChildModule.TestTwiceNestedChildModule), twiceNestedChild.Instance.GetType());
         }
 
         [Fact]

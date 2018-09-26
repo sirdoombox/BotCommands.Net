@@ -13,11 +13,9 @@ namespace BotCommands.Tests.Modules.ValidTestModules
             [ModuleNames("TestTwiceNestedChildModule")]
             public class TestTwiceNestedChildModule : IModule<TestContext>, IModulePermissions<TestContext>
             {          
-                public TestService Service { get; }
-        
                 public TestTwiceNestedChildModule(TestService service)
                 {
-                    Service = service;
+                    
                 }
             
                 public Task Execute(TestContext ctx)

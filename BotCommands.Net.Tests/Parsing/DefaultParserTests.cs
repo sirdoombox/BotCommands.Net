@@ -16,15 +16,15 @@ namespace BotCommands.Tests.Parsing
             var context = new TestContext{Message = data};
             var parserResult = _parser.ParseContext(context, 1);
             var currArg = parserResult.FullArgsStart;
-            Assert.Equal(currArg.ArgType, typeof(string));
+            Assert.Equal(typeof(string), currArg.ArgType);
             currArg = currArg.Next;
-            Assert.Equal(currArg.ArgType, typeof(int));
+            Assert.Equal(typeof(int), currArg.ArgType);
             currArg = currArg.Next;
-            Assert.Equal(currArg.ArgType, typeof(bool));
+            Assert.Equal(typeof(bool), currArg.ArgType);
             currArg = currArg.Next;
-            Assert.Equal(currArg.ArgType, typeof(double));
+            Assert.Equal(typeof(double), currArg.ArgType);
             currArg = currArg.Next;
-            Assert.Equal(currArg.ArgType, typeof(string));
+            Assert.Equal(typeof(string), currArg.ArgType);
         }
         
         [Theory]
@@ -35,15 +35,15 @@ namespace BotCommands.Tests.Parsing
             var context = new TestContext {Message = data};
             var parserResult = _parser.ParseContext(context, 1);
             var currArg = parserResult.FullArgsStart;
-            Assert.Equal(currArg.ArgType, typeof(string));
+            Assert.Equal(typeof(string), currArg.ArgType);
             currArg = currArg.Next;
-            Assert.Equal(currArg.ArgType, typeof(bool));
+            Assert.Equal(typeof(bool), currArg.ArgType);
             currArg = currArg.Next;
-            Assert.Equal(currArg.ArgType, typeof(int));
+            Assert.Equal(typeof(int), currArg.ArgType);
             currArg = currArg.Next;
-            Assert.Equal(currArg.ArgType, typeof(string));
+            Assert.Equal(typeof(string), currArg.ArgType);
             currArg = currArg.Next;
-            Assert.Equal(currArg.ArgType, typeof(double));
+            Assert.Equal(typeof(double), currArg.ArgType);
         }
     }
 }

@@ -16,24 +16,24 @@ namespace BotCommands.Tests.Modules.ValidTestModules
             Service = service;
         }
         
-        public async Task Execute(TestContext ctx)
+        public Task Execute(TestContext ctx)
         {
-            
+            return Task.CompletedTask;
         }
         
-        public async Task SomeOtherMethod(TestContext ctx, string[] testArg)
+        public Task SomeOtherMethod(TestContext ctx, string[] testArg)
         {
-            
+            return Task.CompletedTask;
         }
 
-        public async Task SomeMethodWithArrayArgument(TestContext ctx, bool[] bools, string testString)
+        public Task SomeMethodWithArrayArgument(TestContext ctx, bool[] bools, string testString)
         {
-            
+            return Task.CompletedTask;
         }
 
-        public async Task SomeOtherMethodWithArrayArguments(TestContext ctx, string testString, int[] intArray, bool boolTest)
+        public  Task SomeOtherMethodWithArrayArguments(TestContext ctx, string testString, int[] intArray, bool boolTest)
         {
-            
+            return Task.CompletedTask;
         }
     }
 }

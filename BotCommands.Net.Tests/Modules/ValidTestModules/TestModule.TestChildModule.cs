@@ -10,12 +10,10 @@ namespace BotCommands.Tests.Modules.ValidTestModules
     {
         [ModuleNames("TestChildModule")]
         public partial class TestChildModule : IModule<TestContext>
-        {          
-            public TestService Service { get; }
-        
+        {
             public TestChildModule(TestService service)
             {
-                Service = service;
+                
             }
             
             public Task Execute(TestContext ctx)
