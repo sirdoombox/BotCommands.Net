@@ -27,10 +27,10 @@ namespace BotCommands.Tests.Builders.Internal
         {
             var builtModule = BuildValidModule();
             Assert.Collection(builtModule.Commands, 
-                item => Assert.Equal(item.ArgCountWithoutContext, 0),
-                item => Assert.Equal(item.ArgCountWithoutContext, 1),
-                item => Assert.Equal(item.ArgCountWithoutContext, 2),
-                item => Assert.Equal(item.ArgCountWithoutContext, 3));
+                item => Assert.Equal(0, item.ArgCountWithoutContext),
+                item => Assert.Equal(1, item.ArgCountWithoutContext),
+                item => Assert.Equal(2, item.ArgCountWithoutContext),
+                item => Assert.Equal(3, item.ArgCountWithoutContext));
         }
 
         [Fact]
@@ -53,7 +53,7 @@ namespace BotCommands.Tests.Builders.Internal
         [Fact]
         public void BuildingModuleWithoutDependencyAvailable_ShouldThrowException()
         {
-            var moduleBuilder= new ModuleBuilder<TestContext>(new DefaultParser<TestContext>().GetValidTypes());
+            var moduleBuilder = new ModuleBuilder<TestContext>(new DefaultParser<TestContext>().GetValidTypes());
             Assert.Throws<Exception>(() => moduleBuilder.BuildModule(typeof(TestModule)));
         }
         
