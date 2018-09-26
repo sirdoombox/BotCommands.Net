@@ -3,6 +3,7 @@
     <TargetFramework>netcoreapp2.1</TargetFramework>
     <RootNamespace>BotCommands.Tests</RootNamespace>
     <LangVersion>7.2</LangVersion>
+    <OutputType>Library</OutputType>
   </PropertyGroup>
   <ItemGroup>
     <PackageReference Include="xunit" Version="2.4.0" />

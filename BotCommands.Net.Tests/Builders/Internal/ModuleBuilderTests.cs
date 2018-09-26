@@ -82,9 +82,10 @@ namespace BotCommands.Tests.Builders.Internal
             Assert.Throws<Exception>(() => 
                 moduleBuilder.BuildModule(typeof(InvalidTestModuleUsingTypeNotSupportedByParser)));
         }
-
+        
+        // TODO: This test sucks and it behaves super weirdly depending on release/debug configurations.
         [Fact]
-        public void BuildAllModules_ShouldReturnValidModuleList()
+        public void BuildAllModulesShouldThrowException_DueToInvalidModulesBeingInAssembly()
         {
             var moduleBuilder = new ModuleBuilder<TestContext>(new DefaultParser<TestContext>().GetValidTypes());
             Assert.Throws<Exception>(() => moduleBuilder.BuildAllModules());
