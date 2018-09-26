@@ -1,12 +1,14 @@
-﻿using System.Collections.Generic;
+﻿using System;
+using System.Collections.Generic;
 using System.Linq;
 using BotCommands.Interfaces;
 
 namespace BotCommands.Parsing
 {
-    internal class Parser<TContext> where TContext : IContext
-    {
-        internal ParsedCommand ParseContext(TContext ctx, int prefixLength)
+    // TODO: More robust default parser.
+    public class DefaultParser<TContext> : IParser<TContext> where TContext : IContext
+    {       
+        public ParsedCommand ParseContext(TContext ctx, int prefixLength)
         {
             ParsedArgument firstArg = null;
             ParsedArgument currentArg = null;
@@ -17,13 +19,13 @@ namespace BotCommands.Parsing
             {
                 ParsedArgument newCurrent = null;
                 if (bool.TryParse(arg, out var boolOut))
-                    newCurrent = new ParsedArgument(typeof(bool), arg, boolOut);
+                    newCurrent = new ParsedArgument(typeof(bool), boolOut);
                 else if(int.TryParse(arg, out var intOut))
-                    newCurrent = new ParsedArgument(typeof(int), arg, intOut);
+                    newCurrent = new ParsedArgument(typeof(int), intOut);
                 else if(double.TryParse(arg, out var doubleOut))
-                    newCurrent = new ParsedArgument(typeof(double), arg, doubleOut);
+                    newCurrent = new ParsedArgument(typeof(double), doubleOut);
                 else
-                    newCurrent = new ParsedArgument(typeof(string), arg, arg);
+                    newCurrent = new ParsedArgument(typeof(string), arg);
 
                 if (firstArg == null)
                 {
@@ -35,7 +37,17 @@ namespace BotCommands.Parsing
                 currentArg = newCurrent;
             }
             return new ParsedCommand(firstArg, ctx);
-            // TODO: More robust parsing because this is pretty damn whack.
+        }
+
+        public IEnumerable<Type> GetValidTypes()
+        {
+            return new[]
+            {
+                typeof(bool),
+                typeof(int),
+                typeof(double),
+                typeof(string)
+            };
         }
     }
 }

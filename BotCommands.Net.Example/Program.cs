@@ -1,5 +1,5 @@
 ﻿using System;
-using BotCommands.Core;
+using BotCommands.Builders;
 using BotCommands.Events;
 using BotCommands.Example.Context;
 using BotCommands.Example.Modules;
@@ -10,10 +10,12 @@ namespace BotCommands.Example
     {
         private static void Main(string[] args)
         {
-            var cmdr = new Commander<ConsoleContext>();
-            cmdr.RegisterModule<MathsModule>();
-            cmdr.Prefix = "!";
-            cmdr.OnCommmandExecuted += (source, eventArgs) =>
+            var cmdr = new CommanderBuilder<ConsoleContext>()
+                .WithPrefix("!")
+                .WithDefaultParser()
+                .WithModule<MathsModule>()
+                .Build();
+            cmdr.OnCommandExecuted += (source, eventArgs) =>
             {
                 switch (eventArgs.Status)
                 {

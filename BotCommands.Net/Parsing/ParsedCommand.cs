@@ -1,9 +1,8 @@
-﻿using System.Collections.Generic;
-using BotCommands.Interfaces;
+﻿using BotCommands.Interfaces;
 
 namespace BotCommands.Parsing
 {
-    internal class ParsedCommand
+    public class ParsedCommand
     {
         internal readonly ParsedArgument FullArgsStart;
         internal ParsedArgument CommandArgsStart;

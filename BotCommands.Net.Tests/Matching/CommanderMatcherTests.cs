@@ -1,5 +1,5 @@
 ﻿using System.Collections.Generic;
-using BotCommands.Builders;
+using BotCommands.Builders.Internal;
 using BotCommands.Entities;
 using BotCommands.Matching;
 using BotCommands.Parsing;
@@ -12,8 +12,7 @@ namespace BotCommands.Tests.Matching
 {
     public class CommanderMatcherTests
     {
-        private readonly ModuleBuilder<TestContext> _moduleBuilder = new ModuleBuilder<TestContext>();
-        private readonly Parser<TestContext> _parser = new Parser<TestContext>();
+        private readonly DefaultParser<TestContext> _parser = new DefaultParser<TestContext>();
         private readonly CommandMatcher<TestContext> _matcher = new CommandMatcher<TestContext>();
 
         [Fact]
@@ -64,8 +63,9 @@ namespace BotCommands.Tests.Matching
 
         private IReadOnlyList<Module<TestContext>> GetModules()
         {
+            var _moduleBuilder = new ModuleBuilder<TestContext>(_parser.GetValidTypes());
             _moduleBuilder.AddDependency(new TestService(0));
-            var module = _moduleBuilder.BuildModule<TestModule>();
+            var module = _moduleBuilder.BuildModule(typeof(TestModule));
             return new List<Module<TestContext>> {module};
         }
     }

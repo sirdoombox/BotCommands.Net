@@ -6,7 +6,7 @@ namespace BotCommands.Tests.Parsing
 {
     public class ParserTests
     {
-        private static readonly Parser<TestContext> _parser = new Parser<TestContext>();
+        private static readonly DefaultParser<TestContext> _parser = new DefaultParser<TestContext>();
 
         [Theory]
         [InlineData("!test 1 true 1.2345 stringTest")]

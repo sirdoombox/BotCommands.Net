@@ -6,15 +6,17 @@ using BotCommands.Attributes;
 using BotCommands.Entities;
 using BotCommands.Interfaces;
 
-namespace BotCommands.Builders
+namespace BotCommands.Builders.Internal
 {
     internal sealed class ModuleBuilder<TContext> where TContext : IContext
     {
         private readonly Dictionary<Type, object> _dependencies;
+        private readonly IEnumerable<Type> _allowedTypes;
 
-        internal ModuleBuilder()
+        internal ModuleBuilder(IEnumerable<Type> allowedTypes)
         {
             _dependencies = new Dictionary<Type, object>();
+            _allowedTypes = allowedTypes;
         }
 
         internal void AddDependency(object obj)
@@ -33,12 +35,8 @@ namespace BotCommands.Builders
                 .Where(x => typeof(IModule<TContext>).IsAssignableFrom(x) && !x.IsNested);
             return types.Select(BuildModule).ToList();
         }
-
-        internal Module<TContext> BuildModule<T>() where T : IModule<TContext> =>
-            BuildModule(typeof(T));
         
-
-        private Module<TContext> BuildModule(Type type)
+        internal Module<TContext> BuildModule(Type type)
         {
             var newModule = new Module<TContext>();
             var namesAttrib = type.GetCustomAttribute<ModuleNames>();
@@ -87,6 +85,8 @@ namespace BotCommands.Builders
                 {
                     var prevArg = command.ArgumentsWithoutContext[i - 1];
                     var arg = command.ArgumentsWithoutContext[i];
+                    if(!_allowedTypes.Any(x=> x == prevArg || x == arg))
+                        throw new InvalidOperationException($"{command.Method.Name} is using parameter types that the parser does not support.");
                     if (arg.IsArray)
                     {
                         if(arg.GetElementType() == prevArg)
@@ -106,7 +106,7 @@ namespace BotCommands.Builders
             foreach (var method in allMethods)
             {
                 // TODO: Find a better way to filter this method out.
-                if (method.Name == "UserHasSufficientPermissions") continue; 
+                if (method.Name == "UserHasSufficientPermissions") continue;
                 if (!ParameterIsCommandContext(method.GetParameters().FirstOrDefault())) continue;
                 var newCommand = new Command<TContext>
                 {

@@ -1,19 +1,20 @@
 ﻿using System;
 using System.Linq;
-using BotCommands.Builders;
+using BotCommands.Builders.Internal;
 using BotCommands.Entities;
+using BotCommands.Parsing;
 using BotCommands.Tests.Contexts;
-using BotCommands.Tests.Modules;
 using BotCommands.Tests.Modules.InvalidTestModules;
 using BotCommands.Tests.Modules.ValidTestModules;
 using BotCommands.Tests.Services;
 using Xunit;
 
-namespace BotCommands.Tests.Builders
+namespace BotCommands.Tests.Builders.Internal
 {
     public class ModuleBuilderTests
     {
-
+        // TODO: Test cases where parser doesn't allow for certain method signatures.
+        
         [Fact]
         public void BuiltTestModule_ShouldHaveTwoCommands()
         {
@@ -35,25 +36,25 @@ namespace BotCommands.Tests.Builders
         [Fact]
         public void ValidBuiltTestModule_ShouldHaveCorrectDependencyInjected()
         {
-            var moduleBuilder = new ModuleBuilder<TestContext>();
+            var moduleBuilder = new ModuleBuilder<TestContext>(new DefaultParser<TestContext>().GetValidTypes());
             moduleBuilder.AddDependency(new TestService(int.MaxValue));
             moduleBuilder.AddDependency("Unused Dependency String.");
-            var builtModule = moduleBuilder.BuildModule<TestModule>();
+            var builtModule = moduleBuilder.BuildModule(typeof(TestModule));
             Assert.Equal(((TestModule)builtModule.Instance).Service.TestValue, int.MaxValue);
         }
 
         [Fact]
         public void BuildingModuleWithoutNamesAttribute_ShouldThrowException()
         {
-            var moduleBuilder = new ModuleBuilder<TestContext>();
-            Assert.Throws<Exception>(() => moduleBuilder.BuildModule<InvalidTestModuleNoNamesAttribute>());
+            var moduleBuilder = new ModuleBuilder<TestContext>(new DefaultParser<TestContext>().GetValidTypes());
+            Assert.Throws<Exception>(() => moduleBuilder.BuildModule(typeof(InvalidTestModuleNoNamesAttribute)));
         }
 
         [Fact]
         public void BuildingModuleWithoutDependencyAvailable_ShouldThrowException()
         {
-            var moduleBuilder= new ModuleBuilder<TestContext>();
-            Assert.Throws<Exception>(() => moduleBuilder.BuildModule<TestModule>());
+            var moduleBuilder= new ModuleBuilder<TestContext>(new DefaultParser<TestContext>().GetValidTypes());
+            Assert.Throws<Exception>(() => moduleBuilder.BuildModule(typeof(TestModule)));
         }
         
         [Fact]
@@ -69,23 +70,31 @@ namespace BotCommands.Tests.Builders
         [Fact]
         public void ModuleWithInvalidCommand_ShouldThrowException()
         {
-            var moduleBuilder = new ModuleBuilder<TestContext>();
+            var moduleBuilder = new ModuleBuilder<TestContext>(new DefaultParser<TestContext>().GetValidTypes());
             Assert.Throws<Exception>(() =>
-                moduleBuilder.BuildModule<InvalidTestModuleIncorrectCommandArgumentLayout>());
+                moduleBuilder.BuildModule(typeof(InvalidTestModuleIncorrectCommandArgumentLayout)));
+        }
+
+        [Fact]
+        public void ModuleWithCommandWithArgumentTypeNotSupportedByParser_ShouldThrowException()
+        {
+            var moduleBuilder = new ModuleBuilder<TestContext>(new DefaultParser<TestContext>().GetValidTypes());
+            Assert.Throws<Exception>(() => 
+                moduleBuilder.BuildModule(typeof(InvalidTestModuleUsingTypeNotSupportedByParser)));
         }
 
         [Fact]
         public void BuildAllModules_ShouldReturnValidModuleList()
         {
-            var moduleBuilder = new ModuleBuilder<TestContext>();
+            var moduleBuilder = new ModuleBuilder<TestContext>(new DefaultParser<TestContext>().GetValidTypes());
             Assert.Throws<Exception>(() => moduleBuilder.BuildAllModules());
         }
 
         private Module<TestContext> BuildValidModule()
         {
-            var moduleBuilder = new ModuleBuilder<TestContext>();
+            var moduleBuilder = new ModuleBuilder<TestContext>(new DefaultParser<TestContext>().GetValidTypes());
             moduleBuilder.AddDependency(new TestService(int.MaxValue));
-            return moduleBuilder.BuildModule<TestModule>();
+            return moduleBuilder.BuildModule(typeof(TestModule));
         }
     }
 }
