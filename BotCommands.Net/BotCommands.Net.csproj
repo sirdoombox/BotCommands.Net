@@ -3,8 +3,8 @@
     <TargetFramework>netstandard2.0</TargetFramework>
     <RootNamespace>BotCommands</RootNamespace>
     <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
-    <Version>0.1a</Version>
-    <PackageVersion>0.1a</PackageVersion>
+    <Version>0.1</Version>
+    <PackageVersion>0.1</PackageVersion>
     <Authors>Doombox</Authors>
     <Company />
     <Description>A service agnostic chat-based command handling library written in C# targetting .NET 2.0</Description>
