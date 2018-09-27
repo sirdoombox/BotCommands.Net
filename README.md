@@ -1,5 +1,5 @@
 # BotCommands.Net
-
+[![Build status](https://ci.appveyor.com/api/projects/status/qhg0wre804mn2fvi?svg=true)](https://ci.appveyor.com/project/sirdoombox/botcommands-net) [![NuGet version](https://badge.fury.io/nu/BotCommands.Net.svg)](https://badge.fury.io/nu/BotCommands.Net)
 ## What?
 A service and library agnostic way to define commands for your bot, it also provides parsing and execution so all you have to do is implement the functionality.
 
@@ -7,7 +7,7 @@ A service and library agnostic way to define commands for your bot, it also prov
 Depending on which service you're making a bot for, the library for that service may or may not have a built-in commands system, and learning an entirely new commands API for each different platform you might not be something you want to do. With this library all platforms are easily supported.
 
 ## How?
-Grab this project from NuGet (coming soon), Create a Context, Create a Command, Pipe your input into the Commander instance and you're good to go.
+Check out the [Getting Started](https://github.com/sirdoombox/BotCommands.Net/wiki/Getting-Started) page on the wiki for a quick rundown.
 A very simple example can be found [here](https://github.com/sirdoombox/BotCommands.Net/tree/develop/BotCommands.Net.Example)
 
 ## Dependencies
